@@ -10,7 +10,7 @@
 - Klikattuasi "Create Repository" omaat uuden Github-sivun
   - Sivulla ei tosin ole README.md:n ja lisenssin lisäksi muuta sisältöä
 - Uuden tiedoston lisääminen onnistuu sivulla näkyvän "Add file" -painikkeen kautta
-  - Muista tieodostoa nimetessäsi tiedostopääte (.md eli markdown-tiedosto on hyvä)
+  - Muista tieodostoa nimetessäsi tiedostopääte (.md eli markdown-tiedosto on hyvä tekstitiedostoille)
 
 ### Run Salt Command Locally (Karvinen 2023c)
 
