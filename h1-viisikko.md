@@ -55,9 +55,18 @@ Karvisen (2023b) mukaan viisi tärkeintä Saltin funktiota ovat: pkg, file, serv
 
 Pkg on lyhenne sanasta package, niin englanniksi yleensä kuin tietojenkäsittelytieteiden kontekstissa (Oxford University Press 2023). Pkg-funktiolla voidaan tarkistaa, onko jokin sovellus asennettu.
 
+    sudo salt-call --local -l info pkg.installed tree
 
+Yllä oleva komento tarkoittaa:
+
+- sudo = suorita seuraava komento/ohjelma superuserina (vaatii sudo-salasanan) (BSD System Manager's Manual 2023)
+- salt-call = suoritettava ohjelma
+- --local = saltin vaihtoehtoinen suoritustapa eli suorita paikallisesti (Hatch et al 2023)
+- -l info = lokitus eli lisää suorituksen tulostukseen myös välivaiheet (muita vaihtoehtoja -l option kanssa esim. all tai error) (Hatch et al 2023)
 
 ### Lähteet
+
+BSD System Manager's Manual, 2023. sudo Documentation. Manual Page sudo.
 
 Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 26.10.2023
 
@@ -66,3 +75,5 @@ Karvinen, T. 2023b. Create a Web Page Using Github. Luettavissa: https://terokar
 Karvinen, T. 2023c. Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/ Luettu: 26.10.2023
 
 Oxford University Press, 2023. pkg abbreviation. Luettavissa: https://www.oxfordlearnersdictionaries.com/definition/english/pkg Luettu: 26.10.2023
+
+Hatch, T.S. et al. 2023. salt-call Documentation. Manual Page salt-call.
