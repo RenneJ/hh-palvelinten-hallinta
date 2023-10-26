@@ -41,9 +41,11 @@ Ensimmäinen rivi, komennolla mkdir on omassa tapauksessani turha. Tarkistin kys
 
 Komentoriville tulostuisi "no such file or directory", jos hakemistoa ei löytyisi.
 
-Suoritin loput komennot ohjeiden mukaisesti (kuva 1). Tämän jälkeen testasin, että asennus onnistui (kuva 2).
+Suoritin loput komennot ohjeiden mukaisesti (kuva 1). Tämän jälkeen testasin, että asennus onnistui (kuva 2). Tarkistin komennon Teron ohjeista (Karvinen 2023c).
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/7ed290f4-915d-4e74-a018-c75859828b57)
+
+> Kuva 2. Onnistunut asennus!
 
 ### Lähteet
 
