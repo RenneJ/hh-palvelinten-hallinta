@@ -37,7 +37,7 @@
 
 Ensimmäinen rivi, komennolla mkdir on omassa tapauksessani turha. Tarkistin kyseisen hakemiston olevan olemassa listauskomennolla:
 
-  ls /etc/apt/keyrings
+    ls /etc/apt/keyrings
 
 Komentoriville tulostuisi "no such file or directory", jos hakemistoa ei löytyisi.
 
