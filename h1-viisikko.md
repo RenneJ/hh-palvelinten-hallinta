@@ -12,7 +12,7 @@
 
 ## Run Salt Command Locally (Karvinen 2023b)
 
-- Salt-komentojen käyttäminen paikallisesti on hyvää harjoitusta
+- Salt-komentojen käyttäminen paikallisesti on hyvää harjoitusta ja sopii testaamiseen
   - Tuloksen näkee välittömästi
 - Samat komennot toimivat sekä Linuxilla että Windowsilla
 - Saltia käytetään tavanomaisesti useiden koneiden hallintaan verkon välityksellä
