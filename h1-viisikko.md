@@ -27,12 +27,19 @@
 
  ## Saltin asennus Debian 12:lle
 
- Noudatan tässä osatehtävässä Tero Karvisen (2023a) vinkkejä.
+ Noudatan tässä osatehtävässä Tero Karvisen (2023a) vinkkejä. Olen aikaisemmalla opintojaksolla asentanut Debian 12:n (Bookworm), joten käytän sitä tämän ja tulevien tehtävien tekemiseen. 
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/a850dbc7-ee3f-49ed-8d59-09b751b3b82a)
 
 > Kuva 1. Teron ohjeet salt-minionin asentamiseen Debian 12:lle.
- 
+
+**HUOM!** Näitä ohjeita ei suositella käytettävän tuotantokoneelle.
+
+Ensimmäinen rivi, komennolla mkdir on omassa tapauksessani turha. Tarkistin kyseisen hakemiston olevan olemassa listauskomennolla:
+
+  ls /etc/apt/keyrings
+
+Komentoriville tulostuisi "no such file or directory", jos hakemistoa ei löytyisi.
 
 ### Lähteet
 
