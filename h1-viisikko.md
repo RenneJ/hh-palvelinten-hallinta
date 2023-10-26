@@ -1,6 +1,6 @@
 # H1 Viisikko (Karvinen 2023a)
 
-## Tiivistelmät
+## x) Tiivistelmät
 
 ### Create a Web Page Using Github (Karvinen 2023b)
 
@@ -25,9 +25,9 @@
   - user
   - cmd
 
- ## Saltin asennus Debian 12:lle
+## a) Saltin asennus Debian 12:lle
 
- Noudatan tässä osatehtävässä Tero Karvisen (2023a) vinkkejä. Olen aikaisemmalla opintojaksolla asentanut Debian 12:n (Bookworm), joten käytän sitä tämän ja tulevien tehtävien tekemiseen. 
+Noudatan tässä osatehtävässä Tero Karvisen (2023a) vinkkejä. Olen aikaisemmalla opintojaksolla asentanut Debian 12:n (Bookworm), joten käytän sitä tämän ja tulevien tehtävien tekemiseen. 
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/a850dbc7-ee3f-49ed-8d59-09b751b3b82a)
 
@@ -46,6 +46,10 @@ Suoritin loput komennot ohjeiden mukaisesti (kuva 1). Tämän jälkeen testasin,
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/7ed290f4-915d-4e74-a018-c75859828b57)
 
 > Kuva 2. Onnistunut asennus!
+
+## b) Viisi tärkeintä
+
+Karvisen (2023b) mukaan viisi tärkeintä
 
 ### Lähteet
 
