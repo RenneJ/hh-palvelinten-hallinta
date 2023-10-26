@@ -25,6 +25,15 @@
   - user
   - cmd
 
+ ## Saltin asennus Debian 12:lle
+
+ Noudatan tässä osatehtävässä Tero Karvisen (2023a) vinkkejä.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/a850dbc7-ee3f-49ed-8d59-09b751b3b82a)
+
+> Kuva 1. Teron ohjeet salt-minionin asentamiseen Debian 12:lle.
+ 
+
 ### Lähteet
 
 Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 26.10.2023
