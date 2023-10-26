@@ -63,6 +63,8 @@ Yllä oleva komento tarkoittaa:
 - salt-call = suoritettava ohjelma
 - --local = saltin vaihtoehtoinen suoritustapa eli suorita paikallisesti (Hatch et al 2023)
 - -l info = lokitus eli lisää suorituksen tulostukseen myös välivaiheet (muita vaihtoehtoja -l option kanssa esim. all tai error) (Hatch et al 2023)
+- pkg.installed = tarkista onko järjestelmä tilassa, johon on asennetu paketti (Karvinen 2023c)
+- tree = paketti, jota tarkistetaan
 
 ### Lähteet
 
