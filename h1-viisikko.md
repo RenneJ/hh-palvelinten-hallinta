@@ -49,7 +49,13 @@ Suoritin loput komennot ohjeiden mukaisesti (kuva 1). Tämän jälkeen testasin,
 
 ## b) Viisi tärkeintä
 
-Karvisen (2023b) mukaan viisi tärkeintä
+Karvisen (2023b) mukaan viisi tärkeintä Saltin funktiota ovat: pkg, file, service, user ja cmd.
+
+### pkg
+
+Pkg on lyhenne sanasta package, niin englanniksi yleensä kuin tietojenkäsittelytieteiden kontekstissa (Oxford University Press 2023). Pkg-funktiolla voidaan tarkistaa, onko jokin sovellus asennettu.
+
+
 
 ### Lähteet
 
@@ -58,3 +64,5 @@ Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/20
 Karvinen, T. 2023b. Create a Web Page Using Github. Luettavissa: https://terokarvinen.com/2023/create-a-web-page-using-github/ Luettu: 26.10.2023
 
 Karvinen, T. 2023c. Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/ Luettu: 26.10.2023
+
+Oxford University Press, 2023. pkg abbreviation. Luettavissa: https://www.oxfordlearnersdictionaries.com/definition/english/pkg Luettu: 26.10.2023
