@@ -1,6 +1,8 @@
-# Tiivistelmät
+# H1 Viisikko (Karvinen 2023a)
 
-## Create a Web Page Using Github (Karvinen 2023a)
+## Tiivistelmät
+
+### Create a Web Page Using Github (Karvinen 2023b)
 
 - Luo tili Githubiin
 - Navigoi "Repositories" -näkymään
@@ -10,7 +12,7 @@
 - Uuden tiedoston lisääminen onnistuu sivulla näkyvän "Add file" -painikkeen kautta
   - Muista tieodostoa nimetessäsi tiedostopääte (.md eli markdown-tiedosto on hyvä)
 
-## Run Salt Command Locally (Karvinen 2023b)
+### Run Salt Command Locally (Karvinen 2023c)
 
 - Salt-komentojen käyttäminen paikallisesti on hyvää harjoitusta ja sopii testaamiseen
   - Tuloksen näkee välittömästi
@@ -23,8 +25,10 @@
   - user
   - cmd
 
-## Lähteet
+### Lähteet
 
-Karvinen, T. 2023a. Create a Web Page Using Github. Luettavissa: https://terokarvinen.com/2023/create-a-web-page-using-github/ Luettu: 26.10.2023
+Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 26.10.2023
 
-Karvinen, T. 2023b. Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/ Luettu: 26.10.2023
+Karvinen, T. 2023b. Create a Web Page Using Github. Luettavissa: https://terokarvinen.com/2023/create-a-web-page-using-github/ Luettu: 26.10.2023
+
+Karvinen, T. 2023c. Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/ Luettu: 26.10.2023
