@@ -41,6 +41,10 @@ Ensimmäinen rivi, komennolla mkdir on omassa tapauksessani turha. Tarkistin kys
 
 Komentoriville tulostuisi "no such file or directory", jos hakemistoa ei löytyisi.
 
+Suoritin loput komennot ohjeiden mukaisesti (kuva 1). Tämän jälkeen testasin, että asennus onnistui (kuva 2).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/7ed290f4-915d-4e74-a018-c75859828b57)
+
 ### Lähteet
 
 Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 26.10.2023
