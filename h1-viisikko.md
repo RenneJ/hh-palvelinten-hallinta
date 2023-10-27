@@ -89,7 +89,7 @@ File-moduulilla voidaan tarkistaa mm. tiedoston olemassaolo, sisältö ja käytt
 
 Yllä oleva komento tarkoittaa:
 
-- file.managed = hallinnoi tiedostoa; tässä tapauksessa ei ole määritelty mistä ladataan joten luodaan tyhjä tiedosto polkuun
+- file.managed = hallinnoi tiedostoa; tässä tapauksessa ei ole määritelty mistä ladataan, joten luodaan tyhjä tiedosto polkuun
 - /tmp/hellotero = polku; tiedosto luodaan tänne
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/188ce3ad-e1fc-44f3-b847-03ed38853ccf)
