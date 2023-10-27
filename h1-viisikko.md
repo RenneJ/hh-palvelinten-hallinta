@@ -96,7 +96,11 @@ Yllä oleva komento tarkoittaa:
 
 > Kuva 5. Esimerkkiajon tulos (sudo salt-call --local -l info state.single file.managed /tmp/hellotero)
 
-### Lähteet
+### service
+
+Service-moduulilla voidaan hallinnoida daemoneiden käynnistystä ja lopetusta (VMware, Inc. 2023d).
+
+## Lähteet
 
 BSD System Manager's Manual, 2023. sudo Documentation. Manual Page sudo.
 
@@ -115,5 +119,7 @@ VMware, Inc., 2023a. salt.states.pkg. Salt Project. Luettavissa: https://docs.sa
 VMware, Inc., 2023b. salt.modules.state. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.state.html#salt.modules.state.single Luettu: 27.10.2023
 
 VMware, Inc., 2023c. salt.modules.file. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.file.html Luettu: 27.10.2023
+
+VMware, Inc., 2023d. salt.states.service. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.service.html Luettu: 27.10.2023
 
 Wigmore, I., 2016. What is idempotence?. TechTarget. Luettavissa: https://www.techtarget.com/whatis/definition/idempotence Luettu: 27.10.2023
