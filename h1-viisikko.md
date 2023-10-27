@@ -63,12 +63,13 @@ Yllä oleva komento tarkoittaa:
 - salt-call = suoritettava ohjelma
 - --local = saltin vaihtoehtoinen suoritustapa eli suorita paikallisesti (Hatch et al 2023)
 - -l info = lokitus eli lisää suorituksen tulostukseen myös välivaiheet (muita vaihtoehtoja -l option kanssa esim. all tai error) (Hatch et al 2023)
-- pkg.installed = tarkista onko järjestelmä tilassa, johon on asennettu paketti (Karvinen 2023c)
+- state.single = suorita yksi tilafunktio (VMware, Inc. 2023b)
+- pkg.installed = suoritettava funktio; tarkista onko järjestelmä tilassa, johon on asennettu paketti (Karvinen 2023c)
 - tree = paketti, jota tarkistetaan
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/5f071c97-97e4-4d63-9dc3-c67c05e0cfe5)
 
-> Kuva 3. Esimerkkiajo: sudo salt-call --local -l info state.single pkg.installed tree
+> Kuva 3. Esimerkkiajon tulos (sudo salt-call --local -l info state.single pkg.installed tree)
 
 ### file
 
@@ -89,3 +90,5 @@ Karvinen, T. 2023c. Run Salt Command Locally. Luettavissa: https://terokarvinen.
 Oxford University Press, 2023. pkg abbreviation. Luettavissa: https://www.oxfordlearnersdictionaries.com/definition/english/pkg Luettu: 26.10.2023
 
 VMware, Inc., 2023a. salt.states.pkg. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html Luettu: 27.10.2023
+
+VMware, Inc., 2023b. salt.modules.state. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.state.html#salt.modules.state.single Luettu: 27.10.2023
