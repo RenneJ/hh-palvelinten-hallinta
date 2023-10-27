@@ -139,11 +139,35 @@ Cmd-moduulilla hallinnoidaan omavaltaisia (itse määritettyjä) komentoja (VMwa
 
 ## d) Tietoa koneesta
 
+Saltin avulla voi kerätä tietoa järjestelmästä (Karvinen 2023a).
 
+    sudo salt-call --local grains.items
+
+Komento tulostaa terminaaliin tiedot käyttöjärjestelmästä, prosessorista, ip-tiedot ym.
+
+Niitä voi erotella, jos ei halua kaikkia tietoja tulostuvan (Karvinen 2023a).
+
+    sudo salt-call --local grains.item valinta1 valinta2 valinta3
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/71399293-c01f-4bd7-8320-86218d88d380)
+
+> Kuva 9. Saltin avulla saadut tiedot.
+
+Kuvassa yhdeksän on käytetty grains.item -funktiota.
+
+- cwd = current working directory; tämänhetkinen hakemistosi
+  - cwd viittaa tilaan ja pwd (print working directory) on komento (Davies 2022)
+- ip_interfaces = internetprotokollan liitännät
+  - enp0s3 on viittaa ethernet-yhteyteen (ethernet network peripheral 0 serial 3)
+    - koska tiedetään jo valmiiksi laitteen olevan virtuaalinen, on ethernet-yhteyskin virtuaalinen; hostkoneeni ei ole ethernet-kaapeliin yhdistettynä
+  - lo on loopbackosoite eli osoite, jolla kone voi kutsua itseään
+- os = operating system eli käyttöjärjestelmän nimi
 
 ## Lähteet
 
 BSD System Manager's Manual, 2023. sudo Documentation. Manual Page sudo.
+
+Davies, C., 2022. What is the difference between cwd and pwd?. StackExchange. Luettavissa: https://unix.stackexchange.com/questions/709896/what-is-the-difference-between-cwd-and-pwd Luettu: 27.10.2023
 
 Hatch, T.S. et al., 2023. salt-call Documentation. Manual Page salt-call.
 
