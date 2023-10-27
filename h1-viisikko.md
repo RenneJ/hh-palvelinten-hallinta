@@ -100,6 +100,16 @@ Yllä oleva komento tarkoittaa:
 
 Service-moduulilla voidaan hallinnoida daemoneiden käynnistystä ja lopetusta (VMware, Inc. 2023d).
 
+    sudo salt-call --local -l info state.single service.dead apache2 enable=False
+
+- service.dead = varmista, että palvelu (service) ei ole päällä ja lopeta sen ajaminen, jos se on päällä
+- apache2 = palvelu/daemon/skripti (apache2 on webpalvelin)
+- enable=False = enable viittaa palvelun käynnistykseen järjestelmän käynnistyessä; False -> älä käynnistä
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/76817a64-b0cf-4940-a587-445fdda51a5d)
+
+> Kuva 6. Apache2 ei ole päällä eikä sitä yritetä käynnistää.
+
 ## Lähteet
 
 BSD System Manager's Manual, 2023. sudo Documentation. Manual Page sudo.
