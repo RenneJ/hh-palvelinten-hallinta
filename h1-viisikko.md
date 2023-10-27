@@ -153,7 +153,7 @@ Niitä voi erotella, jos ei halua kaikkia tietoja tulostuvan (Karvinen 2023a).
 
 > Kuva 9. Saltin avulla saadut tiedot.
 
-Kuvassa yhdeksän on käytetty grains.item -funktiota.
+Kuvassa 9 on käytetty grains.item -funktiota.
 
 - cwd = current working directory; tämänhetkinen hakemistosi
   - cwd viittaa tilaan ja pwd (print working directory) on komento (Davies 2022)
