@@ -119,7 +119,7 @@ User-moduulilla hallinnoidaan järjestelmän käyttäjiä. User-moduulissa on va
 - user.present = tarkistetaan onko, käyttäjä järjestelmässä; jos ei ole, sellainen luodaan
 - terote08 = käyttäjänimi
 
-### [image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/725199f8-0d14-4978-be16-4bb3b71f4c3c)
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/725199f8-0d14-4978-be16-4bb3b71f4c3c)
 
 > Kuva 7. Käyttäjä terote08, läsnäolo pakollinen!
 
