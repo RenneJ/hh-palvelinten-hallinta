@@ -71,6 +71,8 @@ Yllä oleva komento tarkoittaa:
 
 > Kuva 3. Esimerkkiajon tulos (sudo salt-call --local -l info state.single pkg.installed tree)
 
+Pkg.installed on idempotentti funktio. Sen ajaminen useamman kerran palauttaa saman lopputuloksen (Wigmore 2016). Ts. funktio ei asenna toista tree-ohjelmaa seuraavilla funktion suorituskerroilla. Ko. funktio myös tulostaa terminaaliin lisätietoja ajosta (kuva 3).
+
 ### file
 
 File-funktiolla voidaan tarkistaa tiedoston olemassaolo
@@ -79,16 +81,18 @@ File-funktiolla voidaan tarkistaa tiedoston olemassaolo
 
 BSD System Manager's Manual, 2023. sudo Documentation. Manual Page sudo.
 
-Hatch, T.S. et al. 2023. salt-call Documentation. Manual Page salt-call.
+Hatch, T.S. et al., 2023. salt-call Documentation. Manual Page salt-call.
 
-Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 26.10.2023
+Karvinen, T., 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 26.10.2023
 
-Karvinen, T. 2023b. Create a Web Page Using Github. Luettavissa: https://terokarvinen.com/2023/create-a-web-page-using-github/ Luettu: 26.10.2023
+Karvinen, T., 2023b. Create a Web Page Using Github. Luettavissa: https://terokarvinen.com/2023/create-a-web-page-using-github/ Luettu: 26.10.2023
 
-Karvinen, T. 2023c. Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/ Luettu: 26.10.2023
+Karvinen, T., 2023c. Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/ Luettu: 26.10.2023
 
 Oxford University Press, 2023. pkg abbreviation. Luettavissa: https://www.oxfordlearnersdictionaries.com/definition/english/pkg Luettu: 26.10.2023
 
 VMware, Inc., 2023a. salt.states.pkg. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html Luettu: 27.10.2023
 
 VMware, Inc., 2023b. salt.modules.state. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.state.html#salt.modules.state.single Luettu: 27.10.2023
+
+Wigmore, I., 2016. What is idempotence?. TechTarget. Luettavissa: https://www.techtarget.com/whatis/definition/idempotence Luettu: 27.10.2023
