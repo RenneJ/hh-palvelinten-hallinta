@@ -69,11 +69,17 @@ Yllä oleva komento tarkoittaa:
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/5f071c97-97e4-4d63-9dc3-c67c05e0cfe5)
 
-> Kuva 3. Esimerkkiajon tulos (sudo salt-call --local -l info state.single pkg.installed tree)
+> Kuva 3. Ensimmäisen ajon tulos (sudo salt-call --local -l info state.single pkg.installed tree)
 
 Pkg.installed on idempotentti funktio. Sen ajaminen useamman kerran palauttaa saman lopputuloksen (Wigmore 2016). Ts. funktio ei asenna toista tree-ohjelmaa seuraavilla funktion suorituskerroilla. Ko. funktio myös tulostaa terminaaliin lisätietoja ajosta. Kuvasta 3 voi nähdä, että yksi muutos on tapahtunut
     
     Succeeded: 1 (Changed=1)
+
+Seuraava ajo ei luo muutoksia järjestelmään (kuva 4).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/9c491937-f672-4d19-b5ef-3da85ec7b363)
+
+> Kuva 4. Aikaisemman funktion suoritus toisen kerran.
 
 ### file
 
@@ -88,7 +94,7 @@ Yllä oleva komento tarkoittaa:
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/188ce3ad-e1fc-44f3-b847-03ed38853ccf)
 
-> Kuva 4. Esimerkkiajon tulos (sudo salt-call --local -l info state.single file.managed /tmp/hellotero)
+> Kuva 5. Esimerkkiajon tulos (sudo salt-call --local -l info state.single file.managed /tmp/hellotero)
 
 ### Lähteet
 
