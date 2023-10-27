@@ -110,6 +110,23 @@ Service-moduulilla voidaan hallinnoida daemoneiden käynnistystä ja lopetusta (
 
 > Kuva 6. Apache2 ei ole päällä eikä sitä yritetä käynnistää.
 
+### user
+
+User-moduulilla hallinnoidaan järjestelmän käyttäjiä. User-moduulissa on vain kaksi funktiota; present (läsnä) ja absent (poissa). (VMware, Inc. 2023e)
+
+    sudo salt-call --local -l info state.single user.present terote08
+
+- user.present = tarkistetaan onko, käyttäjä järjestelmässä; jos ei ole, sellainen luodaan
+- terote08 = käyttäjänimi
+
+### [image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/725199f8-0d14-4978-be16-4bb3b71f4c3c)
+
+> Kuva 7. Käyttäjä terote08, läsnäolo pakollinen!
+
+### cmd
+
+
+
 ## Lähteet
 
 BSD System Manager's Manual, 2023. sudo Documentation. Manual Page sudo.
@@ -131,5 +148,7 @@ VMware, Inc., 2023b. salt.modules.state. Salt Project. Luettavissa: https://docs
 VMware, Inc., 2023c. salt.modules.file. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.file.html Luettu: 27.10.2023
 
 VMware, Inc., 2023d. salt.states.service. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.service.html Luettu: 27.10.2023
+
+VMware, Inc., 2023e. salt.states.user. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.user.html Luettu: 27.10.2023
 
 Wigmore, I., 2016. What is idempotence?. TechTarget. Luettavissa: https://www.techtarget.com/whatis/definition/idempotence Luettu: 27.10.2023
