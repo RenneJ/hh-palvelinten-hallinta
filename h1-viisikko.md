@@ -71,7 +71,9 @@ Yllä oleva komento tarkoittaa:
 
 > Kuva 3. Esimerkkiajon tulos (sudo salt-call --local -l info state.single pkg.installed tree)
 
-Pkg.installed on idempotentti funktio. Sen ajaminen useamman kerran palauttaa saman lopputuloksen (Wigmore 2016). Ts. funktio ei asenna toista tree-ohjelmaa seuraavilla funktion suorituskerroilla. Ko. funktio myös tulostaa terminaaliin lisätietoja ajosta (kuva 3).
+Pkg.installed on idempotentti funktio. Sen ajaminen useamman kerran palauttaa saman lopputuloksen (Wigmore 2016). Ts. funktio ei asenna toista tree-ohjelmaa seuraavilla funktion suorituskerroilla. Ko. funktio myös tulostaa terminaaliin lisätietoja ajosta. Kuvasta 3 voi nähdä, että yksi muutos on tapahtunut
+    
+    Succeeded: 1 (Changed=1)
 
 ### file
 
