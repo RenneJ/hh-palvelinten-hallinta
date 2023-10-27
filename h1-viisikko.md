@@ -125,7 +125,17 @@ User-moduulilla hallinnoidaan järjestelmän käyttäjiä. User-moduulissa on va
 
 ### cmd
 
+Cmd-moduulilla hallinnoidaan omavaltaisia (itse määritettyjä) komentoja (VMware, Inc. 2023f).
 
+    sudo salt-call --local -l info state.single cmd.run 'touch /tmp/foo' creates="/tmp/foo"
+
+- cmd.run = suorita komento
+- 'touch /tmp/foo' = komento; touch luo uuden tyhjän tiedoston (Rubin et al 2022)
+- creates="/tmp/foo" = ehto komennon suoritukselle; suoritetaan vain, jos /tmp/foo EI ole olemassa
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/1be2c2c5-a2f6-4083-bb82-5ef0bc6e8811)
+
+> Kuva 8. Ehto toteutuu, itse määritelty komento suoritetaan.
 
 ## Lähteet
 
@@ -141,6 +151,8 @@ Karvinen, T., 2023c. Run Salt Command Locally. Luettavissa: https://terokarvinen
 
 Oxford University Press, 2023. pkg abbreviation. Luettavissa: https://www.oxfordlearnersdictionaries.com/definition/english/pkg Luettu: 26.10.2023
 
+Rubin, P. et al, 2022. User Commands. Touch manual pages. 
+
 VMware, Inc., 2023a. salt.states.pkg. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html Luettu: 27.10.2023
 
 VMware, Inc., 2023b. salt.modules.state. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.state.html#salt.modules.state.single Luettu: 27.10.2023
@@ -150,5 +162,7 @@ VMware, Inc., 2023c. salt.modules.file. Salt Project. Luettavissa: https://docs.
 VMware, Inc., 2023d. salt.states.service. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.service.html Luettu: 27.10.2023
 
 VMware, Inc., 2023e. salt.states.user. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.user.html Luettu: 27.10.2023
+
+VMware, Inc., 2023f. salt.states.cmd. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html Luettu: 27.10.2023
 
 Wigmore, I., 2016. What is idempotence?. TechTarget. Luettavissa: https://www.techtarget.com/whatis/definition/idempotence Luettu: 27.10.2023
