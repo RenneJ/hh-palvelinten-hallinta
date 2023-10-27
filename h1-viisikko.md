@@ -137,6 +137,10 @@ Cmd-moduulilla hallinnoidaan omavaltaisia (itse määritettyjä) komentoja (VMwa
 
 > Kuva 8. Ehto toteutuu, itse määritelty komento suoritetaan.
 
+## d) Tietoa koneesta
+
+
+
 ## Lähteet
 
 BSD System Manager's Manual, 2023. sudo Documentation. Manual Page sudo.
