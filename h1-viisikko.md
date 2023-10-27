@@ -47,15 +47,15 @@ Suoritin loput komennot ohjeiden mukaisesti (kuva 1). Tämän jälkeen testasin,
 
 > Kuva 2. Onnistunut asennus!
 
-## b) Viisi tärkeintä
+## b & c) Viisi tärkeintä & idempotentti
 
-Karvisen (2023b) mukaan viisi tärkeintä Saltin funktiota ovat: pkg, file, service, user ja cmd.
+Karvisen (2023b) mukaan viisi tärkeintä Saltin funktiota ovat: pkg, file, service, user ja cmd. 
 
 ### pkg
 
-Pkg on lyhenne sanasta package, niin englanniksi yleensä kuin tietojenkäsittelytieteiden kontekstissa (Oxford University Press 2023). Pkg-funktiolla voidaan tarkistaa, onko jokin sovellus asennettu.
+Pkg on lyhenne sanasta package (Oxford University Press 2023). Pkg-moduulilla voidaan tarkistaa, onko jokin sovellus asennettu tai onko asennetusta ohjelmassa käytössä viimeisin versio (VMware, Inc 2023a).
 
-    sudo salt-call --local -l info pkg.installed tree
+    sudo salt-call --local -l info state.single pkg.installed tree
 
 Yllä oleva komento tarkoittaa:
 
@@ -63,12 +63,22 @@ Yllä oleva komento tarkoittaa:
 - salt-call = suoritettava ohjelma
 - --local = saltin vaihtoehtoinen suoritustapa eli suorita paikallisesti (Hatch et al 2023)
 - -l info = lokitus eli lisää suorituksen tulostukseen myös välivaiheet (muita vaihtoehtoja -l option kanssa esim. all tai error) (Hatch et al 2023)
-- pkg.installed = tarkista onko järjestelmä tilassa, johon on asennetu paketti (Karvinen 2023c)
+- pkg.installed = tarkista onko järjestelmä tilassa, johon on asennettu paketti (Karvinen 2023c)
 - tree = paketti, jota tarkistetaan
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/5f071c97-97e4-4d63-9dc3-c67c05e0cfe5)
+
+> Kuva 3. Esimerkkiajo: sudo salt-call --local -l info state.single pkg.installed tree
+
+### file
+
+File-funktiolla voidaan tarkistaa tiedoston olemassaolo
 
 ### Lähteet
 
 BSD System Manager's Manual, 2023. sudo Documentation. Manual Page sudo.
+
+Hatch, T.S. et al. 2023. salt-call Documentation. Manual Page salt-call.
 
 Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 26.10.2023
 
@@ -78,4 +88,4 @@ Karvinen, T. 2023c. Run Salt Command Locally. Luettavissa: https://terokarvinen.
 
 Oxford University Press, 2023. pkg abbreviation. Luettavissa: https://www.oxfordlearnersdictionaries.com/definition/english/pkg Luettu: 26.10.2023
 
-Hatch, T.S. et al. 2023. salt-call Documentation. Manual Page salt-call.
+VMware, Inc., 2023a. salt.states.pkg. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html Luettu: 27.10.2023
