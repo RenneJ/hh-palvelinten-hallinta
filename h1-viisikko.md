@@ -75,7 +75,18 @@ Pkg.installed on idempotentti funktio. Sen ajaminen useamman kerran palauttaa sa
 
 ### file
 
-File-funktiolla voidaan tarkistaa tiedoston olemassaolo
+File-moduulilla voidaan tarkistaa mm. tiedoston olemassaolo, sisältö ja käyttöoikeudet (VMware 2023c).
+
+    sudo salt-call --local -l info state.single file.managed /tmp/hellotero
+
+Yllä oleva komento tarkoittaa:
+
+- file.managed = hallinnoi tiedostoa; tässä tapauksessa ei ole määritelty mistä ladataan joten luodaan tyhjä tiedosto polkuun
+- /tmp/hellotero = polku; tiedosto luodaan tänne
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/188ce3ad-e1fc-44f3-b847-03ed38853ccf)
+
+> Kuva 4. Esimerkkiajon tulos (sudo salt-call --local -l info state.single file.managed /tmp/hellotero)
 
 ### Lähteet
 
@@ -94,5 +105,7 @@ Oxford University Press, 2023. pkg abbreviation. Luettavissa: https://www.oxford
 VMware, Inc., 2023a. salt.states.pkg. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html Luettu: 27.10.2023
 
 VMware, Inc., 2023b. salt.modules.state. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.state.html#salt.modules.state.single Luettu: 27.10.2023
+
+VMware, Inc., 2023c. salt.modules.file. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.file.html Luettu: 27.10.2023
 
 Wigmore, I., 2016. What is idempotence?. TechTarget. Luettavissa: https://www.techtarget.com/whatis/definition/idempotence Luettu: 27.10.2023
