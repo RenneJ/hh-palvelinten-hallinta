@@ -49,7 +49,7 @@ Suoritin loput komennot ohjeiden mukaisesti (kuva 1). Tämän jälkeen testasin,
 
 ## b & c) Viisi tärkeintä & idempotentti
 
-Karvisen (2023b) mukaan viisi tärkeintä Saltin funktiota ovat: pkg, file, service, user ja cmd. 
+Karvisen (2023b) mukaan viisi tärkeintä Saltin toimintoa ovat: pkg, file, service, user ja cmd. 
 
 ### pkg
 
