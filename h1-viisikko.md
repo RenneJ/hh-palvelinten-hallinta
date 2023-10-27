@@ -75,11 +75,11 @@ Pkg.installed on idempotentti funktio. Sen ajaminen useamman kerran palauttaa sa
     
     Succeeded: 1 (Changed=1)
 
-Seuraava ajo ei luo muutoksia järjestelmään (kuva 4).
+Saman funktion suorittaminen uudestaan ei luo muutoksia järjestelmään (kuva 4).
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/9c491937-f672-4d19-b5ef-3da85ec7b363)
 
-> Kuva 4. Aikaisemman funktion suoritus toisen kerran.
+> Kuva 4. Aikaisemman idempotenttifunktion suoritus toisen kerran.
 
 ### file
 
