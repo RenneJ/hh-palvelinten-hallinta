@@ -99,11 +99,11 @@ Olisiko pitänyt määrittää, mitä virtualisoimisalustaa käytetään? Defaul
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/82d57a84-5134-41d3-a9e9-7075ab1cbd1d)
 
-> Kuva 7. ==vagrant up== jäätyminen ja komennon uudelleen suorittaminen.
+> Kuva 7. `$ vagrant up` jäätyminen ja komennon uudelleen suorittaminen.
 
-`vagrant up` suorittaminen pysähtyi kohtaan **Mounting NFS shared folders** useaksi minuutksi. Joten päätin lopettaa suorituksen näppäinyhdistelmällä Ctrl + C. Hellä pysäytys clean upin kanssa myöskin jäätyi, joten Ctrl + C uusiksi ja prosessi tapettiin.
+`$ vagrant up` suorittaminen pysähtyi kohtaan **Mounting NFS shared folders** useaksi minuutksi. Joten päätin lopettaa suorituksen näppäinyhdistelmällä `Ctrl + C`. Hellä pysäytys clean upin kanssa myöskin jäätyi, joten `Ctrl + C` uusiksi ja prosessi tapettiin.
 
-Suoritin $ vagrant up -komennon uudestaan oletuksella, että sama virhe toistuu. Yllätyksekseni se onnistuikin, joten yritin muodostaa ssh-yhteden uuteen koneeseen ('.
+Suoritin `$ vagrant up` -komennon uudestaan oletuksella, että sama virhe toistuu. Yllätyksekseni se onnistuikin, joten yritin muodostaa ssh-yhteden uuteen koneeseen ('.
 
 Lähteet:
 
