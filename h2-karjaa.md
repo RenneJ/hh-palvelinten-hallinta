@@ -147,6 +147,17 @@ Vihdoin sain vagrantkoneen käynnistettyä ongelmitta (kuva 12).
 
 > Kuva 12. Onnistunut vagrantkoneen käynnistys!
  
+En äkkiseltään löytänyt portteja, jotka pitäisi avata. Se ei myöskään ole tätä tehtävää varten oleellista, joten jatkan palomuuri kytkettynä pois päältä.
+
+Seuraavaksi on tarkoitus muodostaa ssh-yhteys ja asentaa kohdekoneeseen master ja minion.
+
+	$ vagrant ssh
+ 	$ sudo apt update
+  	$ sudo apt install salt-minion
+   	$ sudo apt install salt-master
+
+Ylläolevien komentojen suoritus onnistui ongelmitta. Tarkistetaan sovellusten versiot, Saltin dokumentaation mukaan on suositeltavaa, että master ja minion käyttävät samaa versiota ([VMware, Inc. 2023](https://docs.saltproject.io/en/latest/faq.html#can-i-run-different-versions-of-salt-on-my-master-and-minion).
+
 
 
 Lähteet:
@@ -156,3 +167,5 @@ Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 3
 Karvinen, T. 2023. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h2-karjaa Luettu: 2.11.2023
 
 Slater, R. 2017. What is the definition of "cattle not pets"?. Luettavissa: https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654 Luettu: 2.11.2023
+
+VMware, Inc. 2023. Frequently Asked Questions. Salt project. Luettavissa: https://docs.saltproject.io/en/latest/faq.html#can-i-run-different-versions-of-salt-on-my-master-and-minion Luettu: 2.11.2023
