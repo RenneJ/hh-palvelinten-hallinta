@@ -107,6 +107,12 @@ Suoritin `$ vagrant up` -komennon uudestaan oletuksella, että sama virhe toistu
 
 Se toimikin! Kuvasta 7 näkee, että käyttäjä on vaihtunut hostkoneen käyttäjästä ja laitteesta Vagrantilla luotuun koneeseen.
 
+Viimeiseksi testataan, että netti toimii pingaamalla jotain verkkosivua (kuva 8).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/f73e1ea9-9b82-46ee-ac22-5fd87508687f)
+
+> Kuva 8. Onnistunut icmp-paketin lähetys -> netti toimii!
+
 Lähteet:
 
 Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 2.11.2023
