@@ -156,9 +156,13 @@ Seuraavaksi on tarkoitus muodostaa ssh-yhteys ja asentaa kohdekoneeseen master j
   	$ sudo apt install salt-minion
    	$ sudo apt install salt-master
 
-Ylläolevien komentojen suoritus onnistui ongelmitta. Tarkistetaan sovellusten versiot, Saltin dokumentaation mukaan on suositeltavaa, että master ja minion käyttävät samaa versiota ([VMware, Inc. 2023](https://docs.saltproject.io/en/latest/faq.html#can-i-run-different-versions-of-salt-on-my-master-and-minion).
+Ylläolevien komentojen suoritus onnistui ongelmitta. Tarkistetaan sovellusten versiot (kuva 13). Saltin dokumentaation mukaan on suositeltavaa, että master ja minion käyttävät samaa versiota ([VMware, Inc. 2023](https://docs.saltproject.io/en/latest/faq.html#can-i-run-different-versions-of-salt-on-my-master-and-minion)).
 
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/2d2648b2-014f-4fc8-9945-fac9830c8b97)
 
+> Kuva 13. Herran ja orjan versiot.
+
+Versiot tarkastettuani muistin, että viime viikon tehtävissä asennettiin uusin versio, jonka asentamiseen oli hieman monimutkaisemmat [ohjeet](https://github.com/RenneJ/hh-palvelinten-hallinta/blob/main/h1-viisikko.md#a-saltin-asennus-debian-12lle). Jatkan näiden tehtävien tekemistä toistaiseksi versiolla, jonka asensin.
 
 Lähteet:
 
