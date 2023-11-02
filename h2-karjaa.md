@@ -14,7 +14,7 @@
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/de54506d-6d02-4704-a243-23ba83df8f10)
 
-> [Kuva 1.](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/) Ohjeet Vagrantin ja VirtualBoxin asentamiseen ja uuden virtuaalikoneen luominen.
+> [Kuva 1](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/). Ohjeet Vagrantin ja VirtualBoxin asentamiseen ja uuden virtuaalikoneen luominen.
 
 ### Salt Vagrant - automatically provision one master and two slaves ([Karvinen 2023](https://terokarvinen.com/2023/salt-vagrant/))
 
