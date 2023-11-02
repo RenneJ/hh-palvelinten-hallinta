@@ -164,7 +164,7 @@ Ylläolevien komentojen suoritus onnistui ongelmitta. Tarkistetaan sovellusten v
 
 Versiot tarkastettuani muistin, että viime viikon tehtävissä asennettiin uusin versio, jonka asentamiseen oli hieman monimutkaisemmat [ohjeet](https://github.com/RenneJ/hh-palvelinten-hallinta/blob/main/h1-viisikko.md#a-saltin-asennus-debian-12lle). Jatkan tämän viikon tehtävien tekemistä toistaiseksi ohjelmistoversiolla, jonka asensin vagrantkoneelle.
 
-Lähteet:
+## Lähteet:
 
 Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 2.11.2023
 
