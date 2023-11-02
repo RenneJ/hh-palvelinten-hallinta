@@ -40,7 +40,7 @@
 
 		sudo salt '*' test.ping
 
-- Hallitset nyt orjakoneita ja pysty saltin avulla suorittamaan idempotentteja funktioita
+- Hallitset nyt orjakoneita ja pystyt saltin avulla suorittamaan idempotentteja funktioita
 
 ## a) Asenna Vagrant.
 
