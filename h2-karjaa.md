@@ -115,7 +115,39 @@ Viimeiseksi testataan, että netti toimii pingaamalla jotain verkkosivua (kuva 8
 
 ## c) Oma orjansa. Asenna Salt herra ja orja samalle koneelle.
 
-Tässä osatehtävässä
+Pyrin asentamaan salt-masterin ja salt-minionin edellisessä osatehtävässä Vagrantilla alustamaani virtuaalikoneeseen.
+
+Jälleen kerran Vagrantin käynnistys jäätyy samaan kohtaan kuin aikaisemmin (kuva 9). Googlasin hakusanoilla "vagrant up stops at mounting nfs", mikä johti hashicorpin GitHub-sivuille, jossa käyttäjä lordgordon oli kohdannut saman ongelman. [Keskustelusta](https://github.com/hashicorp/vagrant/issues/5802) päätellen ongelma johtuu palomuurista.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/591a6a8a-2056-43af-ba4b-f9a48d05ace4)
+
+> Kuva 9. `$ vagrant up` jäätyy taas. Kuvassa koko stack trace.
+
+Kuvan 9 rivillä `default: SSH address: 192.168.121.241:22` viimeinen numero kuvastaa tcp/ip tietoliikenne porttia. Sallitaan palomuurin hyväksyvän kaikki liikenne ko. portista. Ufw:llä portin avaus ja palomuurin status (kuva 10).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/7747f9a5-12c6-4e92-8431-eafc3d8551d5)
+
+> Kuva 10. Palomuuriin uusi sääntö ja tilannekatsaus.
+
+Palomuuriin reiän porattuani voidaan kokeilla uudestaan. Edellisen "virheellisen" onnistumisen välttämiseksi sammutetaan vagrant-kone (kuva 11).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/67a49fcb-e6c3-4047-bf43-bf0392dcf5c0)
+
+> Kuva 11. Koneen sammutus Vagrantilla.
+
+Taas kun kokeilin Vagrantin käynnistystä kohtasin saman ongelman. Seuraavaksi kokeillaan palomuurin kytkemistä pois päältä ja toistetaan uudestaan vagrantin käynnistys.
+
+	$ sudo ufw disable
+ 	$ vagrant halt
+  	$ vagrant up
+
+Vihdoin sain vagrantkoneen käynnistettyä ongelmitta (kuva 12).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/df8c4288-9d5c-4dec-9c7f-8008b2680e6a)
+
+> Kuva 12. Onnistunut vagrantkoneen käynnistys!
+ 
+
 
 Lähteet:
 
