@@ -162,7 +162,7 @@ Ylläolevien komentojen suoritus onnistui ongelmitta. Tarkistetaan sovellusten v
 
 > Kuva 13. Herran ja orjan versiot.
 
-Versiot tarkastettuani muistin, että viime viikon tehtävissä asennettiin uusin versio, jonka asentamiseen oli hieman monimutkaisemmat [ohjeet](https://github.com/RenneJ/hh-palvelinten-hallinta/blob/main/h1-viisikko.md#a-saltin-asennus-debian-12lle). Jatkan näiden tehtävien tekemistä toistaiseksi versiolla, jonka asensin.
+Versiot tarkastettuani muistin, että viime viikon tehtävissä asennettiin uusin versio, jonka asentamiseen oli hieman monimutkaisemmat [ohjeet](https://github.com/RenneJ/hh-palvelinten-hallinta/blob/main/h1-viisikko.md#a-saltin-asennus-debian-12lle). Jatkan tämän viikon tehtävien tekemistä toistaiseksi ohjelmistoversiolla, jonka asensin vagrantkoneelle.
 
 Lähteet:
 
