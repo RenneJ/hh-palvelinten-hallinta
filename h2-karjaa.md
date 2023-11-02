@@ -115,7 +115,7 @@ Viimeiseksi testataan, että netti toimii pingaamalla jotain verkkosivua (kuva 8
 
 ## c) Oma orjansa. Asenna Salt herra ja orja samalle koneelle.
 
-
+Tässä osatehtävässä
 
 Lähteet:
 
