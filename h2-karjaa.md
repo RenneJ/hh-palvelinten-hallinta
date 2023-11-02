@@ -40,7 +40,7 @@
 
       $ $ sudo salt '*' test.ping
 
-- Hallitset nyt orjakoneiyta ja pysty saltin avulla suorittamaan idempotentteja funktioita
+- Hallitset nyt orjakoneita ja pysty saltin avulla suorittamaan idempotentteja funktioita
 
 Lähteet:
 
