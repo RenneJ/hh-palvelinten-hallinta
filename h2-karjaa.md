@@ -26,7 +26,7 @@
 - Kopioi Karvisen sivulta valmis kolmen koneen [konfiguroimistiedosto](https://terokarvinen.com/2023/salt-vagrant/#ready-made-vagrantfile-for-three-computers) Vagranfile -nimiseen tiedostoon
 - Käynnistä koneet
 
-    $ vagrant up
+      $ vagrant up
 
 Lähteet:
 
