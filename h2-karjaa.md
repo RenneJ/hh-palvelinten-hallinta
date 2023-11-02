@@ -103,7 +103,7 @@ Olisiko pitänyt määrittää, mitä virtualisoimisalustaa käytetään? Defaul
 
 `$ vagrant up` suorittaminen pysähtyi kohtaan **Mounting NFS shared folders** useaksi minuutksi. Joten päätin lopettaa suorituksen näppäinyhdistelmällä Ctrl + C. Hellä pysäytys clean upin kanssa myöskin jäätyi, joten Ctrl + C uusiksi ja prosessi tapettiin.
 
-Suoritin `$ vagrant up` -komennon uudestaan oletuksella, että sama virhe toistuu. Yllätyksekseni se onnistuikin, joten yritin muodostaa ssh-yhteden uuteen koneeseen (`$ vagrant ssh`).
+Suoritin `$ vagrant up` -komennon uudestaan oletuksella, että sama virhe toistuu. Yllätyksekseni se onnistuikin, joten yritin muodostaa ssh-yhteyden uuteen koneeseen (`$ vagrant ssh`).
 
 Se toimikin! Kuvasta 7 näkee, että käyttäjä on vaihtunut hostkoneen käyttäjästä ja laitteesta Vagrantilla luotuun koneeseen.
 
@@ -112,6 +112,10 @@ Viimeiseksi testataan, että netti toimii pingaamalla jotain verkkosivua (kuva 8
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/f73e1ea9-9b82-46ee-ac22-5fd87508687f)
 
 > Kuva 8. Onnistunut icmp-paketin lähetys -> netti toimii!
+
+## c) Oma orjansa. Asenna Salt herra ja orja samalle koneelle.
+
+
 
 Lähteet:
 
