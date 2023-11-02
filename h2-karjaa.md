@@ -2,7 +2,7 @@
 
 ## x) Tiivistelmät
 
-### What is the definition of "cattle not pets"? ([Slater 2017])(https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654)
+### What is the definition of "cattle not pets"? ([Slater 2017](https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654))
 
 - Aikaisemmin, jos palvelin kaatui kutsuttiin kaikki kykenevät kannelle auttamaan nostamaan palvelin takaisin pystyyn
   - Analogia lemmikkiin eli kaatunut serveri on rakas ja tärkeä tai korvaamaton
