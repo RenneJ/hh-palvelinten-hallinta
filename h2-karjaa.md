@@ -4,8 +4,8 @@
 
 ### What is the definition of "cattle not pets"? [Slater 2017](https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654)
 
-- Aikaisemmin, jos palvelin kaatuu kutsutaan kaikki kykenevät kannelle auttamaan nostamaan serveri takaisin pystyyn
-  - Analogia lemmikkiin eli kaatunut serveri on rakas ja tärkeä
+- Aikaisemmin, jos palvelin kaatui kutsuttiin kaikki kykenevät kannelle auttamaan nostamaan palvelin takaisin pystyyn
+  - Analogia lemmikkiin eli kaatunut serveri on rakas ja tärkeä tai korvaamaton
 - Nykyään (parempi toimintamalli) on ajatella palvelimia karjana
   - Vialliset/kaatuneet palvelimet viedään ladon taakse lahdattavaksi -> toiminta jatkuu
 - Palvelinten käsittely karjana edesauttaa varautumaan ongelmatilanteisiin ja monet ongelmatilanteet ovat automatisoinnin avulla korjattavissa ilman ihmistä
