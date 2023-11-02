@@ -79,6 +79,22 @@ Lopputulos (kuva 4). Kuvasta näkee, että ensimmäinen ajo ennen päivitystä k
 
 ## b) Yksi maankiertäjä. Asenna yksi kone Vagrantilla, ota siihen SSH-yhteys, osoita että netti toimii.
 
+Mukailen Karvisen (2017) [ohjeita](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/).
+
+Aloitetaan asentamalla uusi kone käyttäen Vagrantin init-funktiota (kuva 5).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/f811b826-a50f-47ea-b090-b2bf5775e551)
+
+> Kuva 5. Debian Bullseyen asennus vagrantilla.
+
+Seuraavaksi voidaan käynnistää Vagrant ja yrittää ottaa yhteys juuri luotuun koneeseen (kuvat 6 & 7).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/d4627582-9905-48da-9e6e-75d7a85eec72)
+
+> Kuva 6. Vagrantin käynnistys.
+
+Vagrantin käynnistys näemmä aloitti libvirt:n asennuksen. Antaa mennä vaan! Olisiko pitänyt määrittää, mitä virtualisoimisalustaa käytetään? Default näyttäisi kuvan 6 mukaan olevan libvirt ja se asennetaan ennemmin kuin etsittäisiin paikallisesti toista virtualisoimisalustaa kuten jo asennettua VirtualBoxia.
+
 Lähteet:
 
 Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 2.11.2023
