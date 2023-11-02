@@ -26,19 +26,19 @@
 - Kopioi Karvisen sivulta valmis kolmen koneen [konfiguroimistiedosto](https://terokarvinen.com/2023/salt-vagrant/#ready-made-vagrantfile-for-three-computers) Vagranfile -nimiseen tiedostoon
 - Käynnistä koneet
 
-      $ vagrant up
+		$ vagrant up
 
 - Muodosta yhteys masteriin
 
-      $ vagrant ssh tmaster
+		$ vagrant ssh tmaster
 
 -Hyväksy orjien kutsut (salausavaimet)
 
-      $ sudo salt-key -A
+    $ sudo salt-key -A
 
 - Testaa, että master pystyy komentamaan orjia
 
-      $ $ sudo salt '*' test.ping
+		sudo salt '*' test.ping
 
 - Hallitset nyt orjakoneita ja pysty saltin avulla suorittamaan idempotentteja funktioita
 
