@@ -21,7 +21,7 @@
 - Asenna virtualisointiympäristö (kuva 2)
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/475d2861-d325-47f8-b1a4-c9f76732e409)
-> Kuva 2. Virtualisointiympäristön asentaminen. [Kuvan lähde]((https://terokarvinen.com/2023/salt-vagrant/)
+> Kuva 2. Virtualisointiympäristön asentaminen. [Kuvan lähde](https://terokarvinen.com/2023/salt-vagrant/)
 
 - Kopioi Karvisen sivulta valmis kolmen koneen [konfiguroimistiedosto](https://terokarvinen.com/2023/salt-vagrant/#ready-made-vagrantfile-for-three-computers) Vagranfile -nimiseen tiedostoon
 - Käynnistä koneet
