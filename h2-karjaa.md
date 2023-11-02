@@ -56,6 +56,28 @@ Testataan ensin löytyykö koneelta Vagrant.
 
 > Kuva 3. Vagrant-komentoa ei löydy -> Vagrantia ei ole asennettu.
 
+Ylläolevista ohjeista poiketen en asenna VirtualBoxia (on jo asennettu) tai microa (olen tottunut käyttämään nanoa tekstieditorina).
+
+		$ sudo apt install vagrant
+
+Komennon suoritettuani muistin, että paketinhallintaohjelma olisi hyvä päivittää. Ajoin siis komennot:
+
+		$ sudo apt update
+ja
+
+  		$ sudo apt upgrade
+    
+sekä uudestaan
+		
+		$ sudo apt install vagrant
+
+Lopputulos (kuva 4).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/7c55832d-afae-4757-a23a-7303581311d2)
+
+> Kuva 4. Onnistunut Vagrantin asennus Ubuntulle.
+
+
 Lähteet:
 
 Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 2.11.2023
