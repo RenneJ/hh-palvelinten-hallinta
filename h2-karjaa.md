@@ -32,9 +32,9 @@
 
 		$ vagrant ssh tmaster
 
--Hyväksy orjien kutsut (salausavaimet)
+- Hyväksy orjien kutsut (salausavaimet)
 
-    $ sudo salt-key -A
+  		$ sudo salt-key -A
 
 - Testaa, että master pystyy komentamaan orjia
 
