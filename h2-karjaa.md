@@ -101,7 +101,7 @@ Olisiko pitänyt määrittää, mitä virtualisoimisalustaa käytetään? Defaul
 
 > Kuva 7. ==vagrant up== jäätyminen ja komennon uudelleen suorittaminen.
 
-<mark>vagrant up</mark> suorittaminen pysähtyi kohtaan **Mounting NFS shared folders** useaksi minuutksi. Joten päätin lopettaa suorituksen näppäinyhdistelmällä Ctrl + C. Hellä pysäytys clean upin kanssa myöskin jäätyi, joten Ctrl + C uusiksi ja prosessi tapettiin.
+`vagrant up` suorittaminen pysähtyi kohtaan **Mounting NFS shared folders** useaksi minuutksi. Joten päätin lopettaa suorituksen näppäinyhdistelmällä Ctrl + C. Hellä pysäytys clean upin kanssa myöskin jäätyi, joten Ctrl + C uusiksi ja prosessi tapettiin.
 
 Suoritin $ vagrant up -komennon uudestaan oletuksella, että sama virhe toistuu. Yllätyksekseni se onnistuikin, joten yritin muodostaa ssh-yhteden uuteen koneeseen ('.
 
