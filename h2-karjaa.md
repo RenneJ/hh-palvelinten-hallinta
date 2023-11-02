@@ -172,4 +172,4 @@ Karvinen, T. 2023. Infra as Code 2023. Luettavissa: https://terokarvinen.com/202
 
 Slater, R. 2017. What is the definition of "cattle not pets"?. Luettavissa: https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654 Luettu: 2.11.2023
 
-VMware, Inc. 2023. Frequently Asked Questions. Salt project. Luettavissa: https://docs.saltproject.io/en/latest/faq.html#can-i-run-different-versions-of-salt-on-my-master-and-minion Luettu: 2.11.2023
+VMware, Inc. 2023. Frequently Asked Questions. Can I run different versions of Salt on my master and minion?. Luettavissa: https://docs.saltproject.io/en/latest/faq.html#can-i-run-different-versions-of-salt-on-my-master-and-minion Luettu: 2.11.2023
