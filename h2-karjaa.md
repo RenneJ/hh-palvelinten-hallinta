@@ -42,6 +42,20 @@
 
 - Hallitset nyt orjakoneita ja pysty saltin avulla suorittamaan idempotentteja funktioita
 
+## a) Asenna Vagrant.
+
+Testausympäristö:
+
+- Host OS: Ubuntu 22.04
+- Prosessori arkkitehtuuri: AMD64
+- Prosessorimalli: 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+
+Testataan ensin löytyykö koneelta Vagrant.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/9b9df10f-1c29-48c9-9d17-dcadfbf807ce)
+
+> Kuva 3. Vagrant-komentoa ei löydy -> Vagrantia ei ole asennettu.
+
 Lähteet:
 
 Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 2.11.2023
