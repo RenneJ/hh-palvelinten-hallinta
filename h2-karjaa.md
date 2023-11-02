@@ -77,6 +77,7 @@ Lopputulos (kuva 4). Kuvasta näkee, että ensimmäinen ajo ennen päivitystä k
 
 > Kuva 4. Onnistunut Vagrantin asennus Ubuntulle.
 
+## b) Yksi maankiertäjä. Asenna yksi kone Vagrantilla, ota siihen SSH-yhteys, osoita että netti toimii.
 
 Lähteet:
 
