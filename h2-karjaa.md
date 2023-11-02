@@ -14,14 +14,14 @@
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/de54506d-6d02-4704-a243-23ba83df8f10)
 
-> [Kuva 1](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/). Ohjeet Vagrantin ja VirtualBoxin asentamiseen ja uuden virtuaalikoneen luominen.
+> Kuva 1. Ohjeet Vagrantin ja VirtualBoxin asentamiseen ja uuden virtuaalikoneen luominen. [Kuvan lähde](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/)
 
 ### Salt Vagrant - automatically provision one master and two slaves ([Karvinen 2023](https://terokarvinen.com/2023/salt-vagrant/))
 
 - Asenna virtualisointiympäristö (kuva 2)
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/475d2861-d325-47f8-b1a4-c9f76732e409)
-> [Kuva 2](https://terokarvinen.com/2023/salt-vagrant/). Virtualisointiympäristön asentaminen.
+> Kuva 2. Virtualisointiympäristön asentaminen. [Kuvan lähde]((https://terokarvinen.com/2023/salt-vagrant/)
 
 - Kopioi Karvisen sivulta valmis kolmen koneen [konfiguroimistiedosto](https://terokarvinen.com/2023/salt-vagrant/#ready-made-vagrantfile-for-three-computers) Vagranfile -nimiseen tiedostoon
 - Käynnistä koneet
