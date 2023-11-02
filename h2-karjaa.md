@@ -129,7 +129,7 @@ Kuvan 9 rivillä `default: SSH address: 192.168.121.241:22` viimeinen numero kuv
 
 > Kuva 10. Palomuuriin uusi sääntö ja tilannekatsaus.
 
-Palomuuriin reiän porattuani voidaan kokeilla uudestaan. Edellisen "virheellisen" onnistumisen välttämiseksi sammutetaan vagrant-kone (kuva 11).
+Palomuuriin reiän porattuani voidaan kokeilla uudestaan. Aikaisemman "virheellisen" onnistumisen (kuva 7) välttämiseksi sammutetaan vagrant-kone (kuva 11).
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/67a49fcb-e6c3-4047-bf43-bf0392dcf5c0)
 
