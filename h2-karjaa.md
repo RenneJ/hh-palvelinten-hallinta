@@ -28,6 +28,20 @@
 
       $ vagrant up
 
+- Muodosta yhteys masteriin
+
+      $ vagrant ssh tmaster
+
+-Hyväksy orjien kutsut (salausavaimet)
+
+      $ sudo salt-key -A
+
+- Testaa, että master pystyy komentamaan orjia
+
+      $ $ sudo salt '*' test.ping
+
+- Hallitset nyt orjakoneiyta ja pysty saltin avulla suorittamaan idempotentteja funktioita
+
 Lähteet:
 
 Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 2.11.2023
