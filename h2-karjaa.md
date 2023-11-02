@@ -58,18 +58,18 @@ Testataan ensin löytyykö koneelta Vagrant.
 
 Ylläolevista ohjeista poiketen en asenna VirtualBoxia (on jo asennettu) tai microa (olen tottunut käyttämään nanoa tekstieditorina).
 
-		$ sudo apt install vagrant
+	$ sudo apt install vagrant
 
 Komennon suoritettuani muistin, että paketinhallintaohjelma olisi hyvä päivittää. Ajoin siis komennot:
 
-		$ sudo apt update
+	$ sudo apt update
 ja
 
-  		$ sudo apt upgrade
+  	$ sudo apt upgrade
     
 sekä uudestaan
 		
-		$ sudo apt install vagrant
+	$ sudo apt install vagrant
 
 Lopputulos (kuva 4).
 
