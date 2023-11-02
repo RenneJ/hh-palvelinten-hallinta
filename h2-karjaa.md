@@ -71,7 +71,7 @@ sekä uudestaan
 		
 	$ sudo apt install vagrant
 
-Lopputulos (kuva 4).
+Lopputulos (kuva 4). Kuvasta näkee, että ensimmäinen ajo ennen päivitystä käytti viimeisimpiä Vagrantin paketteja (*already the newest version*).
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/7c55832d-afae-4757-a23a-7303581311d2)
 
