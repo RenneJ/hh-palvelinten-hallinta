@@ -87,7 +87,7 @@ Aloitetaan asentamalla uusi kone käyttäen Vagrantin init-funktiota (kuva 5).
 
 > Kuva 5. Debian Bullseyen asennus vagrantilla.
 
-Seuraavaksi voidaan käynnistää Vagrant ja yrittää ottaa yhteys juuri luotuun koneeseen (kuvat 6 & 7).
+Seuraavaksi voidaan käynnistää Vagrant ja yrittää ottaa yhteys juuri luotuun koneeseen.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/d4627582-9905-48da-9e6e-75d7a85eec72)
 
