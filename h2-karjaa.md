@@ -174,7 +174,13 @@ Loin ensimmäisen vagrantfilen kotihakemistooni, joten kasataan uusi testausymp�
 
 	$ mkdir lab01; cd lab01
 
-Ohjeista poiketen käytän tekstieditorina nanoa. Kopioin 
+Ohjeista poiketen käytän tekstieditorina nanoa. Kopioin ohjeista konfiguroimistiedoston Vagrantfile-nimiseen tiedostoon. En ole varma mitä tapahtuu, kun vagrant käynnistetään. Pohdin onko ip-määrityksissä jotain, mitä minun pitäisi muuttaa. Mutta testausympäristö on testausta varten joten:
+
+	$ vagrant up
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/0e92f656-a4e0-42e3-b37e-1ccef4709aa7)
+
+> Kuva 14. Testausympäristön käynnistys. Stack tracen viimeiset rivit.
 
 ## Lähteet:
 
