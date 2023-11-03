@@ -135,7 +135,9 @@ Palomuuriin reiän porattuani voidaan kokeilla uudestaan. Aikaisemman "virheelli
 
 > Kuva 11. Koneen sammutus Vagrantilla.
 
-Taas kun kokeilin Vagrantin käynnistystä kohtasin saman ongelman. Seuraavaksi kokeillaan palomuurin kytkemistä pois päältä ja toistetaan uudestaan vagrantin käynnistys.
+Taas kun kokeilin Vagrantin käynnistystä sain saman virheen kuin aikaisemmin (kuva 9). Luulen, että muitakin portteja pitäisi avata. Mutta en tiedä mitkä kaikki olisi tarpeen avata.
+
+Seuraavaksi kokeillaan palomuurin kytkemistä pois päältä ja toistetaan uudestaan vagrantin käynnistys.
 
 	$ sudo ufw disable
  	$ vagrant halt
