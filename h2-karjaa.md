@@ -207,7 +207,17 @@ Komennot joilla tarkistin alla olevaan taulukkoon kirjatut tiedot:
 
 > Kuva 15. Esimerkki roolin tarkistuksesta ja daemonin ajosta.
 
+Tässä vaiheessa ollaan tilanteessa, jossa on mahdollista verkon välityksellä ohjata orjakoneita masterilla. MEn aivan tarkalleen muista, mitä Tero edellisellä oppitunnilla demonstroi tähän vaiheeseen päästyään. Se liitty avaimiin. Kuvasta 15 näkee, että binääreihin tmasterille on asennettu `salt-key`, joten kokeillaan ajaa se.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/b27eef9d-039f-41bf-90e1-f5e11cb347e2)
+
+> Kuva 16. Orjat ovat yrittäneet ottaa yhteyttä.
+
+Salt-keyn dokumentaatiosta, `man salt-key` (Hatch et al 2021)
+
 ## Lähteet:
+
+Hatch, T.S., et al. 2021. Salt-key manual pages. `man salt-key`.
 
 Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 2.11.2023
 
