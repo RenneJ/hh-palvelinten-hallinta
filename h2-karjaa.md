@@ -285,6 +285,18 @@ Testataan onnistuiko saltin file.managed -funktion ajaminen. Oletetaan, että ti
 
 ## h) Hello, IaC. Tee infraa koodina kirjoittamalla /srv/salt/hello/init.sls. Aja tila jollekin orjalle.
 
+Seurasin Karvisen (2023b) [ohjeita](ttps://terokarvinen.com/2023/salt-vagrant/) tavoitteenani luoda oma moduuli, jolla luodaan käyttäjän kotihakemistoon tiedosto nimeltä `fancy-example`.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/addeb2bc-d70a-428d-b3c2-5e4830912635)
+
+> Kuva 23. Oman moduulin ajo suoritui ja näyttäisi luoneen uuden tiedoston.
+
+Tarkistetaan se paikallisesti ottamalla ssh-yhteys t001-koneeseen (kuva 24).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/5ba84f2c-0e72-48dd-ba8a-bab2e4f12123)
+
+> Kuva 24. Tiedosto löytyy paikallisesti tarkistettuna.
+
 ## Lähteet:
 
 Hatch, T.S., et al. 2021. Salt-key manual pages. `man salt-key`.
