@@ -1,4 +1,4 @@
-# H1 Karjaa ([Karvinen 2023](https://terokarvinen.com/2023/configuration-management-2023-autumn/#h2-karjaa))
+# H1 Karjaa ([Karvinen 2023a](https://terokarvinen.com/2023/configuration-management-2023-autumn/#h2-karjaa))
 
 ## x) Tiivistelmät
 
@@ -16,7 +16,7 @@
 
 > Kuva 1. Ohjeet Vagrantin ja VirtualBoxin asentamiseen ja uuden virtuaalikoneen luominen. [Kuvan lähde](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/)
 
-### Salt Vagrant - automatically provision one master and two slaves ([Karvinen 2023](https://terokarvinen.com/2023/salt-vagrant/))
+### Salt Vagrant - automatically provision one master and two slaves ([Karvinen 2023b](https://terokarvinen.com/2023/salt-vagrant/))
 
 - Asenna virtualisointiympäristö (kuva 2)
 
@@ -166,11 +166,23 @@ Ylläolevien komentojen suoritus onnistui ongelmitta. Tarkistetaan sovellusten v
 
 Versiot tarkastettuani muistin, että viime viikon tehtävissä asennettiin uusin versio, jonka asentamiseen oli hieman monimutkaisemmat [ohjeet](https://github.com/RenneJ/hh-palvelinten-hallinta/blob/main/h1-viisikko.md#a-saltin-asennus-debian-12lle). Jatkan tämän viikon tehtävien tekemistä toistaiseksi ohjelmistoversiolla, jonka asensin vagrantkoneelle.
 
+## d) Asenna Saltin herra-orja arkkitehtuuri toimimaan verkon yli.
+
+Asetelma johon pyrin on, että herra ja orja ovat eri koneilla; niillä on oltava eri ip-osoitteet. Herran on kyettävä ajamaan komentoja verkon yli ja orjan on vastattava. Tässä vaiheessa tehtäviä on herra ja orja asennettu samalle laitteelle. Rakennetaan testausympäristö Karvisen (2023b) [ohjeiden](https://terokarvinen.com/2023/salt-vagrant/) mukaan.
+
+Loin ensimmäisen vagrantfilen kotihakemistooni, joten kasataan uusi testausympäristö omaan hakemistoon:
+
+	$ mkdir lab01; cd lab01
+
+Ohjeista poiketen käytän tekstieditorina nanoa. Kopioin 
+
 ## Lähteet:
 
 Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 2.11.2023
 
-Karvinen, T. 2023. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h2-karjaa Luettu: 2.11.2023
+Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h2-karjaa Luettu: 3.11.2023
+
+Karvinen, T. 2023b. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/ Luettu: 3.11.2023
 
 Slater, R. 2017. What is the definition of "cattle not pets"?. Luettavissa: https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654 Luettu: 2.11.2023
 
