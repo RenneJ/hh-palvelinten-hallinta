@@ -271,7 +271,19 @@ Kaikki tiedot saadaan komennolla:
 
 ## g) Aja shell-komento orjalla verkon yli.
 
+Luodaan shell-komennolla tiedosto käyttäjän kotihakemistoon:
 
+	$ sudo salt '*' state.single cmd.run 'touch /home/user01/testfile'
+
+Testataan onnistuiko saltin file.managed -funktion ajaminen. Oletetaan, että tiedosto löytyy, seuraavan komennon ajo onnistuu ja tilaa ei muuteta.
+
+	$ sudo salt '*' state.single file.managed /home/user01/testfile
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/133aecdb-ccbe-4fd9-8f12-fd84881b4985)
+
+> Kuva 22. Testfile oli luotu `touch` komennolla, joten file-funktio ei tehnyt muutoksia koneeseen.
+
+## h) Hello, IaC. Tee infraa koodina kirjoittamalla /srv/salt/hello/init.sls. Aja tila jollekin orjalle.
 
 ## Lähteet:
 
