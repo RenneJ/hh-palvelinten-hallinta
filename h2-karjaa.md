@@ -209,11 +209,25 @@ Komennot joilla tarkistin alla olevaan taulukkoon kirjatut tiedot:
 
 Tässä vaiheessa ollaan tilanteessa, jossa on mahdollista verkon välityksellä ohjata orjakoneita masterilla. MEn aivan tarkalleen muista, mitä Tero edellisellä oppitunnilla demonstroi tähän vaiheeseen päästyään. Se liitty avaimiin. Kuvasta 15 näkee, että binääreihin tmasterille on asennettu `salt-key`, joten kokeillaan ajaa se.
 
+	$ sudo salt-key
+
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/b27eef9d-039f-41bf-90e1-f5e11cb347e2)
 
 > Kuva 16. Orjat ovat yrittäneet ottaa yhteyttä.
 
-Salt-keyn dokumentaatiosta, `man salt-key` (Hatch et al 2021)
+Tarkistan ohjelman dokumentaatiosta, `man salt-key` (Hatch et al 2021), kuinka hyväksytään vastauspyynnöt.
+
+	$ sudo salt-key -A			# -A = accept all
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/78d3ae94-d2b7-4020-8be6-92f6dc4d66a2)
+
+> Kuva 17. Avainten hyväksyminen masterilla.
+
+Nyt pitäisi herra-orja -arkkitehtuurin toimia verkon yli, ainakin pingaaminen onnistuu (kuva 17). Seuraavissa osissa testataan tarkemmin.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/2c18ceed-b87b-4518-8ee3-d78037b2ac1c)
+
+> Kuva 18. Pingaaminen herralta orjalle ja orjalta herralle onnistuu.
 
 ## Lähteet:
 
