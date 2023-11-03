@@ -153,12 +153,12 @@ En äkkiseltään löytänyt portteja, jotka pitäisi avata. Se ei myöskään o
 
 Seuraavaksi on tarkoitus muodostaa ssh-yhteys ja asentaa kohdekoneeseen master ja minion.
 
-	$ vagrant ssh
+	$ vagrant ss
  	$ sudo apt update
   	$ sudo apt install salt-minion
    	$ sudo apt install salt-master
 
-Ylläolevien komentojen suoritus onnistui ongelmitta. Tarkistetaan sovellusten versiot (kuva 13). Saltin dokumentaation mukaan on suositeltavaa, että master ja minion käyttävät samaa versiota ([VMware, Inc. 2023](https://docs.saltproject.io/en/latest/faq.html#can-i-run-different-versions-of-salt-on-my-master-and-minion)).
+Ylläolevien komentojen suoritus onnistui ongelmitta. Tarkistetaan sovellusten versiot (kuva 13). Saltin dokumentaation mukaan on suositeltavaa, että master ja minion käyttävät samaa versiota ([VMware, Inc. 2023a](https://docs.saltproject.io/en/latest/faq.html#can-i-run-different-versions-of-salt-on-my-master-and-minion)).
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/2d2648b2-014f-4fc8-9945-fac9830c8b97)
 
@@ -229,11 +229,57 @@ Nyt pitäisi herra-orja -arkkitehtuurin toimia verkon yli, ainakin pingaaminen o
 
 > Kuva 18. Pingaaminen herralta orjalle ja orjalta herralle onnistuu.
 
+## e) Aja useita idempotentteja (state.single) komentoja verkon yli.
+
+Testataan idempotenssia pakettien asentamisella ja poistamisella; kokeillaan tapahtuuko yhtedenotoissa muutoksia, jos orjiin asennetaan ja käynnistetään palomuuri (ufw). Tehdään myös molemmille kohdekoneille käyttäjät kotihakemistoineen. Komennot mukailtu Karvisen (2023b) esimerkeistä.
+
+Masterilla:
+
+	$ sudo salt '*' state.single pkg.installed ufw
+ 	$ sudo salt '*' state.single service.running ufw
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/913945e2-c92c-41c1-89d2-037793d81b04)
+
+> Kuva 19. Orjakoneiden idempotenssia muutettu. Ufw asennettu.
+
+Alempi komento onnistuneesti käynnistää molemmissa orjissa daemonin. Tulostus on samankaltainen kuin yllä kuvassa 19.
+
+Kokeillaan paketin asentamista nyt kun palomuurit ovat käynnissä kohdekoneissa.
+
+	$ sudo salt '*' state.single pkg.installed tree
+ 	$ sudo salt '*' state.single user.present user01
+
+Yllä olevat komennot suorituivat virheittä. Tämän testin perusteella palomuuri ei häiritse salt-masterin kykyä käskyttää salt-minioneita.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/0aaaad1c-a52f-4533-b6a2-d0f6b094d7cf)
+
+> Kuva 20. Käyttäjän luominen onnistui.
+
+## f) Kerää teknistä tietoa orjista verkon yli (grains.item)
+
+Katsotaan orjien `cwd` current working directory, `os` operating system.
+
+	$ sudo salt '*' grains.item cwd os
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/5295dd37-2dee-469f-8baa-c7cb002b3bf8)
+
+> Kuva 21. Tietoja orjista.
+
+Kaikki tiedot saadaan komennolla:
+
+	$ sudo salt '*' grains.items
+
+## g) Aja shell-komento orjalla verkon yli.
+
+
+
 ## Lähteet:
 
 Hatch, T.S., et al. 2021. Salt-key manual pages. `man salt-key`.
 
 Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 2.11.2023
+
+Karvinen, T. 2021. Run Salt Commands Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/ Luettu. 3.11.2023
 
 Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h2-karjaa Luettu: 3.11.2023
 
@@ -241,4 +287,6 @@ Karvinen, T. 2023b. Salt Vagrant - automatically provision one master and two sl
 
 Slater, R. 2017. What is the definition of "cattle not pets"?. Luettavissa: https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654 Luettu: 2.11.2023
 
-VMware, Inc. 2023. Frequently Asked Questions. Can I run different versions of Salt on my master and minion?. Luettavissa: https://docs.saltproject.io/en/latest/faq.html#can-i-run-different-versions-of-salt-on-my-master-and-minion Luettu: 2.11.2023
+VMware, Inc. 2023a. Frequently Asked Questions. Can I run different versions of Salt on my master and minion?. Luettavissa: https://docs.saltproject.io/en/latest/faq.html#can-i-run-different-versions-of-salt-on-my-master-and-minion Luettu: 2.11.2023
+
+VMware, Inc. 2023b. Configuring the Salt Minion. Minion Primary Configuration. Luettavissa: https://docs.saltproject.io/en/latest/ref/configuration/minion.html Luettu: 3.11.2023
