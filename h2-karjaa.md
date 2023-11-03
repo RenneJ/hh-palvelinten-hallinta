@@ -182,6 +182,31 @@ Ohjeista poiketen käytän tekstieditorina nanoa. Kopioin ohjeista konfiguroimis
 
 > Kuva 14. Testausympäristön käynnistys. Stack tracen viimeiset rivit.
 
+Käynnistys sujui ongelmitta (kuva 14). Kokeillaan ensin manuaalisesti kerätä tietoja luoduista koneista. Selvitetään jokaisen koneen Salt-versio (minion vai master) sekä ip-osoitetiedot.
+
+Yhteyden muodostus:
+
+	$ vagrant ssh <hostname>
+
+Jos <hostname> jätetään tyhjäksi, vagrant muodostaa yhteyden masteriin.
+
+Komennot joilla tarkistin alla olevaan taulukkoon kirjatut tiedot:
+
+	$ ip address 			# kirjasin sen ip:n mikä on kofigurointitiedoissa määritetty
+ 	$ ls /usr/bin/ | grep salt 	# binääreiden hakemistosta listattu tulokset, jotka sisältävät merkkijonon "salt"
+  	$ systemctl status salt-<rooli>	# tarkistetaan onko daemon päällä
+   	$ salt -V			# saltin versio
+
+|   |tmaster|t001|t002|
+|---|-------|----|----|
+|ip|192.168.12.3/24|192.168.12.100/24|192.168.12.102/24|
+|rooli|master|minion|minion|
+|versio|3002.6|3002.6|3002.6|
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/897368c9-a927-4f02-861f-217c3a60fc9f)
+
+> Kuva 15. Esimerkki roolin tarkistuksesta ja daemonin ajosta.
+
 ## Lähteet:
 
 Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 2.11.2023
