@@ -1,4 +1,4 @@
-# H3 Versio
+# H3 Versio [(Karvinen 2023)](https://terokarvinen.com/2023/configuration-management-2023-autumn/#h3-versio)
 
 ## a) Online. Tee uusi varasto GitHubiin. Varaston nimessä ja lyhyessä kuvauksessa tulee olla sana "winter".
 
@@ -13,3 +13,7 @@ Uuden varaston (suomeksi myös säilö/säilytyspaikka) luonti GitHubiin onnistu
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/8f5f50ea-338b-4aaa-b75b-07cd4247942f)
 
 > Kuva X. Ssh-avainparin luominen.
+
+## Lähteet
+
+Karvinen, T. 2023. Infra as Code 2023 - H3 Versio. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h3-versio Luettu: 11.11.2023 
