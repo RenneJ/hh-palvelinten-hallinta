@@ -9,6 +9,11 @@ Uuden varaston (suomeksi myös säilö/säilytyspaikka) luonti GitHubiin onnistu
 
 > Kuva 1. Repositories-sivun näkymä.
 
+Teron vinkeissä uuden säilön luomiseksi (Karvinen 2023) suositellaan tehtävän README.md ja lisenssi heti säilön luomisvaiheessa. Olen aiemmin tehnyt muiden ohjeiden mukaan ja luonut tyhjän säilön. Noudatan tässä tehtävässä Teron vinkkejä.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/58754021-6211-4076-b5d0-8b97edb4f3b8)
+
+> Kuva 2. Näkymä uuden säilön luomisesta GitHubiin.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/8f5f50ea-338b-4aaa-b75b-07cd4247942f)
 
