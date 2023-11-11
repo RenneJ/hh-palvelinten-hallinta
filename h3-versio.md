@@ -107,6 +107,20 @@ Lisätään muutos gitiin.
     $ git add self_destruct.py    # lisätään vain juuri luotu tiedosto
     $ git status                  # näytetään nykyisen työskentelytilan vaihe (Git 2023, `man git status`)
 
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/f5dd34d6-5f78-4b71-b7e8-94527c5dc5f1)
+
+> Kuva 14. Tiedosto lisätty ja git status.
+
+Suoritetaan tehtävänannon komento ja tarkistetaan muutos gitissä ja paikallisesti.
+
+    $ git reset --hard
+    $ git status
+    $ ls
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/9ac52f34-b968-4406-b5f5-f4bad72f526f)
+
+> Kuva 15. Resetointi, git status ja hakemiston paikallinen sisältö.
+
 
 
 ## Lähteet
