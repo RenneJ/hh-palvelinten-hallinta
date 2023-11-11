@@ -92,6 +92,23 @@ Päivitetään GitHub-sivu ja tarkistetaan näkyvätkö muutokset (kuva 12).
 
 > Kuva 12. Näkymä GitHubissa muutosten pushaamisen jälkeen.
 
+## c) Doh! Tee tyhmä muutos gittiin, älä tee commit:tia. Tuhoa huonot muutokset ‘git reset --hard’. Huomaa, että tässä toiminnossa ei ole peruutusnappia.
+
+Tehdään tyhmä muutos.
+
+    $ nano self_destruct.py
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/46a0278b-2071-42fa-aa9f-dfbdc15ee41c)
+
+> Kuva 13. Itsetuhoskevenssi lisätty hakemistoon.
+
+Lisätään muutos gitiin.
+
+    $ git add self_destruct.py    # lisätään vain juuri luotu tiedosto
+    $ git status                  # näytetään nykyisen työskentelytilan vaihe (Git 2023, `man git status`)
+
+
+
 ## Lähteet
 
 Git 2023. Git manual. Git v. 2.34.1.
