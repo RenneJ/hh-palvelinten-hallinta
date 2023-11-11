@@ -76,7 +76,8 @@ Mielestäni muutosten tekeminen lisenssiin ei ole missään tapauksessa järkev�
 Muutosten ja lisäysten jälkeen, kerrotaan gitille muutoksista, jotka halutaan tallentaa.
 
     $ git add .        # indeksoidaan tehdyt muutokset säilön kaikille tiedostoille (Git 2023, `man git add`)
-    $ git commit       # tallennetaan tehdyt muutokset, tallennetaan myös muutoksen tekijä ja tekijän commit-viesti (Git 2023, `man git commit`)
+    $ git commit       # tallennetaan tehdyt muutokset, tallennetaan myös muutoksen 
+                            tekijä ja tekijän commit-viesti (Git 2023, `man git commit`)
     $ git pull         # yhdistää remoten (GitHubissa olevan säilön) nykyiseen paikalliseen versioon, jos nykyinen paikallinen versio on jäljessä remotea (Git 2023, `man git pull`)
 
 ## Lähteet
