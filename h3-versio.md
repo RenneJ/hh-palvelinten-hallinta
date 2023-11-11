@@ -80,6 +80,7 @@ Muutosten ja lisäysten jälkeen, kerrotaan gitille muutoksista, jotka halutaan 
                         # tekijä ja tekijän commit-viesti (Git 2023, `man git commit`)
     $ git pull          # yhdistää remoten (GitHubissa olevan säilön) nykyiseen paikalliseen versioon,
                         # jos nykyinen paikallinen versio on jäljessä remotea (Git 2023, `man git pull`)
+    $ git push          # päivittää remoten paikallisesti tehtyjen muutosten perusteella (Git 2023, `man git push`)
 
 ## Lähteet
 
