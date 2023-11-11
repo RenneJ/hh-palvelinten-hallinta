@@ -25,7 +25,7 @@ Teron vinkeissä uuden säilön luomiseksi (Karvinen 2023) suositellaan tehtäv�
 
 ## b) Dolly. Kloonaa edellisessä kohdassa tehty uusi varasto itsellesi, tee muutoksia, puske ne palvelimelle, ja näytä, että ne ilmestyvät weppiliittymään.
 
-Kloonaamisella tarkoitetaan tarkan kopion luomista säilöstä paikalliseen hakemistoon (Git 2023). Ennen kloonaamista on siis hyvä navigoida siihen hakemistoon, jonne haluaa kloonata säilön GitHubista. 
+Kloonaamisella tarkoitetaan tarkan kopion luomista säilöstä paikalliseen hakemistoon (Git 2023, `man git clone`). Ennen kloonaamista on siis hyvä navigoida siihen hakemistoon, jonne haluaa kloonata säilön GitHubista. 
 
     $ cd <my/relative/path/to/directory>
 
@@ -56,10 +56,31 @@ salasanan, kysyy järjestelmäsi antamaan sen.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/e3935a9b-984f-422e-ab04-921e6bfa88c3)
 
-> Kuva 8. Onnistunut kloonaus. Uusi hakemisto nimeltä *palvelinten-hallinta-winter* löytyy paikallisesti. 
+> Kuva 8. Onnistunut kloonaus. Uusi hakemisto nimeltä *palvelinten-hallinta-winter* löytyy paikallisesti.
+
+Kokeillaan seuraavaksi tehdä muutoksia ja lisäyksiä säilöön niin, että ne näkyvät myös web-liittymässä.
+
+Mielestäni muutosten tekeminen lisenssiin ei ole missään tapauksessa järkevää, joten muutetaan README.md -tiedostoa. Lisätään myös uusi tiedosto säilöön.
+
+    $ nano README.md
+    $ nano <filename.extension>
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/937887e8-a2f2-4d21-9f0f-2e7d654b042a)
+
+> Kuva 9. README.md ennen muutoksia.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/1b1c57ae-ef68-4322-b8ca-b8489ba4367e)
+
+> Kuva 10. Uuden tiedoston sisältö.
+
+Muutosten ja lisäysten jälkeen, kerrotaan gitille muutoksista, jotka halutaan tallentaa.
+
+    $ git add .        # indeksoidaan tehdyt muutokset säilön kaikille tiedostoille (Git 2023, `man git add`)
+    $ git commit       # tallennetaan tehdyt muutokset, tallennetaan myös muutoksen tekijä ja tekijän commit-viesti (Git 2023, `man git commit`)
+    $ git pull         # yhdistää remoten (GitHubissa olevan säilön) nykyiseen paikalliseen versioon, jos nykyinen paikallinen versio on jäljessä remotea (Git 2023, `man git pull`)
 
 ## Lähteet
 
-Git 2023. Git manual. `man git clone`. Git v. 2.34.1.
+Git 2023. Git manual. Git v. 2.34.1.
 
 Karvinen, T. 2023. Infra as Code 2023 - H3 Versio. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h3-versio Luettu: 11.11.2023 
