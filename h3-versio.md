@@ -82,6 +82,16 @@ Muutosten ja lisäysten jälkeen, kerrotaan gitille muutoksista, jotka halutaan 
                         # jos nykyinen paikallinen versio on jäljessä remotea (Git 2023, `man git pull`)
     $ git push          # päivittää remoten paikallisesti tehtyjen muutosten perusteella (Git 2023, `man git push`)
 
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/2b31f5fe-0e2c-4f50-a981-9c29936ff2bf)
+
+> Kuva 11. Gitin peruskäyttö terminaalista. -m optio commit-komennossa mahdollistaa viestin kirjoittamisen suoraan komentorivillä.
+
+Päivitetään GitHub-sivu ja tarkistetaan näkyvätkö muutokset (kuva 12).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/3e871ea3-1461-4b5a-a31f-692950f4dae4)
+
+> Kuva 12. Näkymä GitHubissa muutosten pushaamisen jälkeen.
+
 ## Lähteet
 
 Git 2023. Git manual. Git v. 2.34.1.
