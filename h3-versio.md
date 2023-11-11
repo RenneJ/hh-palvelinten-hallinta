@@ -29,11 +29,34 @@ Kloonaamisella tarkoitetaan tarkan kopion luomista säilöstä paikalliseen hake
 
     $ cd <my/relative/path/to/directory>
 
-Olen gitiä käyttänyt jo jonkin verran, joten tiedän sen olevan asennettuna. Sen voi tarkastaa komennolla `git --version`. Jos git ei ole asennettu se käy helposti Debian/Ubuntu -järjestelmillä komennoilla `sudo apt-get update` ja `sudo apt-get install git`.
+Olen gitiä käyttänyt jo jonkin verran, joten tiedän sen olevan asennettuna. Sen voi tarkastaa komennolla `git --version`. Jos git ei ole asennettu, se käy helposti Debian/Ubuntu -järjestelmillä komennoilla `sudo apt-get update` ja `sudo apt-get install git`.
+
+Käytetään kloonamiseen Teron suosituksesta ssh-yhteyttä. Ssh-yhteyden käyttämiseksi on luotava avainpari; julkinen ja yksityinen (kuva 5). Julkinen avain täytyy myös jakaa GitHubille. Julkisen avaimen jakaminen GitHubissa onnistuu omista asetuksista (klikkaa pyöreää ikonia oikeassa yläkulmassa).
+
+    Settings > SSH and GPG keys > New SSH key
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/8f5f50ea-338b-4aaa-b75b-07cd4247942f)
 
-> Kuva X. Ssh-avainparin luominen.
+> Kuva 5. Ssh-avainparin luominen.
+
+Kopioidaan avain (joka päättyy .pub) sisältö **New SSH key** -painikkeesta avautuvaan promptiin ja nimeä avaimesi.
+
+Seuraavaksi voidaan kokeilla kloonausta ssh-yhteydellä. Ssh-urlin voi kätevästi kopioida leikepöydälle säilön sivulta **Code**-painike (kuva 6). Kloonaus (kuva 7) suoritetaan alla olevalla komennolla. Jos annoit ssh-avainaparia luodessasi 
+salasanan, kysyy järjestelmäsi antamaan sen.
+
+    $ git clone <ssh url>
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/b5f730b8-ecfa-47eb-90bf-e3c63175d7bf)
+
+> Kuva 6. Säilön main branch. Urlin kopiointi.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/883becb6-1a23-477f-b523-2753b9c46a87)
+
+> Kuva 7. Säilön kloonaus.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/e3935a9b-984f-422e-ab04-921e6bfa88c3)
+
+> Kuva 8. Onnistunut kloonaus. Uusi hakemisto nimeltä *palvelinten-hallinta-winter* löytyy paikallisesti. 
 
 ## Lähteet
 
