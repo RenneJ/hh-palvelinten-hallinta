@@ -23,10 +23,20 @@ Teron vinkeissä uuden säilön luomiseksi (Karvinen 2023) suositellaan tehtäv�
 
 > Kuva 4. Uusi säilö löytyy!
 
+## b) Dolly. Kloonaa edellisessä kohdassa tehty uusi varasto itsellesi, tee muutoksia, puske ne palvelimelle, ja näytä, että ne ilmestyvät weppiliittymään.
+
+Kloonaamisella tarkoitetaan tarkan kopion luomista säilöstä paikalliseen hakemistoon (Git 2023). Ennen kloonaamista on siis hyvä navigoida siihen hakemistoon, jonne haluaa kloonata säilön GitHubista. 
+
+    $ cd <my/relative/path/to/directory>
+
+Olen gitiä käyttänyt jo jonkin verran, joten tiedän sen olevan asennettuna. Sen voi tarkastaa komennolla `git --version`. Jos git ei ole asennettu se käy helposti Debian/Ubuntu -järjestelmillä komennoilla `sudo apt-get update` ja `sudo apt-get install git`.
+
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/8f5f50ea-338b-4aaa-b75b-07cd4247942f)
 
 > Kuva X. Ssh-avainparin luominen.
 
 ## Lähteet
+
+Git 2023. Git manual. `man git clone`. Git v. 2.34.1.
 
 Karvinen, T. 2023. Infra as Code 2023 - H3 Versio. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h3-versio Luettu: 11.11.2023 
