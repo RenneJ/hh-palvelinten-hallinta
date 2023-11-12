@@ -6,8 +6,8 @@
 
 > Kuva 1. Haku omasta GitHub-varastolistauksesta. Hakusanalla *winter* ei ole osumia. 
 
-Uuden varaston (suomeksi myös säilö/säilytyspaikka) luonti GitHubiin onnistuu navigoimalla omalle **Repositories**-sivulle (kuva 1). Tämä toiminto tosin edellyttää käyttäjätilin luomista GitHubiin. Uutta säilöä pääsee luomaan 
-**New**-painiketta klikkaamalla (kuvassa 1 oikeassa reunassa vihreä painike).
+Uuden varaston (suomeksi myös säilö/säilytyspaikka) luonti GitHubiin onnistuu navigoimalla omalle **Repositories**-sivulle (kuva 2). Tämä toiminto tosin edellyttää käyttäjätilin luomista GitHubiin. Uutta säilöä pääsee luomaan 
+**New**-painiketta klikkaamalla (kuvassa 2 oikeassa reunassa vihreä painike).
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/c1f13d4c-6dbe-4731-8873-d4aae8ccbf48)
 
@@ -100,7 +100,7 @@ Tehdään tyhmä muutos.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/46a0278b-2071-42fa-aa9f-dfbdc15ee41c)
 
-> Kuva 13. Itsetuhoskevenssi lisätty hakemistoon.
+> Kuva 13. Itsetuhosekvenssi lisätty hakemistoon.
 
 Lisätään muutos gitiin.
 
@@ -111,7 +111,7 @@ Lisätään muutos gitiin.
 
 > Kuva 14. Tiedosto lisätty ja git status.
 
-Suoritetaan tehtävänannon komento ja tarkistetaan muutos gitissä ja paikallisesti.
+Suoritetaan tehtävänannon komento ja tarkistetaan muutos gitissä sekä paikallisesti.
 
     $ git reset --hard
     $ git status
@@ -121,6 +121,29 @@ Suoritetaan tehtävänannon komento ja tarkistetaan muutos gitissä ja paikallis
 
 > Kuva 15. Resetointi, git status ja hakemiston paikallinen sisältö.
 
+## d) Tukki. Tarkastele ja selitä varastosi lokia.
+
+Gitin valvomat tiedostot (commit-suoritukset) saadaan terminaalissa näkyviin komennolla `git log` (Git 2023, `man git log`). Lokeista voidaan tarkastella commitin tunniste, tekijä, ajankohta ja viesti (kuva 16).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/3ab7935d-f072-49fd-bf11-dc88e4a4af44)
+
+> Kuva 16. Säilön lokitus.
+
+Tarkempaa tietoa commiteista voidaan hankkia komennolla `git diff` (Git 2023, `man git diff`). Ko. komennolla voidaan tarkastella kahden eri commitin eroja (rivimuutoksia, tiedostojen lisäyksiä/poistoja). Kuvassa 17 näkyy terminaaliin tulostuva output `git diff <commit1>..<commit2>` komennosta.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/438d55fc-8aae-4359-bcba-814be267a81f)
+
+> Kuva 17. `git diff` terminaalissa.
+
+Mielestäni GitHubin vastaava työkalu on selkolukuisempi. Painamalla säilön GitHub-sivulla olevaa **X commits** -linkkiä (vihreän **New**-painikkeen alla, kuva 18) pääsee katselemaan commit-historiaa, josta näkee tehdyt commitit. Listanäkymästä voi valita haluamansa commitin ja tarkastella tehtyjä muutoksia (kuva 19).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/12a16179-3c67-4653-a111-fd55aa26db48)
+
+> Kuva 18. Linkki commit-historiaan. Kuvassa sininen teksti oikeassa reunassa.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/6dcfb7d6-cf4a-414e-81b0-af46210fc788)
+
+> Kuva 19. Yksittäisen commitin muutokset sen vanhempi-versioon (parent). Tässä tapauksessa parent on "Initial commit".
 
 
 ## Lähteet
