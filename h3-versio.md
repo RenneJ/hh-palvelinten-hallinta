@@ -4,7 +4,7 @@
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/261be2d1-620d-479a-a1da-cb72ef079950)
 
-> Kuva 1. Hakusanalla *winter* ei löydy säilöä. 
+> Kuva 1. Haku omasta GitHub-varastolistauksesta. Hakusanalla *winter* ei ole osumia. 
 
 Uuden varaston (suomeksi myös säilö/säilytyspaikka) luonti GitHubiin onnistuu navigoimalla omalle **Repositories**-sivulle (kuva 1). Tämä toiminto tosin edellyttää käyttäjätilin luomista GitHubiin. Uutta säilöä pääsee luomaan 
 **New**-painiketta klikkaamalla (kuvassa 1 oikeassa reunassa vihreä painike).
