@@ -4,7 +4,7 @@
 
 ### Salt Vagrant - automatically provision one master and two slaves [(Karvinen 2023b)](https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file)
 
-**Infra as Code - Your wishes as a text file**
+#### Infra as Code - Your wishes as a text file
 
 Oman salt-moduulin luomisvaiheet:
 
@@ -13,7 +13,7 @@ Oman salt-moduulin luomisvaiheet:
 - Määritykset YAMLilla; sisennys kaksi välilyöntiä
 - Oman moduulin ajo: `$ sudo salt '*' state.apply <oma moduuli>`
 
-**top.sls - What Slave Runs What States**
+#### top.sls - What Slave Runs What States
     
 Top-tiedosto määrittelee mikä orja suorittaa minkäkin määrityksen. Ts. koodia, jossa määritellään orja/orjat sekä moduulit, jotka niiden on suoritettava.
 
