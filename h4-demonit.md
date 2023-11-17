@@ -36,6 +36,7 @@ YAML on merkintäkieli. Salt tarvitsee python-datarakenteet. YAML renderer suori
 YAML perussäännöt:
 
 - datarakenne avain-arvo -pareina
+- kaksoispiste ja välilyönti erottimena `": "`
 - 
 
 ## Lähteet:
