@@ -15,6 +15,16 @@ Oman salt-moduulin luomisvaiheet:
 
 **top.sls - What Slave Runs What States**
     
+Top-tiedosto määrittelee mikä orja suorittaa minkäkin määrityksen. Ts. koodia, jossa määritellään orja/orjat sekä moduulit, jotka niiden on suoritettava.
+
+- Uusi tiedosto polkuun `/srv/salt/top.sls`
+- Määritykset top.sls -tiedostoon
+    - Esim. (Karvinen 2023b)
+
+            base:
+              '*':
+                - hello
+
 
 
 ## Lähteet:
