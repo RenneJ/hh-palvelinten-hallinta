@@ -56,7 +56,8 @@ Kolme peruselementtiä:
 
 #### Lists and dictionaries - YAML block structures
 
-
+- YAML on jäsennelty blokkeihin
+- sisennys määrittelee asiayhteyden
 
 ## Lähteet:
 
