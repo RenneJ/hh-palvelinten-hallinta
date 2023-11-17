@@ -37,7 +37,10 @@ YAML perussäännöt:
 
 - datarakenne avain-arvo -pareina
 - kaksoispiste ja välilyönti erottimena `": "`
-- 
+- arvo voi esiintyä useamman kerran eri rakenteissa
+- merkkikoolla on väliä; a != A
+- ei tabeja vaan välilyöntejä
+- kommentit alkavat risuaidalla `#`
 
 ## Lähteet:
 
