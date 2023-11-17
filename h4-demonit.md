@@ -46,7 +46,7 @@ YAML perussäännöt:
 
 Kolme peruselementtiä:
 
-- Scalars:         # skalaarit? mikä on tästä suomennos?
+- Scalars: (skalaarit? mikä on tästä suomennos?)
     - avain, jonka arvo on merkkijono, luku tai totuusarvo
 - Listat:
     - avain, jonka arvo on lista
