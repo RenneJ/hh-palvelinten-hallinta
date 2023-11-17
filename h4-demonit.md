@@ -27,7 +27,7 @@ Top-tiedosto määrittelee mikä orja suorittaa minkäkin määrityksen. Ts. koo
 
 Tämän jälkeen voi ajaa `$ sudo salt '*' state.apply`. Erona aikaisempaan on, että `<oma moduuli>` on jätetty pois. Se on määritetty nyt top.sls -tiedostossa.
 
-### Salt overview ([VMware, Inc. 2023)](https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml)
+### Salt overview ([VMware, Inc. 2023a)](https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml)
 
 #### Rules of YAML
 
@@ -59,10 +59,16 @@ Kolme peruselementtiä:
 - YAML on jäsennelty blokkeihin
 - sisennys määrittelee asiayhteyden
 
+### Salt states [(VMware, Inc. 2023b)](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules)
+
+
+
 ## Lähteet:
 
 Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h4-demonit Luettu: 17.11.2023
 
 Karvinen, T. 2023b. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file Luettu: 17.11.2023
 
-VMware, Inc. 2023. Salt overview. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml Luettu: 17.11.2023
+VMware, Inc. 2023a. Salt overview. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml Luettu: 17.11.2023
+
+VMware, Inc. 2023b. Salt states. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules Luettu: 17.11.2023
