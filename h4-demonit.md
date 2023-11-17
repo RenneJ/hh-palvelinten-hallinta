@@ -6,10 +6,6 @@
 
 **Infra as Code - Your wishes as a text file**
 
-### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/39a89342-3115-4bc4-8877-b44e8c73c128)
-
-> Kuva 1. Oman salt-moduulin määritys linuxilla. Lähde: Karvinen 2023b.
-
 Oman salt-moduulin luomisvaiheet:
 
 - Hakemiston luonti polkuun `/srv/salt/<oma moduuli>`
