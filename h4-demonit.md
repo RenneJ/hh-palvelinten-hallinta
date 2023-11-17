@@ -25,7 +25,7 @@ Top-tiedosto määrittelee mikä orja suorittaa minkäkin määrityksen. Ts. koo
               '*':
                 - hello
 
-
+Tämän jälkeen voi ajaa `$ sudo salt '*' state.apply`. Erona aikaisempaan on, että `<oma moduuli>` on jätetty pois. Se on määritetty nyt top.sls -tiedostossa.
 
 ## Lähteet:
 
