@@ -29,7 +29,7 @@ Tämän jälkeen voi ajaa `$ sudo salt '*' state.apply`. Erona aikaisempaan on, 
 
 ### Salt overview ([VMware, Inc. 2023)](https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml)
 
-**Rules of YAML**
+#### Rules of YAML
 
 YAML on merkintäkieli. Salt tarvitsee python-datarakenteet. YAML renderer suorittaa YAML datarakenteen muuttamisen pythonille sopivaksi.
 
@@ -42,7 +42,7 @@ YAML perussäännöt:
 - ei tabeja vaan välilyöntejä
 - kommentirivit alkavat risuaidalla `#`
 
-**YAML simple structure**
+#### YAML simple structure
 
 Kolme peruselementtiä:
 
@@ -54,7 +54,7 @@ Kolme peruselementtiä:
 - Sanakirjat:
     - kokoelma skalaareita ja listoja
 
-**Lists and dictionaries - YAML block structures**
+#### Lists and dictionaries - YAML block structures
 
 
 
