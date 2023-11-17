@@ -40,7 +40,23 @@ YAML perussäännöt:
 - arvo voi esiintyä useamman kerran eri rakenteissa
 - merkkikoolla on väliä; a != A
 - ei tabeja vaan välilyöntejä
-- kommentit alkavat risuaidalla `#`
+- kommentirivit alkavat risuaidalla `#`
+
+**YAML simple structure**
+
+Kolme peruselementtiä:
+
+- Scalars:         # skalaarit? mikä on tästä suomennos?
+    - avain, jonka arvo on merkkijono, luku tai totuusarvo
+- Listat:
+    - avain, jonka arvo on lista
+    - listan alkion merkkaus: uusi rivi, kaksi välilyöntiä, väliviiva, välilyönti, alkion arvo
+- Sanakirjat:
+    - kokoelma skalaareita ja listoja
+
+**Lists and dictionaries - YAML block structures**
+
+
 
 ## Lähteet:
 
