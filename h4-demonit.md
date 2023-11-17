@@ -10,8 +10,10 @@
 
 > Kuva 1. Oman salt-moduulin määritys linuxilla. Lähde: Karvinen 2023b.
 
-- tekst
-- 
+Oman salt-moduulin luomisvaiheet:
+
+- Hakemiston luonti polkuun `/srv/salt/<oma moduuli>`
+- Oman määritystiedoston luonti juuri luotuun hakemistoon `<tiedostonimi>.sls`
 
 **top.sls - What Slave Runs What States**
     
