@@ -14,6 +14,8 @@ Oman salt-moduulin luomisvaiheet:
 
 - Hakemiston luonti polkuun `/srv/salt/<oma moduuli>`
 - Oman määritystiedoston luonti juuri luotuun hakemistoon `<tiedostonimi>.sls`
+- Määritykset YAMLilla; sisennys kaksi välilyöntiä
+- Oman moduulin ajo: `$ sudo salt '*' state.apply <oma moduuli>`
 
 **top.sls - What Slave Runs What States**
     
