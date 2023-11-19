@@ -158,7 +158,13 @@ Package-file-service on yleinen mallinnus useiden daemoneiden hallintaan.
 
 > Kuva 1. Alkuasetelma tehtävään ryhdyttäessä.
 
-Kuvasta 1 voi nähdä, että masterkoneellani on jo tiedosto `init.sls` tehtävänannon mukaisessa polussa `/srv/salt/hello`.
+Kuvasta 1 voi nähdä, että masterkoneellani on jo tiedosto `init.sls` tehtävänannon mukaisessa polussa `/srv/salt/hello`. Muokataan ko. tiedostoa tätä tehtävää varten niin, että tilafunktio tarkistaa `helloworld.txt` -tiedoston olemassaolon ja tarvittaessa lataa sen masterilta.
+
+Master-koneella navigoidaan `/srv/salt/hello` -hakemistoon ja muokataan `init.sls` -tiedostoa. Käytetään aiemmasta tehtävästä analysoitua argumenttia tässä tehtävssä `- source: salt://<hakemisto/tiedosto.pääte>`. En ole varma minne `helloworld.txt` pitäisi sijoittaa masterilla, että orjat sen lataisivat. Tehdään tiedosto nykyiseen hakemistoon, jossa `init.sls` on. Kuvasta 2 näkee työvaiheeni.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/a37ba736-ba62-4a67-b7c6-368e38e65ce6)
+
+> Kuva 2. Kuvakaappaus init.sls -tiedoston muokkauksesta.
 
 ## Lähteet:
 
