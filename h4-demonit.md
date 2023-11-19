@@ -152,6 +152,14 @@ Package-file-service on yleinen mallinnus useiden daemoneiden hallintaan.
 - file muutettaavaan konffaustiedostoon
 - service uudelleenkäynnistykseen uusien määritysten käyttöönottamiseksi
 
+## a) Hello SLS!
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/d1ccfd7a-37be-4796-9583-d8f16680b295)
+
+> Kuva 1. Alkuasetelma tehtävään ryhdyttäessä.
+
+Kuvasta 1 voi nähdä, että masterkoneellani on jo tiedosto `init.sls` tehtävänannon mukaisessa polussa `/srv/salt/hello`.
+
 ## Lähteet:
 
 Karvinen, T. 2018. Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port. Luettavissa: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh Luettu: 19.11.2023
