@@ -71,7 +71,7 @@ Kolme peruselementtiä:
 
 #### The state SLS data structure
 
-- Identifier
+- Identifier, tunniste tilablokille
 - State moduuli, jossa on funktio esim. `pkg`
 - Function, esim. `installed`
 - Name, tilakutsun nimi, yleensä hallinnoitava tiedosto tai asennettava paketti
@@ -92,14 +92,14 @@ Top.sls -tiedostoon voidaan kartoittaa orjakoneet, minkä lisäksi voidaan mää
 
 Alla olevat esimerkkimääritykset on kopioitu [täältä](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#create-the-ssh-state).
     
-    install_openssh:
-      pkg.installed:
-        - name: openssh
+    install_openssh:                        # identifier
+      pkg.installed:                        # statemoduuli ja funktio
+        - name: openssh                     # kutsuttavan funktion parametri, avain: arvo
     
     push_ssh_conf:
       file.managed:
         - name: /etc/ssh/ssh_config
-        - source: salt://ssh/ssh_config
+        - source: salt://ssh/ssh_config     # argumentti managed-funktiolle
     
     push_sshd_conf:
       file.managed:
@@ -109,7 +109,7 @@ Alla olevat esimerkkimääritykset on kopioitu [täältä](https://docs.saltproj
     start_sshd:
       service.running:
         - name: sshd
-        - enable: True
+        - enable: True                      # argumentti running-funktiolle
 
 
 
