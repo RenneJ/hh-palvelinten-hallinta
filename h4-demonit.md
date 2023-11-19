@@ -146,6 +146,12 @@ Teron vinkeistä päätellen yllä olevat esimerkkimääritykset ovat puutteelis
 
 ### Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port [(Karvinen 2018)](https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh)
 
+Package-file-service on yleinen mallinnus useiden daemoneiden hallintaan.
+
+- package viittaa asennettavaan daemoniin
+- file muutettaavaan konffaustiedostoon
+- service uudelleenkäynnistykseen uusien määritysten käyttöönottamiseksi
+
 ## Lähteet:
 
 Karvinen, T. 2018. Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port. Luettavissa: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh Luettu: 19.11.2023
