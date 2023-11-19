@@ -61,7 +61,13 @@ Kolme peruselementtiä:
 
 ### Salt states [(VMware, Inc. 2023b)](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules)
 
+- yksittäisistä tiloista määritetään `module.function` (tilamoduuleista)
+- tilamoduulit kutsuvat toteutusmoduulivastineitaan (`exectuion module`)
+- paketin asennuserot; terminaali vs salt:
+  - terminaalikomentoja käytettäessä pitää ensin tarkistaa onko paketti jo asennettu ja sitten syöttää komento, jolla se asennetaan
+  - saltilla ei tarvitse erikseen tarkistaa, onko paketti asennettu
 
+*[Arvioijalle: tajusitko itse mitä tässä kappaleessa yritetään selittää? Itse en tajunnut.]*
 
 ## Lähteet:
 
