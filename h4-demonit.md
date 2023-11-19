@@ -158,7 +158,7 @@ Package-file-service on yleinen mallinnus useiden daemoneiden hallintaan.
 
 > Kuva 1. Alkuasetelma tehtävään ryhdyttäessä.
 
-Kuvasta 1 voi nähdä, että masterkoneellani on jo tiedosto `init.sls` tehtävänannon mukaisessa polussa `/srv/salt/hello`. Muokataan ko. tiedostoa tätä tehtävää varten niin, että tilafunktio tarkistaa `helloworld.txt` -tiedoston olemassaolon ja tarvittaessa lataa sen masterilta.
+Kuvasta 1 voi nähdä, että masterkoneellani on jo tiedosto `init.sls` tehtävänannon mukaisessa polussa `/srv/salt/hello`. Muokataan ko. tiedostoa tätä tehtävän vaihetta varten niin, että tilafunktio tarkistaa `helloworld.txt` -tiedoston olemassaolon ja tarvittaessa lataa sen masterilta.
 
 Master-koneella navigoidaan `/srv/salt/hello` -hakemistoon ja muokataan `init.sls` -tiedostoa (kuva 2). Käytetään aiemmasta tehtävästä analysoitua argumenttia tässä tehtävssä `- source: salt://<hakemisto/tiedosto.pääte>`. En ole varma minne `helloworld.txt` pitäisi sijoittaa masterilla, että orjat sen lataisivat. Tehdään tiedosto nykyiseen hakemistoon, jossa `init.sls` on.
 
@@ -166,7 +166,7 @@ Master-koneella navigoidaan `/srv/salt/hello` -hakemistoon ja muokataan `init.sl
 
 > Kuva 2. Kuvakaappaus init.sls -tiedoston muokkauksesta.
 
-Seuraavaksi suoritetaan tilafunktio.
+Seuraavaksi suoritetaan tilafunktio kaikilla orjilla.
 
     $ sudo salt '*' state.apply hello
 
@@ -177,6 +177,14 @@ Seuraavaksi suoritetaan tilafunktio.
 Tekstitiedosto oli oikeassa paikassa suoritettavan sls-tiedoston kanssa samassa hakemistossa.
 
 ## b) Top. Tee top.sls niin, että tilat ajetaan automaattisesti, esim komennolla "sudo salt '*' state.apply".
+
+Tähän osavaiheeseen riittänee kopioida suoraan tämän tehtävän ensimmäisen osan kohtaa **top.sls - What Slave Runs What States**.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/1cce52ac-b91c-445a-9120-c428110a5f7d)
+
+> Kuva 4. Tilan suoritus onnistuu top.sls -tiedoston määritysten mukaisesti!
+
+Kuvasta 4 voi nähdä top.sls tiedoston luomisen ja tilan onnistuneen suorituksen. Muutoksia ei tehty, koska `helloworld.txt` on jo määritellyssä polussa.
 
 ## Lähteet:
 
