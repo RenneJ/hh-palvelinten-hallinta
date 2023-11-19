@@ -84,6 +84,33 @@ Kolme peruselementtiä:
 
 #### The top.sls file
 
+Kun orjakoneita on paljon, ei ole järkevää suorittaa tilamoduuleita yksitellen.
+
+Top.sls -tiedostoon voidaan kartoittaa orjakoneet, minkä lisäksi voidaan määritellä orjien toimintaympäristöt.
+
+#### Create the SSH state
+
+Alla olevat esimerkkimääritykset on kopioitu [täältä](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#create-the-ssh-state).
+    
+    install_openssh:
+      pkg.installed:
+        - name: openssh
+    
+    push_ssh_conf:
+      file.managed:
+        - name: /etc/ssh/ssh_config
+        - source: salt://ssh/ssh_config
+    
+    push_sshd_conf:
+      file.managed:
+        - name: /etc/ssh/sshd_config
+        - source: salt://ssh/sshd_config
+    
+    start_sshd:
+      service.running:
+        - name: sshd
+        - enable: True
+
 
 
 ## Lähteet:
