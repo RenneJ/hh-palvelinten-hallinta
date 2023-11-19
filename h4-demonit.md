@@ -128,13 +128,9 @@ Alla olevat esimerkkimääritykset on kopioitu [täältä](https://docs.saltproj
         - name: httpd
         - enable: True
 
-Teron vinkeistä päätellen yllä olevat esimerkkimääritykset ovat puutteeliset. Tilan ID:ksi (identifier) olisi hyvä asettaa itse tilafunktio. Jos masterilla muutetaan määrityksiä `httpd.conf`-tiedostossa, ne ei vät päivity orjille automaattisesti. Määrityksiin olisi hyvä lisätä service.watch -funktio
+Teron vinkeistä päätellen yllä olevat esimerkkimääritykset ovat puutteeliset. Tilan ID:ksi (identifier) olisi hyvä asettaa itse tilafunktio. Jos masterilla muutetaan määrityksiä `httpd.conf`-tiedostossa, ne ei vät päivity orjille automaattisesti. Määrityksiin olisi hyvä lisätä service.watch -funktio. Perustan muutokseni `watch`-kohdan osalta Saltin dokumentaatioon (VMware, Inc. 2023c).
 
 **Apache muutettuna:**
-
-    pkg.installed:                            # identifier = moduuli.funktio
-      - name: httpd                           # tilakutsun nimi pysyy ennallaan
-    --- määritykset jatkuu
 
     httpd:                                    # id
       pkg.installed                           # funktion kutsu saa nimekseen id:n
@@ -146,7 +142,7 @@ Teron vinkeistä päätellen yllä olevat esimerkkimääritykset ovat puutteelis
     httpd:
       service.running:
         - enable: True
-        - watch: /etc/httpd/conf/httpd.conf  # watchin arvoksi tulee konffaustiedoston funktion id
+        - watch: /etc/httpd/conf/httpd.conf   # watchin arvoksi tulee konffaustiedoston funktion id
 
 ## Lähteet:
 
@@ -157,3 +153,5 @@ Karvinen, T. 2023b. Salt Vagrant - automatically provision one master and two sl
 VMware, Inc. 2023a. Salt overview. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml Luettu: 17.11.2023
 
 VMware, Inc. 2023b. Salt states. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules Luettu: 17.11.2023
+
+VMware, Inc. 2023c. Requisites and other global state arguments. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/requisites.html#watch Luettu: 19.11.2023
