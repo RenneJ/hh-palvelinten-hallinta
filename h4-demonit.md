@@ -180,7 +180,7 @@ Tekstitiedosto oli oikeassa paikassa suoritettavan sls-tiedoston kanssa samassa 
 
 Tähän osavaiheeseen riittänee kopioida suoraan tämän tehtävän ensimmäisen osan kohtaa **top.sls - What Slave Runs What States**.
 
-### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/1cce52ac-b91c-445a-9120-c428110a5f7d)
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/eb14ede4-4da0-4678-a10a-31b8235025e4)
 
 > Kuva 4. Tilan suoritus onnistuu top.sls -tiedoston määritysten mukaisesti!
 
