@@ -128,6 +128,26 @@ Alla olevat esimerkkimääritykset on kopioitu [täältä](https://docs.saltproj
         - name: httpd
         - enable: True
 
+Teron vinkeistä päätellen yllä olevat esimerkkimääritykset ovat puutteeliset. Tilan ID:ksi (identifier) olisi hyvä asettaa itse tilafunktio. Jos masterilla muutetaan määrityksiä `httpd.conf`-tiedostossa, ne ei vät päivity orjille automaattisesti. Määrityksiin olisi hyvä lisätä service.watch -funktio
+
+**Apache muutettuna:**
+
+    pkg.installed:                            # identifier = moduuli.funktio
+      - name: httpd                           # tilakutsun nimi pysyy ennallaan
+    --- määritykset jatkuu
+
+    httpd:                                    # id
+      pkg.installed                           # funktion kutsu saa nimekseen id:n
+
+    /etc/httpd/conf/httpd.conf:
+      file.managed:
+        - source: salt://apache/httpd.conf
+    
+    httpd:
+      service.running:
+        - enable: True
+        - watch: /etc/httpd/conf/httpd.conf  # watchin arvoksi tulee konffaustiedoston funktion id
+
 ## Lähteet:
 
 Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h4-demonit Luettu: 17.11.2023
