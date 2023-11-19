@@ -128,7 +128,7 @@ Alla olevat esimerkkimääritykset on kopioitu [täältä](https://docs.saltproj
         - name: httpd
         - enable: True
 
-Teron vinkeistä päätellen yllä olevat esimerkkimääritykset ovat puutteeliset. Tilan ID:ksi (identifier) olisi hyvä asettaa itse tilafunktio. Jos masterilla muutetaan määrityksiä `httpd.conf`-tiedostossa, ne ei vät päivity orjille automaattisesti. Määrityksiin olisi hyvä lisätä service.watch -funktio. Perustan muutokseni `watch`-kohdan osalta Saltin dokumentaatioon (VMware, Inc. 2023c).
+Teron vinkeistä päätellen yllä olevat esimerkkimääritykset ovat puutteeliset. Tilan ID:ksi (identifier) olisi hyvä asettaa itse tilafunktio. Jos masterilla muutetaan määrityksiä `httpd.conf`-tiedostossa, ne eivät päivity orjille automaattisesti. Määrityksiin olisi hyvä lisätä service.watch -funktio. Perustan muutokseni `watch`-kohdan osalta Saltin dokumentaatioon (VMware, Inc. 2023c).
 
 **Apache muutettuna:**
 
@@ -144,7 +144,11 @@ Teron vinkeistä päätellen yllä olevat esimerkkimääritykset ovat puutteelis
         - enable: True
         - watch: /etc/httpd/conf/httpd.conf   # watchin arvoksi tulee konffaustiedoston funktion id
 
+### Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port [(Karvinen 2018)](https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh)
+
 ## Lähteet:
+
+Karvinen, T. 2018. Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port. Luettavissa: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh Luettu: 19.11.2023
 
 Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h4-demonit Luettu: 17.11.2023
 
