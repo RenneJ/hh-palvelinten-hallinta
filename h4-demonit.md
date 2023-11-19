@@ -152,7 +152,7 @@ Package-file-service on yleinen mallinnus useiden daemoneiden hallintaan.
 - file muutettaavaan konffaustiedostoon
 - service uudelleenkäynnistykseen uusien määritysten käyttöönottamiseksi
 
-## a) Hello SLS!
+## a) Hello SLS! Tee Hei maailma -tila kirjoittamalla se tekstitiedostoon, esim /srv/salt/hello/init.sls.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/d1ccfd7a-37be-4796-9583-d8f16680b295)
 
@@ -160,11 +160,23 @@ Package-file-service on yleinen mallinnus useiden daemoneiden hallintaan.
 
 Kuvasta 1 voi nähdä, että masterkoneellani on jo tiedosto `init.sls` tehtävänannon mukaisessa polussa `/srv/salt/hello`. Muokataan ko. tiedostoa tätä tehtävää varten niin, että tilafunktio tarkistaa `helloworld.txt` -tiedoston olemassaolon ja tarvittaessa lataa sen masterilta.
 
-Master-koneella navigoidaan `/srv/salt/hello` -hakemistoon ja muokataan `init.sls` -tiedostoa. Käytetään aiemmasta tehtävästä analysoitua argumenttia tässä tehtävssä `- source: salt://<hakemisto/tiedosto.pääte>`. En ole varma minne `helloworld.txt` pitäisi sijoittaa masterilla, että orjat sen lataisivat. Tehdään tiedosto nykyiseen hakemistoon, jossa `init.sls` on. Kuvasta 2 näkee työvaiheeni.
+Master-koneella navigoidaan `/srv/salt/hello` -hakemistoon ja muokataan `init.sls` -tiedostoa (kuva 2). Käytetään aiemmasta tehtävästä analysoitua argumenttia tässä tehtävssä `- source: salt://<hakemisto/tiedosto.pääte>`. En ole varma minne `helloworld.txt` pitäisi sijoittaa masterilla, että orjat sen lataisivat. Tehdään tiedosto nykyiseen hakemistoon, jossa `init.sls` on.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/a37ba736-ba62-4a67-b7c6-368e38e65ce6)
 
 > Kuva 2. Kuvakaappaus init.sls -tiedoston muokkauksesta.
+
+Seuraavaksi suoritetaan tilafunktio.
+
+    $ sudo salt '*' state.apply hello
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/bf9140f7-9bc9-4043-b20c-49b092ee8e94)
+
+> Kuva 3. Tilan suoritus toimii!
+
+Tekstitiedosto oli oikeassa paikassa suoritettavan sls-tiedoston kanssa samassa hakemistossa.
+
+## b) Top. Tee top.sls niin, että tilat ajetaan automaattisesti, esim komennolla "sudo salt '*' state.apply".
 
 ## Lähteet:
 
