@@ -91,15 +91,17 @@ Top.sls -tiedostoon voidaan kartoittaa orjakoneet, minkä lisäksi voidaan mää
 #### Create the SSH state
 
 Alla olevat esimerkkimääritykset on kopioitu [täältä](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#create-the-ssh-state).
+
+**SSH:**
     
-    install_openssh:                        # identifier
+    install_openssh:                        # identifier; asenna openssh
       pkg.installed:                        # statemoduuli ja funktio
-        - name: openssh                     # kutsuttavan funktion parametri, avain: arvo
+        - name: openssh                     # tilakutsun nimi
     
     push_ssh_conf:
       file.managed:
-        - name: /etc/ssh/ssh_config
-        - source: salt://ssh/ssh_config     # argumentti managed-funktiolle
+        - name: /etc/ssh/ssh_config         # managed-funktion tilakutsun nimi
+        - source: salt://ssh/ssh_config     # argumentti managed-funktiolle; orja lataa tämän tiedoston itselleen
     
     push_sshd_conf:
       file.managed:
@@ -111,7 +113,21 @@ Alla olevat esimerkkimääritykset on kopioitu [täältä](https://docs.saltproj
         - name: sshd
         - enable: True                      # argumentti running-funktiolle
 
+**Apache:**
 
+    implement_httpd:
+      pkg.installed:
+        - name: httpd
+    
+    http_conf:
+      file.managed:
+        - name: /etc/httpd/conf/httpd.conf
+        - source: salt://apache/httpd.conf
+    
+    start_httpd:
+      service.running:
+        - name: httpd
+        - enable: True
 
 ## Lähteet:
 
