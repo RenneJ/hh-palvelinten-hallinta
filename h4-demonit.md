@@ -61,13 +61,30 @@ Kolme peruselementtiä:
 
 ### Salt states [(VMware, Inc. 2023b)](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules)
 
+#### State modules
+
 - yksittäisistä tiloista määritetään `module.function` (tilamoduuleista)
 - tilamoduulit kutsuvat toteutusmoduulivastineitaan (`exectuion module`)
 - paketin asennuserot; terminaali vs salt:
   - terminaalikomentoja käytettäessä pitää ensin tarkistaa onko paketti jo asennettu ja sitten syöttää komento, jolla se asennetaan
   - saltilla ei tarvitse erikseen tarkistaa, onko paketti asennettu
 
-*[Arvioijalle: tajusitko itse mitä tässä kappaleessa yritetään selittää? Itse en tajunnut.]*
+#### The state SLS data structure
+
+- Identifier
+- State moduuli, jossa on funktio esim. `pkg`
+- Function, esim. `installed`
+- Name, tilakutsun nimi, yleensä hallinnoitava tiedosto tai asennettava paketti
+- Arguments, funktion hyväksymät argumentit
+
+#### Organizing states
+
+- State-moduuleiden järjestäminen tulee tehdtä niin, että muutkin ymmärtävät jo nimestä niiden tarkoituksen
+- Rajoita tilamoduuleiden alihakemistojen määrää
+
+#### The top.sls file
+
+
 
 ## Lähteet:
 
