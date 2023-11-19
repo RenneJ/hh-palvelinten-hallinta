@@ -35,39 +35,39 @@ YAML on merkintäkieli. Salt tarvitsee python-datarakenteet. YAML renderer suori
 
 YAML perussäännöt:
 
-- datarakenne avain-arvo -pareina
-- kaksoispiste ja välilyönti erottimena `: `
-- arvo voi esiintyä useamman kerran eri rakenteissa
-- merkkikoolla on väliä `a != A`
-- ei tabeja vaan välilyöntejä
-- kommentirivit alkavat risuaidalla `#`
+- Datarakenne avain-arvo -pareina
+- Kaksoispiste ja välilyönti erottimena `: `
+- Arvo voi esiintyä useamman kerran eri rakenteissa
+- Merkkikoolla on väliä `a != A`
+- Ei tabeja vaan välilyöntejä
+- Kommentirivit alkavat risuaidalla `#`
 
 #### YAML simple structure
 
 Kolme peruselementtiä:
 
 - Scalars:
-    - avain, jonka arvo on merkkijono, luku tai totuusarvo
+    - Avain, jonka arvo on merkkijono, luku tai totuusarvo
 - Listat:
-    - avain, jonka arvo on lista
-    - listan alkion merkkaus: uusi rivi, kaksi välilyöntiä, väliviiva, välilyönti, alkion arvo
+    - Avain, jonka arvo on lista
+    - Listan alkion merkkaus: uusi rivi, kaksi välilyöntiä, väliviiva, välilyönti, alkion arvo
 - Sanakirjat:
-    - kokoelma skalaareita ja listoja
+    - Kokoelma skalaareita ja listoja
 
 #### Lists and dictionaries - YAML block structures
 
 - YAML on jäsennelty blokkeihin
-- sisennys määrittelee asiayhteyden
+- Sisennys määrittelee asiayhteyden; samaan lohkoon liittyvät argumentit
 
 ### Salt states [(VMware, Inc. 2023b)](https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules)
 
 #### State modules
 
-- yksittäisistä tiloista määritetään `module.function` (tilamoduuleista)
-- tilamoduulit kutsuvat toteutusmoduulivastineitaan (`exectuion module`)
-- paketin asennuserot; terminaali vs salt:
-  - terminaalikomentoja käytettäessä pitää ensin tarkistaa onko paketti jo asennettu ja sitten syöttää komento, jolla se asennetaan
-  - saltilla ei tarvitse erikseen tarkistaa, onko paketti asennettu
+- Yksittäisistä tiloista määritetään `module.function` (tilamoduuleista)
+- Tilamoduulit kutsuvat toteutusmoduulivastineitaan (`exectuion module`)
+- Paketin asennuserot; terminaali vs salt:
+  - Terminaalikomentoja käytettäessä pitää ensin tarkistaa onko paketti jo asennettu ja sitten syöttää komento, jolla se asennetaan
+  - Saltilla ei tarvitse erikseen tarkistaa, onko paketti asennettu
 
 #### The state SLS data structure
 
@@ -79,14 +79,13 @@ Kolme peruselementtiä:
 
 #### Organizing states
 
-- State-moduuleiden järjestäminen tulee tehdtä niin, että muutkin ymmärtävät jo nimestä niiden tarkoituksen
+- State-moduuleiden järjestäminen tulee tehdä niin, että muutkin ymmärtävät jo nimestä niiden tarkoituksen
 - Rajoita tilamoduuleiden alihakemistojen määrää
 
 #### The top.sls file
 
-Kun orjakoneita on paljon, ei ole järkevää suorittaa tilamoduuleita yksitellen.
-
-Top.sls -tiedostoon voidaan kartoittaa orjakoneet, minkä lisäksi voidaan määritellä orjien toimintaympäristöt.
+- Kun orjakoneita on paljon, ei ole järkevää suorittaa tilamoduuleita yksitellen.
+- Top.sls -tiedostoon voidaan kartoittaa orjakoneet, minkä lisäksi voidaan määritellä orjien toimintaympäristöt.
 
 #### Create the SSH state
 
