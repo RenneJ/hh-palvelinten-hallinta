@@ -335,10 +335,15 @@ Ensimmäiset ajot eivät onnistuneet suoraan kopioudulla määritystiedostolla. 
 
 Lisätään moduuliin taas symbolinen linkki sshd_configiin ja päivitetään tilamoduulin sisältö hakemistorakenteeseen sopivaksi.
 
-### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/506db348-edbc-4fea-9f65-e39c4035a9a7)
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/ce720bcc-1d83-47f5-9050-cbc82c0d18e4)
 
-> Kuva 21. Symbolisen linkin luominen.
+> Kuva 21. Symbolisen linkin luominen ja init.sls muokkaus.
 
+Kokeillaan ajaa moduuli uudestaan.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/8e07e477-db52-4c0f-8a84-c71fe3456f8f)
+
+> Kuva 22. Saltin output muutosten jälkeen. Hyvältä näyttää!
 
 
 ## Lähteet:
