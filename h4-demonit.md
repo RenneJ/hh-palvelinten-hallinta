@@ -188,7 +188,42 @@ Kuvasta 4 voi nähdä top.sls tiedoston luomisen ja tilan onnistuneen suoritukse
 
 ## c) Apache. Asenna Apache, korvaa sen testisivu ja varmista, että demoni käynnistyy.
 
-Tätä osiota varten loin uuden testiympäristön [Teron sivuilta](https://terokarvinen.com/2023/salt-vagrant/#ready-made-vagrantfile-for-three-computers) tutulla Vagrantfile-pohjalla
+Tätä osiota varten loin uuden testiympäristön [Teron sivuilta](https://terokarvinen.com/2023/salt-vagrant/#ready-made-vagrantfile-for-three-computers) tutulla Vagrantfile-pohjalla. Muutin ainoastaan virtuaalikoneiden nimet.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/7116e364-9545-42f9-9f70-2ed412eee265)
+
+> Kuva 5. Apachea ei löydy juuri luodulta masterilta.
+
+Apache2:n asennus:
+
+    $ sudo apt-get update
+    $ sudo apt-get install apache2
+    $ apache2 -v
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/aabc2d03-275d-4502-8e96-9c79eec4b6d1)
+
+> Kuva 6. Apache2:n asennuksen onnistumisen varmistuminen.
+
+Alkuasetelmaa havainnoidessani käytin erheellisesti komentoa `apache2 -v`. Tällainen tarkistus toiminee vain sovelluksille, jotka eivät ole daemoneita. Kuvassa 6 näkyy myös yksi toimiva tapa tarkistaa apache2:n asennus.
+
+Seuraavaksi on tarkoitus muuttaa apachen oletusaloitussivu. Aikaisemmalta oppitunnilta muistan, että oletussivu löytyy `/var/www` loput polusta täyttyy tabulaattoria reippaasti näpyttelemällä:
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/28ba122d-488d-427e-a87d-83ca60480c21)
+
+> Kuva 6. Apache2:n index.html ja sen sijainti.
+
+Muokataan sitä!
+
+    $ nano index.html
+
+Testataan sitä selaimella. Ensiksi pitää tosin asentaa linuxin terminaalissa toimiva selain. Muistan Teron maininneen Lynxin, joten asennetaan se.
+
+    $ sudo apt-get install lynx
+    $ lynx localhost
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/a2ee3025-8f87-4c66-8a1c-2e62e9cfe05a)
+
+> Kuva 7. Apache2 toimii!
 
 ## Lähteet:
 
