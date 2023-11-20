@@ -345,6 +345,20 @@ Kokeillaan ajaa moduuli uudestaan.
 
 > Kuva 22. Saltin output muutosten jälkeen. Hyvältä näyttää!
 
+Viimeinen testi onnistumisen varmistamiseksi on tehdä muutos `sshd_config` tiedostoon.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/5fe4398f-0097-4ce8-84bf-4ebcc16b84ee)
+
+> Kuva 23. Muutos sshd_configiin. Vanha portti 1234 kommentiksi ja alla uusi portti.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/19eb70a6-d649-48c9-9052-0b91e76a80b0)
+
+> Kuva 24. State.apply ajo muutosten jälkeen.
+
+En tiedä toimiiko tämä nyt tarkoituksenmukaisesti. Mitään muutoksia ei tapahtunut. Kuvan 24 ajon jälkeen myöskään komento `nc -vz localhost 4321` ei palauttanut "open" vaan "connection refused".
+
+Uudelleenkäynnistin sshd:n käyttäen `systemctl restart` komentoa.
+
 
 ## Lähteet:
 
