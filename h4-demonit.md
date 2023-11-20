@@ -297,7 +297,12 @@ Käytin salt-masterin ja -minionin asentamiseen Debian 12:lle Teron ohjeita (Kar
 
 ### ![image](https://user-images.githubusercontent.com/97522117/284282167-45f2e936-c13a-4ee6-be39-d8bcfa6ba401.png)
 
+> Kuva 15. Muutos sshd-konffaustiedostoon.
+
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/0f283352-3c64-424d-97df-7a548a22c84d)
+
+> Kuva 16. Onko portti auki?
+
 
 
 ## Lähteet:
