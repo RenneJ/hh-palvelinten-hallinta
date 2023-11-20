@@ -265,7 +265,23 @@ Seuraavaksi kokeilin muuttaa apacheinit.sls init.sls nimiseksi ja ajo käynnisty
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/66bb7702-555b-4361-ab34-71512014e620)
 
-> Kuva 11. Tässä ajossa on väärin nimetty id; apacheinit.sls.
+> Kuva 11. Jotain mättää määrityksissäni...
+
+Kuvassa 11 on onnistunut käynnistys, mutta jotain vikaa määrityksissäni on. Ensinnäkin unohdin laittaa lynxin asennettavaksi. Selasin Saltin dokumentaatiota (VMware, Inc 2023d) daemonien käynnistyksen ja uudelleenkäynnistyksen osalta. Tämän pohjalta tein muutoksia init.sls -tiedostoon.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/f386a527-9e91-4799-a391-4f203034b6a4)
+
+> Kuva 12. Muutokset sls-tiedostoon.
+
+Muutosten jälkeen `sudo salt '*' state.apply helloapache` ajaminen onnistui virheittä.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/dc44ce95-e7ee-4095-91a0-212f1aca4043)
+
+> Kuva 13. Virheetön ajo.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/0306b44b-a303-40c0-b000-523583a43be9)
+
+> Kuva 14. Näkymä `lynx localhost` ajosta orjalla.
 
 
 
@@ -282,3 +298,5 @@ VMware, Inc. 2023a. Salt overview. Luettavissa: https://docs.saltproject.io/salt
 VMware, Inc. 2023b. Salt states. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules Luettu: 17.11.2023
 
 VMware, Inc. 2023c. Requisites and other global state arguments. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/requisites.html#watch Luettu: 19.11.2023
+
+VMware, Inc. 2023d. Starting or restarting of services and daemons. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.service.html#starting-or-restarting-of-services-and-daemons Luettu: 20.11.2023
