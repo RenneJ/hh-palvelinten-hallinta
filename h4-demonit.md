@@ -289,7 +289,7 @@ Tämä osa suositellaan tehtävän tavallisella virtuaalikoneella, jota Vagrant 
 
 Aloitetaan siitä, että asennetaan koneelle salt-master ja -minion sekä openssh.
 
-[HUOM! Olen tässä vaiheessa jo myöhässä palautuksesta. En myöskään ymmärrä tämän osan tehtävänantoa, joten tämä tehtävä on palautettu puutteellisena. 20.11.2023 klo 15:15]
+**[HUOM! Olen tässä vaiheessa jo myöhässä palautuksesta. En myöskään ymmärrä tämän osan tehtävänantoa, joten tämä tehtävä on palautettu puutteellisena. 20.11.2023 klo 15:15]**
 
 Kokeillaan jatkaa nyt kun pääsin arvioimaan muutaman kurssikaverin erinomaiset vastaukset. Heidän vastausten pohjalta jatkan tämän osion vastusta ([hautadata](https://github.com/hautadata/palvelintenhallinta-jh/blob/main/h4-demonit.md) ja [J-Huttununen](https://github.com/J-Huttunen/palvelinten-hallinta/blob/main/h4.md)).
 
