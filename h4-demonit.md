@@ -287,7 +287,9 @@ Muutosten jälkeen `sudo salt '*' state.apply helloapache` ajaminen onnistui vir
 
 Tämä osa suositellaan tehtävän tavallisella virtuaalikoneella, jota Vagrant ei ohjaa. Alustin uuden Debian 12 koneen libvirtin virt-managerilla.
 
-Aloitetaan siitä, että asennetaan koneelle salt-master ja -minion.
+Aloitetaan siitä, että asennetaan koneelle salt-master ja -minion sekä openssh.
+
+[HUOM! Olen tässä vaiheessa jo myöhässä palautuksesta. En myöskään ymmärrä tämän osan tehtävänantoa, joten tämä tehtävä on palautettu puutteellisena. 20.11.2023 klo 15:15]
 
 ## Lähteet:
 
