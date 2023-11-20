@@ -321,6 +321,10 @@ Hyväksytään yhteys ja testataan pingaamalla.
 
 Nyt luulen, että voidaan alkaa tehdä infraa koodina eli kokeillaan kirjoittaa uusi tilamoduuli. Määritellään kuitenkin ensiksi tilamoduuleiden 'base' kuten aiemmin.
 
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/09bbdf4b-feed-42ac-97a5-9353469d96b0)
+
+> Kuva 19. Basen määritys; kohdepolku, josta käynnistetään omat sls-tiedostot.
+
 ## Lähteet:
 
 Karvinen, T. 2018. Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port. Luettavissa: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh Luettu: 19.11.2023
