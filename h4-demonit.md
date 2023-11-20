@@ -227,7 +227,12 @@ Testataan sitä selaimella. Ensiksi pitää tosin asentaa linuxin terminaalissa 
 
 Seuraavaksi kirjoitetaan määritykset apache2:n asentamiseen ja muokkaamani index.html:n muuttamiseen samaksi. Eikä unohdeta lynxin asentamistakaan!
 
-Aloitan aikaisemmasta olettamuksestani, että jaettava tiedosto (muokattu index.html) täytyy olla salt statemoduulin juuressa. Ensimmäinen ajatukseni on luoda symbolinen linkki masterilla `/srv/salt/helloapache/apache.sls` -> `/var/www/html/index.html`.
+Aloitan aikaisemmasta olettamuksestani, että jaettava tiedosto (muokattu index.html) täytyy olla salt statemoduulin juuressa. Ensimmäinen ajatukseni on luoda symbolinen linkki masterilla `/srv/salt/helloapache/index.html` -> `/var/www/html/index.html`. Samalla luodaan oikea hakemistorakenne.
+
+Masterilla:
+
+    $ mkdir /srv/salt/helloapache
+    $ 
 
 ## Lähteet:
 
