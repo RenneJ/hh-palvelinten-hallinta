@@ -223,7 +223,11 @@ Testataan sitä selaimella. Ensiksi pitää tosin asentaa linuxin terminaalissa 
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/a2ee3025-8f87-4c66-8a1c-2e62e9cfe05a)
 
-> Kuva 7. Apache2 toimii!
+> Kuva 7. Näkymä lynxillä. Apache2 toimii!
+
+Seuraavaksi kirjoitetaan määritykset apache2:n asentamiseen ja muokkaamani index.html:n muuttamiseen samaksi. Eikä unohdeta lynxin asentamistakaan!
+
+Aloitan aikaisemmasta olettamuksestani, että jaettava tiedosto (muokattu index.html) täytyy olla salt statemoduulin juuressa. Ensimmäinen ajatukseni on luoda symbolinen linkki masterilla `/srv/salt/helloapache/apache.sls` -> `/var/www/html/index.html`.
 
 ## Lähteet:
 
