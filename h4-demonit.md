@@ -291,6 +291,8 @@ Aloitetaan siitä, että asennetaan koneelle salt-master ja -minion sekä openss
 
 [HUOM! Olen tässä vaiheessa jo myöhässä palautuksesta. En myöskään ymmärrä tämän osan tehtävänantoa, joten tämä tehtävä on palautettu puutteellisena. 20.11.2023 klo 15:15]
 
+Kokeillaan jatkaa nyt kun pääsin arvioimaan muutaman kurssikaverin erinomaiset vastaukset. Heidän vastausten pohjalta jatkan tämän osion vastusta ([hautadata](https://github.com/hautadata/palvelintenhallinta-jh/blob/main/h4-demonit.md) ja [J-Huttununen](https://github.com/J-Huttunen/palvelinten-hallinta/blob/main/h4.md)).
+
 ## Lähteet:
 
 Karvinen, T. 2018. Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port. Luettavissa: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh Luettu: 19.11.2023
