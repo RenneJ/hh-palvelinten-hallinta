@@ -237,9 +237,35 @@ Masterilla:
     $ sudo ln -s /var/www/html/index.html
     $ sudo nano apacheinit.sls
 
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/642f22f6-fafa-4d48-92b2-645fed7839ce)
+
+> Kuva 8. Apacheinit.sls sisältö.
+
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/4b48e91e-0978-46ee-b5d6-8cc4e2661da7)
 
-> Kuva 8. Tilan suorittaminen epäonnistuu.
+> Kuva 9. Tilan suorittaminen epäonnistuu.
+
+Googlasin virheilmoituksen ja tulin siihen tulokseen, että 'base' on konfiguroitu väärin ([StackOverflow](https://stackoverflow.com/questions/60873775/no-matching-sls-found-for-httpd-in-env-base)).
+
+Kurkataan mitä masterin `/etc/salt/master` konfiguroinnissa mättää. `$ less /etc/salt/master` komennon avulla huomaan, että konfigurointi on kommenttirivejä täynnä. Lisätään sinne yllä olevan linkin mukaan oikea 'base' määritys.
+
+    $ sudo nano /etc/salt/master
+    
+    file_roots:
+      base:
+        - /srv/salt
+
+Sama error tulee, kun yrittää uudelleen `sudo salt '*' state.apply helloapache`.
+
+Seuraavaksi kokeilin muuttaa apacheinit.sls init.sls nimiseksi ja ajo käynnistyi. Taas opin uutta; sls-tiedostoja ei parane nimetä vapaasti.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/f57c2203-68ac-4c3f-a50e-95ff55361626)
+
+> Kuva 10. Ajo käynnistyy.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/66bb7702-555b-4361-ab34-71512014e620)
+
+> Kuva 11. Tässä ajossa on väärin nimetty id; apacheinit.sls.
 
 
 
