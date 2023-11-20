@@ -182,7 +182,7 @@ Tähän osavaiheeseen riittänee kopioida suoraan tämän tehtävän ensimmäise
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/eb14ede4-4da0-4678-a10a-31b8235025e4)
 
-> Kuva 4. Tilan suoritus onnistuu top.sls -tiedoston määritysten mukaisesti!
+> Kuva 4. Tilan suoritus onnistuu top.sls -tiedoston määritysten mukaisesti jokaiselle orjalle!
 
 Kuvasta 4 voi nähdä top.sls tiedoston luomisen ja tilan onnistuneen suorituksen. Muutoksia ei tehty, koska `helloworld.txt` on jo määritellyssä polussa.
 
