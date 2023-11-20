@@ -291,7 +291,11 @@ Aloitetaan siitä, että asennetaan koneelle salt-master ja -minion sekä openss
 
 **[HUOM! Olen tässä vaiheessa jo myöhässä palautuksesta. En myöskään ymmärrä tämän osan tehtävänantoa, joten tämä tehtävä on palautettu puutteellisena. 20.11.2023 klo 15:15]**
 
-Kokeillaan jatkaa nyt kun pääsin arvioimaan muutaman kurssikaverin erinomaiset vastaukset. Heidän vastausten pohjalta jatkan tämän osion vastusta ([hautadata](https://github.com/hautadata/palvelintenhallinta-jh/blob/main/h4-demonit.md) ja [J-Huttununen](https://github.com/J-Huttunen/palvelinten-hallinta/blob/main/h4.md)).
+Kokeillaan jatkaa nyt, kun pääsin arvioimaan muutaman kurssikaverin erinomaiset vastaukset. Heidän vastausten pohjalta jatkan tämän osion vastausta ([hautadata](https://github.com/hautadata/palvelintenhallinta-jh/blob/main/h4-demonit.md) ja [J-Huttununen](https://github.com/J-Huttunen/palvelinten-hallinta/blob/main/h4.md)).
+
+Käytin salt-masterin ja -minionin asentamiseen Debian 12:lle Teron ohjeita (Karvinen 2023a). Ssh-palvelimen asennus: `sudo apt-get install openssh-server`.
+
+
 
 ## Lähteet:
 
