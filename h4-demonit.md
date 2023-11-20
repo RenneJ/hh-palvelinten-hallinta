@@ -295,7 +295,7 @@ Kokeillaan jatkaa nyt, kun pääsin arvioimaan muutaman kurssikaverin erinomaise
 
 Käytin salt-masterin ja -minionin asentamiseen Debian 12:lle Teron ohjeita (Karvinen 2023a). Ssh-palvelimen asennus: `sudo apt-get install openssh-server`.
 
-### https://user-images.githubusercontent.com/97522117/284282167-45f2e936-c13a-4ee6-be39-d8bcfa6ba401.png
+### ![image](https://user-images.githubusercontent.com/97522117/284282167-45f2e936-c13a-4ee6-be39-d8bcfa6ba401.png)
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/0f283352-3c64-424d-97df-7a548a22c84d)
 
