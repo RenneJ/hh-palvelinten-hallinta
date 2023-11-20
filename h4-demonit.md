@@ -283,7 +283,11 @@ Muutosten jälkeen `sudo salt '*' state.apply helloapache` ajaminen onnistui vir
 
 > Kuva 14. Näkymä `lynx localhost` ajosta orjalla.
 
+## d) SSHouto. Lisää uusi portti, jossa SSHd kuuntelee.
 
+Tämä osa suositellaan tehtävän tavallisella virtuaalikoneella, jota Vagrant ei ohjaa. Alustin uuden Debian 12 koneen libvirtin virt-managerilla.
+
+Aloitetaan siitä, että asennetaan koneelle salt-master ja -minion.
 
 ## Lähteet:
 
