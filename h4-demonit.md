@@ -305,7 +305,13 @@ Kuvissa 15 ja 16 muokataan `/etc/ssh/ssh_config` tiedostoa ja uudelleenkäynnist
 
 > Kuva 16. Onko portti auki?
 
+Määritellään vielä minionin määritystiedostoon master 
 
+    $ sudoedit /etc/salt/minion
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/7d95cd95-9bd4-474e-811f-0314087eb504)
+
+> Kuva 17. Minionin masterin määritys.
 
 ## Lähteet:
 
