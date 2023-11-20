@@ -231,8 +231,17 @@ Aloitan aikaisemmasta olettamuksestani, että jaettava tiedosto (muokattu index.
 
 Masterilla:
 
+    $ mkdir /srv/salt/
     $ mkdir /srv/salt/helloapache
-    $ 
+    $ cd /srv/salt/helloapache
+    $ sudo ln -s /var/www/html/index.html
+    $ sudo nano apacheinit.sls
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/4b48e91e-0978-46ee-b5d6-8cc4e2661da7)
+
+> Kuva 8. Tilan suorittaminen epäonnistuu.
+
+
 
 ## Lähteet:
 
