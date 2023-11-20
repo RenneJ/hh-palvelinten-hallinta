@@ -319,11 +319,27 @@ Hyväksytään yhteys ja testataan pingaamalla.
 
 > Kuva 18. Avaimen hyväksyminen.
 
-Nyt luulen, että voidaan alkaa tehdä infraa koodina eli kokeillaan kirjoittaa uusi tilamoduuli. Määritellään kuitenkin ensiksi tilamoduuleiden 'base' kuten aiemmin.
+Nyt luulen, että voidaan alkaa tehdä infraa koodina eli kokeillaan kirjoittaa uusi tilamoduuli. Määritellään kuitenkin ensiksi tilamoduuleiden 'base' kuten aiemmin. Grep-komento regex-parametrillään tarkoittaa, että listaa ne rivit, jotka alkavat jollain muulla merkillä kuin `#`.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/09bbdf4b-feed-42ac-97a5-9353469d96b0)
 
 > Kuva 19. Basen määritys; kohdepolku, josta käynnistetään omat sls-tiedostot.
+
+Tässä vaiheessa alkaa tässä mennä sormi suuhun... Kokeillaan kopioida ja tarvittaessa muokata Teron ssh-state esimierkkimäärityksiä (Karvinen 2018).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/f854de77-14f8-48f3-95a1-f814522b884b)
+
+> Kuva 20. Tilamoduulin ajoa.
+
+Ensimmäiset ajot eivät onnistuneet suoraan kopioudulla määritystiedostolla. Muokkasin sitä niin, että muutin hakemistorakenteen samaksi kuin aiemmin onnistuneissa `state.apply` ajoissa. Muutin myös tiedoston nimen; uusi nimi on `init.sls`. Näiden muutosten jälkeen ajo käynnistyi mutta suoritus epäonnistui osittain (kuva 20).
+
+Lisätään moduuliin taas symbolinen linkki sshd_configiin ja päivitetään tilamoduulin sisältö hakemistorakenteeseen sopivaksi.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/506db348-edbc-4fea-9f65-e39c4035a9a7)
+
+> Kuva 21. Symbolisen linkin luominen.
+
+
 
 ## Lähteet:
 
