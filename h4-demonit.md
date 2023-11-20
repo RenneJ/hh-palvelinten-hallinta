@@ -357,7 +357,7 @@ Viimeinen testi onnistumisen varmistamiseksi on tehdä muutos `sshd_config` tied
 
 En tiedä toimiiko tämä nyt tarkoituksenmukaisesti. Mitään muutoksia ei tapahtunut. Kuvan 24 ajon jälkeen myöskään komento `nc -vz localhost 4321` ei palauttanut "open" vaan "connection refused".
 
-Uudelleenkäynnistin sshd:n käyttäen `systemctl restart` komentoa.
+Uudelleenkäynnistin sshd:n käyttäen `systemctl restart` komentoa, minkä jälkeen portti 4321 aukesi.
 
 
 ## Lähteet:
