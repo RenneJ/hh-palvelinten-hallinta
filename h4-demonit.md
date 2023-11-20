@@ -186,6 +186,10 @@ Tähän osavaiheeseen riittänee kopioida suoraan tämän tehtävän ensimmäise
 
 Kuvasta 4 voi nähdä top.sls tiedoston luomisen ja tilan onnistuneen suorituksen. Muutoksia ei tehty, koska `helloworld.txt` on jo määritellyssä polussa.
 
+## c) Apache. Asenna Apache, korvaa sen testisivu ja varmista, että demoni käynnistyy.
+
+Tätä osiota varten loin uuden testiympäristön [Teron sivuilta](https://terokarvinen.com/2023/salt-vagrant/#ready-made-vagrantfile-for-three-computers) tutulla Vagrantfile-pohjalla
+
 ## Lähteet:
 
 Karvinen, T. 2018. Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port. Luettavissa: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh Luettu: 19.11.2023
