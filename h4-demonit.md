@@ -313,6 +313,14 @@ Määritellään vielä minionin määritystiedostoon master
 
 > Kuva 17. Minionin masterin määritys.
 
+Hyväksytään yhteys ja testataan pingaamalla.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/deb5d709-5b7c-41b5-a6c5-6387c14904c2)
+
+> Kuva 18. Avaimen hyväksyminen.
+
+Nyt luulen, että voidaan alkaa tehdä infraa koodina eli kokeillaan kirjoittaa uusi tilamoduuli. Määritellään kuitenkin ensiksi tilamoduuleiden 'base' kuten aiemmin.
+
 ## Lähteet:
 
 Karvinen, T. 2018. Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port. Luettavissa: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh Luettu: 19.11.2023
