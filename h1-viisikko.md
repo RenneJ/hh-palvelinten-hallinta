@@ -167,29 +167,29 @@ Kuvassa 9 on käytetty grains.item -funktiota.
 
 BSD System Manager's Manual, 2023. sudo Documentation. Manual Page sudo.
 
-Davies, C., 2022. What is the difference between cwd and pwd?. StackExchange. Luettavissa: https://unix.stackexchange.com/questions/709896/what-is-the-difference-between-cwd-and-pwd Luettu: 27.10.2023
+Davies, C., 2022. What is the difference between cwd and pwd?. StackExchange. Luettavissa: https://unix.stackexchange.com/questions/709896/what-is-the-difference-between-cwd-and-pwd Luettu: 2023/10/27
 
 Hatch, T.S. et al., 2023. salt-call Documentation. Manual Page salt-call.
 
-Karvinen, T., 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 26.10.2023
+Karvinen, T., 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 2023/10/26
 
-Karvinen, T., 2023b. Create a Web Page Using Github. Luettavissa: https://terokarvinen.com/2023/create-a-web-page-using-github/ Luettu: 26.10.2023
+Karvinen, T., 2023b. Create a Web Page Using Github. Luettavissa: https://terokarvinen.com/2023/create-a-web-page-using-github/ Luettu: 2023/10/26
 
-Karvinen, T., 2023c. Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/ Luettu: 26.10.2023
+Karvinen, T., 2023c. Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/ Luettu: 2023/10/26
 
-Oxford University Press, 2023. pkg abbreviation. Luettavissa: https://www.oxfordlearnersdictionaries.com/definition/english/pkg Luettu: 26.10.2023
+Oxford University Press, 2023. pkg abbreviation. Luettavissa: https://www.oxfordlearnersdictionaries.com/definition/english/pkg Luettu: 2023/10/26
 
 Rubin, P. et al, 2022. User Commands. Touch manual pages. 
 
-VMware, Inc., 2023a. salt.states.pkg. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html Luettu: 27.10.2023
+VMware, Inc., 2023a. salt.states.pkg. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html Luettu: 2023/10/27
 
-VMware, Inc., 2023b. salt.modules.state. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.state.html#salt.modules.state.single Luettu: 27.10.2023
+VMware, Inc., 2023b. salt.modules.state. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.state.html#salt.modules.state.single Luettu: 2023/10/27
 
-VMware, Inc., 2023c. salt.modules.file. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.file.html Luettu: 27.10.2023
+VMware, Inc., 2023c. salt.modules.file. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.file.html Luettu: 2023/10/27
 
-VMware, Inc., 2023d. salt.states.service. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.service.html Luettu: 27.10.2023
+VMware, Inc., 2023d. salt.states.service. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.service.html Luettu: 2023/10/27
 
-VMware, Inc., 2023e. salt.states.user. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.user.html Luettu: 27.10.2023
+VMware, Inc., 2023e. salt.states.user. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.user.html Luettu: 2023/10/27
 
 VMware, Inc., 2023f. salt.states.cmd. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.cmd.html Luettu: 27.10.2023
 
