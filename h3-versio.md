@@ -150,4 +150,4 @@ Mielestäni GitHubin vastaava työkalu on selkolukuisempi. Painamalla säilön G
 
 Git 2023. Git manual. Git v. 2.34.1.
 
-Karvinen, T. 2023. Infra as Code 2023 - H3 Versio. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h3-versio Luettu: 11.11.2023 
+Karvinen, T. 2023. Infra as Code 2023 - H3 Versio. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h3-versio Luettu: 2023/11/11
