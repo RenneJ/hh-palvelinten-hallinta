@@ -362,16 +362,16 @@ Uudelleenkäynnistin sshd:n käyttäen `systemctl restart` komentoa, minkä jäl
 
 ## Lähteet:
 
-Karvinen, T. 2018. Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port. Luettavissa: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh Luettu: 19.11.2023
+Karvinen, T. 2018. Pkg-File-Service – Control Daemons with Salt – Change SSH Server Port. Luettavissa: https://terokarvinen.com/2018/04/03/pkg-file-service-control-daemons-with-salt-change-ssh-server-port/?fromSearch=karvinen%20salt%20ssh Luettu: 2023/11/19
 
-Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h4-demonit Luettu: 17.11.2023
+Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h4-demonit Luettu: 2023/11/17
 
-Karvinen, T. 2023b. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file Luettu: 17.11.2023
+Karvinen, T. 2023b. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file Luettu: 2023/11/17
 
-VMware, Inc. 2023a. Salt overview. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml Luettu: 17.11.2023
+VMware, Inc. 2023a. Salt overview. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml Luettu: 2023/11/17
 
-VMware, Inc. 2023b. Salt states. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules Luettu: 17.11.2023
+VMware, Inc. 2023b. Salt states. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules Luettu: 2023/11/17
 
-VMware, Inc. 2023c. Requisites and other global state arguments. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/requisites.html#watch Luettu: 19.11.2023
+VMware, Inc. 2023c. Requisites and other global state arguments. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/requisites.html#watch Luettu: 2023/11/19
 
-VMware, Inc. 2023d. Starting or restarting of services and daemons. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.service.html#starting-or-restarting-of-services-and-daemons Luettu: 20.11.2023
+VMware, Inc. 2023d. Starting or restarting of services and daemons. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.service.html#starting-or-restarting-of-services-and-daemons Luettu: 2023/11/20
