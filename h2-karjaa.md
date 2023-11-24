@@ -301,16 +301,16 @@ Tarkistetaan se paikallisesti ottamalla ssh-yhteys t001-koneeseen (kuva 24).
 
 Hatch, T.S., et al. 2021. Salt-key manual pages. `man salt-key`.
 
-Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 2.11.2023
+Karvinen, T. 2017. Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds Luettavissa: https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/ Luettu: 2023/11/02
 
-Karvinen, T. 2021. Run Salt Commands Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/ Luettu. 3.11.2023
+Karvinen, T. 2021. Run Salt Commands Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/ Luettu. 2023/11/03
 
-Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h2-karjaa Luettu: 3.11.2023
+Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h2-karjaa Luettu: 2023/11/03
 
-Karvinen, T. 2023b. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/ Luettu: 3.11.2023
+Karvinen, T. 2023b. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/ Luettu: 2023/11/03
 
-Slater, R. 2017. What is the definition of "cattle not pets"?. Luettavissa: https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654 Luettu: 2.11.2023
+Slater, R. 2017. What is the definition of "cattle not pets"?. Luettavissa: https://devops.stackexchange.com/questions/653/what-is-the-definition-of-cattle-not-pets#654 Luettu: 2023/11/02
 
-VMware, Inc. 2023a. Frequently Asked Questions. Can I run different versions of Salt on my master and minion?. Luettavissa: https://docs.saltproject.io/en/latest/faq.html#can-i-run-different-versions-of-salt-on-my-master-and-minion Luettu: 2.11.2023
+VMware, Inc. 2023a. Frequently Asked Questions. Can I run different versions of Salt on my master and minion?. Luettavissa: https://docs.saltproject.io/en/latest/faq.html#can-i-run-different-versions-of-salt-on-my-master-and-minion Luettu: 2023/11/02
 
-VMware, Inc. 2023b. Configuring the Salt Minion. Minion Primary Configuration. Luettavissa: https://docs.saltproject.io/en/latest/ref/configuration/minion.html Luettu: 3.11.2023
+VMware, Inc. 2023b. Configuring the Salt Minion. Minion Primary Configuration. Luettavissa: https://docs.saltproject.io/en/latest/ref/configuration/minion.html Luettu: 2023/11/03
