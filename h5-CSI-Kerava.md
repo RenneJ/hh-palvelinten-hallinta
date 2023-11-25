@@ -138,7 +138,7 @@ Uusi tiedosto näyttäisi olevan luotuna molemmille orjille. Testataan sitä vie
 
 > Kuva 13. Access denied! Komento tosin löytyy, joten jotain onnistui!
 
-Oikeudet ovat väärin! Saltin default-määritykset file.managed -funktiossa ovat väärät tähän tapaukseen. Muutetaan commands-moduulin määrityksiä (kuva 14).
+Oikeudet ovat väärin! Saltin default-määritykset file.managed -funktiossa ovat väärät tähän tapaukseen. Muutetaan commands-moduulin määrityksiä (kuva 14). Tässä kohtaa tehtävien tekemistä muistinkin edelliseltä oppitunnilta, että tämähän käytiinkin läpi. Tero muistini mukaan suosittele antamaan oikeusmääritykset saltissa merkkijonona ei lukuina.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/7a517c9d-b322-4fa4-9f9e-8481a16457a6)
 
