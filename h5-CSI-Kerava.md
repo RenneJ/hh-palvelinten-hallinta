@@ -69,7 +69,37 @@ Nyt yritetään paikallistaa asetustiedosto.
 
 > Kuva 5. `find`-komento taas kotihakemistossa.
 
-En äkkiseltään löytänyt mitään sopivaa osumaa täältä tai `/etc`-hakemistossa, joten turvauduin googlaamaan mistä löytyy VScoden konfigurointitiedosto (hakusanoilla *vscode config file*).
+En äkkiseltään löytänyt mitään sopivaa osumaa täältä tai `/etc`-hakemistossa. Kokeilin myös lisätä komentoon `| grep vscode`. Mutta tämäkään muutos ei liiemmin helpottanut, joten turvauduin googlaamaan mistä löytyy VScoden konfigurointitiedosto (hakusanoilla *vscode config file*). Hakutulokset osoittivat, että asetustiedosto löytyy käyttäjän kotihakemistosta `.config/Code/User/settings.json`. Olisinpa tajunnut grepata Code enkä vscode...
+
+      ~$ sudo find -printf '%T+ %p \n' | sort | grep Code
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/89c77649-27e2-4788-af70-44f909bf8aed)
+
+> Kuva 6. `find`-komennon ajo kotihakemistossa. Tulosteessa vain ne rivit, joissa on sana 'Code'.
+
+Kuvassa 6 ensimmäisellä rivillä näkyy VScoden asetustiedosto.
+
+Kokeillaan tehdä muutos siihen.
+
+      $ sudo nano .config/Code/User/settings.json
+
+Tiedostossa ei ollut kuin 4 riviä (kuva 7). Palautetaan tabikoko takaisin 4:ään (kuva 8).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/958df9fd-f385-400f-b31e-1eff4e23dcbb)
+
+> Kuva 7. VScoden settings.json.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/af05d38b-1e42-45e4-8a1d-db8e7a078542)
+
+> Kuva 8. Muutos tehty!
+
+Tarkistetaan vielä tuliko muutos voimaan graafiseen käyttöliittymään.
+
+Tulihan se (kuva 9)!
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/865f4f8c-8b17-482a-8e8f-81dde7abb4b6)
+
+> Kuva 9. Muutos näkyy myös graafisessa käyttöliittymässä.
 
 # Lähteet
 
