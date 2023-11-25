@@ -193,9 +193,25 @@ Eli `sudo a2enmod userdir` teki samat asiat kuin:
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/307093b0-db4c-4047-a32f-66f6f372a3dc)
 
-> Kuva 21. Käyttäjän oma kotisivu.
+> Kuva 21. Käyttäjän oman kotisivun luominen.
 
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/9c37492a-8fe0-44d2-b94c-b138c33358c4)
 
+> Kuva 22. Näkymä kotisivusta lynx-selaimessa, url = localhost/~vagrant
+
+Kokeillaan automatisoida salt-tila, jossa orjat saavat omat kotisivut.
+
+Muokataan hieman Teron (Karvinen 2018) esimerkkiä. Lisätään tilamäärityksiin käyttäjän kotihakemistoon tyhjä index.html -tiedosto polkuun `~/public_html`.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/45e553c0-797b-43ac-bfb3-96a6e8ef0740)
+
+> Kuva 23. Tilatiedoston sisältö.
+
+Tyhjän index-tiedoston luominen onnistuu helposti, koska kaikkien labrani käyttäjänimi on sama - vagrant.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/d3d35583-e427-406a-ad98-84e51e624ae5)
+
+> Kuva 24. Orjalle on luotu oma kotisivu, jota käyttäjällä on oikeus muokata.
 
 # Lähteet
 
