@@ -185,6 +185,18 @@ Eli `sudo a2enmod userdir` teki samat asiat kuin:
       $ ln -s /etc/apache2/mods-available/userdir.conf /etc/apache2/mods-enabled/userdir.conf
       $ ln -s /etc/apache2/mods-available/userdir.load /etc/apache2/mods-enabled/userdir.load
 
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/411e4bc2-861e-4f7e-8e85-224691225590)
+
+> Kuva 20. `userdir.conf` tiedoston sisältö.
+
+`userdir.conf` tiedoston sisällöstä päätellen apache2-käyttäjän kotihakemisto on `~/public_html`. Tehdään sinne index.html.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/307093b0-db4c-4047-a32f-66f6f372a3dc)
+
+> Kuva 21. Käyttäjän oma kotisivu.
+
+
+
 # Lähteet
 
 a2enmod 2006. `man a2enmod`.
