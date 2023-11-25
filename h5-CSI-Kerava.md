@@ -19,9 +19,29 @@
     - `%T+` muokkausaika
     - `%p` tiedostonimi ja polku
     - `\n` uusi rivi
+    - `sort`-komento järjestää tulosteen aakkosjärjestykseen tai numeroiden kohdalla pienimmästä suurimpaan
 
 - Kun käytät komentoa salt-tilassa, tee siitä idempotentti
-- Kannattaa automatisoidessa saltin `service.running` -funktio kohdistaa tiedostoon ei komentoon
+- Kannattaa automatisoidessa saltin `service.running` -funktio kohdistaa tiedostoon, ei komentoon
+
+## a) CSI Kerava. Näytä 'find' avulla viimeisimmäksi muokatut tiedostot /etc/-hakemistosta ja kotihakemistostasi.
+
+Käytetään x) -kohdan esimerkkiä `find -printf '%T+ %p \n' | sort`.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/820f86e6-0e96-422c-9e4d-cf9cd31449ec)
+
+> Kuva 1. Ote `find`-komennon tulosteesta kotihakemistossani.
+
+Kuvassa 1 näkyy alimmilla riveillä uusimmat muokkaukset tiedostoihin kotihakemistossani. Näyttää siltä, että Teams keräilee koneelleni jatkuvasti jotain tietoja.
+
+Siirrytään seuraavaksi `/etc/`-hakemistoon ja tarkastetaan samalla komennolla konfigurointihakemistoon tehdyt muutokset.
+
+            $ cd /etc
+            $ find -printf '%T+ %p \n' | sort
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/65bdc95b-e5d1-491c-9219-01eea52a6b2f)
+
+> Kuva 2. Ote `find`-komennon tulosteesta konfigurointihakemistossani.
 
 # Lähteet
 
