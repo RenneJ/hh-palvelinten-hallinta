@@ -55,6 +55,22 @@ Muokataan VScoden asetuksia graafisesta käyttöliittymästä ja etsitään konf
             tai
       Ctrl + ,
 
+Muutetaan tabin arvoa. Kuvasta 3 voi nähdä, että se on oletusarvoisesti 4.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/b5fbafbf-6e16-44bb-95e6-e117a07c2444)
+
+> Kuva 4. Muutos tehty asetuksiin.
+
+Todensin asetuksen muutoksen astuneen voimaan uudelleenkäynnistämällä VScoden.
+
+Nyt yritetään paikallistaa asetustiedosto.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/98664bb1-e2e9-4eda-8911-409ec535f88c)
+
+> Kuva 5. `find`-komento taas kotihakemistossa.
+
+En äkkiseltään löytänyt mitään sopivaa osumaa täältä tai `/etc`-hakemistossa, joten turvauduin googlaamaan mistä löytyy VScoden konfigurointitiedosto (hakusanoilla *vscode config file*).
+
 # Lähteet
 
 Karvinen, T. 2018. Apache User Homepages Automatically – Salt Package-File-Service Example. Luettavissa: https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/ Luettu: 2023/11/24
