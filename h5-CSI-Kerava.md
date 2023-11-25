@@ -69,7 +69,7 @@ Nyt yritetään paikallistaa asetustiedosto.
 
 > Kuva 5. `find`-komento taas kotihakemistossa.
 
-En äkkiseltään löytänyt mitään sopivaa osumaa täältä tai `/etc`-hakemistossa. Kokeilin myös lisätä komentoon `| grep vscode`. Mutta tämäkään muutos ei liiemmin helpottanut, joten turvauduin googlaamaan mistä löytyy VScoden konfigurointitiedosto (hakusanoilla *vscode config file*). Hakutulokset osoittivat, että asetustiedosto löytyy käyttäjän kotihakemistosta `.config/Code/User/settings.json`. Olisinpa tajunnut grepata Code enkä vscode...
+En äkkiseltään löytänyt mitään sopivaa osumaa kotihakemistosta (kuva 5) tai `/etc`-hakemistossa. Kokeilin myös lisätä komentoon `| grep vscode`. Mutta tämäkään muutos ei liiemmin helpottanut, joten turvauduin googlaamaan mistä löytyy VScoden konfigurointitiedosto (hakusanoilla *vscode config file*). Hakutulokset osoittivat, että asetustiedosto löytyy käyttäjän kotihakemistosta `.config/Code/User/settings.json`. Olisinpa tajunnut grepata Code enkä vscode...
 
       ~$ sudo find -printf '%T+ %p \n' | sort | grep Code
 
@@ -100,6 +100,24 @@ Tulihan se (kuva 9)!
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/865f4f8c-8b17-482a-8e8f-81dde7abb4b6)
 
 > Kuva 9. Muutos näkyy myös graafisessa käyttöliittymässä.
+
+## c) Komennus. Tee Salt-tila, joka asentaa järjestelmään uuden komennon.
+
+Käytetään edellistä viikkotehtävää (h4 Demonit) varten alustamaani Vagrant-labraa (master ja kaksi orjaa).
+
+Ensin komennon asentaminen käsin yhdelle koneelle (masterilla):
+
+      $ nano output                         # nimesin esimerkkini outputiksi
+      $ chmod +x output                     # lisätään kaikille ajo-oikeus tiedostoon
+      $ ./output                            # testataan toimiiko komennon ajo
+      $ sudo mv output /usr/local/bin/      # siirretään tiedosto, jotta komennon voi ajaa mistä hakemistosta tahansa
+      $ output                              # testataan toimiiko
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/0cc61fa2-5f89-4967-9005-6c665997e1b0)
+
+> Kuva 10. Oma komento toimii!
+
+
 
 # Lähteet
 
