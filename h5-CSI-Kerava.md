@@ -154,11 +154,19 @@ Kokeillaan nyt ajaa paikallisesti uusi komento 'output'.
 
 > Kuva 16. Ajo onnistuu!
 
-Jätin kuvaan 16 näkyviin saman näkymän kuvassa 13 osoittaakseni, että en tehnyt paikallisesti mitään muutoksia ws02-nimisessä koneessa.
+Jätin kuvaan 16 näkyviin samat rivit kuin kuvassa 13 osoittaakseni, että en tehnyt paikallisesti mitään muutoksia ws02-nimisessä koneessa.
+
+## d) Apassi. Tee Salt-tila, joka asentaa Apachen näyttämään kotihakemistoja.
+
+Ensin käsin masterilla, sitten automatisoimaan.
+
+Kotihakemistojen käyttöönotto apache2:een tapahtuu komennolla `a2enmod userdir` (man a2enmod 2006).
 
 # Lähteet
 
 Karvinen, T. 2018. Apache User Homepages Automatically – Salt Package-File-Service Example. Luettavissa: https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/ Luettu: 2023/11/24
 
 Karvinen, T. 2023. Infra as Code 2023. H5 CSI Kerava. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h5-csi-kerava) Luettu: 2023/11/24
+
+
 
