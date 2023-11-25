@@ -36,8 +36,8 @@ Kuvassa 1 näkyy alimmilla riveillä uusimmat muokkaukset tiedostoihin kotihakem
 
 Siirrytään seuraavaksi `/etc/`-hakemistoon ja tarkastetaan samalla komennolla konfigurointihakemistoon tehdyt muutokset.
 
-            $ cd /etc
-            $ find -printf '%T+ %p \n' | sort
+      $ cd /etc
+      $ find -printf '%T+ %p \n' | sort
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/65bdc95b-e5d1-491c-9219-01eea52a6b2f)
 
