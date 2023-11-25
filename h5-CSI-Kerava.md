@@ -117,7 +117,44 @@ Ensin komennon asentaminen käsin yhdelle koneelle (masterilla):
 
 > Kuva 10. Oma komento toimii!
 
+Lähdetään määrittelemään salt-moduulia.
 
+      $ sudo mkdir /srv/salt/commands; cd /srv/salt/commands
+      $ sudo ln -s /usr/local/bin/output                        # luodaan symlinkki nykyiseen hakemistoon
+      $ sudo nano init.sls                                      # YAML-tiedosto salt-moduulin ajoa varten (kuva 11)
+      $ sudo salt '*' state.apply commands                      # komennetaan orjat ajamaan commands-hakemiston sisältö
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/914d12ea-9242-4201-8fff-8044c8bd4b11)
+
+> Kuva 11. Salt-konfiguraatiot oman komennon asennusta varten orjille.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/52998ce9-2434-42b9-aade-b35116a4e886)
+
+> Kuva 12. Komennon `sudo salt '*' state.apply commands` tuloste.
+
+Uusi tiedosto näyttäisin olevan luotuna molemmille orjille. Testataan sitä vielä ottamalla ssh-yhteys toiseen orjaan ja kokeillaan ajaa komento `output`.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/a79a05b2-1e24-43c9-967f-747ee72dfe96)
+
+> Kuva 13. Access denied! Komento tosin löytyy, joten jotain onnistui!
+
+Oikeudit ovat väärin! Saltin default-määritykset file.managed -funktiossa ovat väärät tähän tapaukseen. Muutetaan commands-moduulin määrityksiä (kuva 14).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/c8309f2c-4edb-4ed1-948d-dc79f9b4ac5b)
+
+> Kuva 14. Muutokset init.sls -tiedostoon.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/03755a49-0af9-440f-b31d-5add59602282)
+
+> Kuva 15. Uusi state.apply ajo. Muutoksia tapahtui!
+
+Kokeillaan nyt ajaa paikallisesti uusi komento 'output'.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/fc139d05-6c51-4696-bf5e-3b34111f28f1)
+
+> Kuva 16. Ajo onnistuu!
+
+Jätin kuvaan 16 näkyviin saman näkymän kuvassa 13 osoittaakseni, että en tehnyt paikallisesti mitään muutoksia ws02-nimisessä koneessa.
 
 # Lähteet
 
