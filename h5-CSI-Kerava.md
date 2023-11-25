@@ -160,9 +160,34 @@ Jätin kuvaan 16 näkyviin samat rivit kuin kuvassa 13 osoittaakseni, että en t
 
 Ensin käsin masterilla, sitten automatisoimaan.
 
-Kotihakemistojen käyttöönotto apache2:een tapahtuu komennolla `a2enmod userdir` (man a2enmod 2006).
+Kotihakemistojen käyttöönotto apache2:een tapahtuu komennolla `a2enmod userdir` (a2enmod 006).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/ba7ce995-8b4f-4041-b76d-3a5a24a8d76a)
+
+> Kuva 17. Tuloste `a2enmod userdir` komennosta.
+
+Daemon pitää vielä uudelleenkäynnistää. Sen jälkeen selvitetään mitä muuttui järjestelmässä.
+
+Aloitetaan selvitystyö `/etc/apache2` hakemistosta. Ajetaan komento, jota käytimme aiemmin `find -printf '%T+ %p \n' | sort`.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/2ee50060-bf2a-4494-b992-3b5bf1c63db4)
+
+> Kuva 18. Salapoliisityö kävi helposti tällä kertaa!
+
+Kuvassa 18 näkyy `find` komennon tulosteen kolme viimeistä riviä (eli uusimmat muokkaukset hakemistossa `/etc/apache2`). Käyttöönotettujen modien hakemisto `mods-enabled` sisältää ainoastaan symlinkkejä (kuva 19).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/0e3419dd-8f4d-42e2-9bfc-070e33c548d1)
+
+> Kuva 19. `/etc/apache2/mods-enabled` sisältö.
+
+Eli `sudo a2enmod userdir` teki samat asiat kuin:
+
+      $ ln -s /etc/apache2/mods-available/userdir.conf /etc/apache2/mods-enabled/userdir.conf
+      $ ln -s /etc/apache2/mods-available/userdir.load /etc/apache2/mods-enabled/userdir.load
 
 # Lähteet
+
+a2enmod 2006. `man a2enmod`.
 
 Karvinen, T. 2018. Apache User Homepages Automatically – Salt Package-File-Service Example. Luettavissa: https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/ Luettu: 2023/11/24
 
