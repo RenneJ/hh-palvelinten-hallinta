@@ -132,13 +132,13 @@ Lähdetään määrittelemään salt-moduulia.
 
 > Kuva 12. Komennon `sudo salt '*' state.apply commands` tuloste.
 
-Uusi tiedosto näyttäisin olevan luotuna molemmille orjille. Testataan sitä vielä ottamalla ssh-yhteys toiseen orjaan ja kokeillaan ajaa komento `output`.
+Uusi tiedosto näyttäisi olevan luotuna molemmille orjille. Testataan sitä vielä ottamalla ssh-yhteys toiseen orjaan ja kokeillaan ajaa komento `output`.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/a79a05b2-1e24-43c9-967f-747ee72dfe96)
 
 > Kuva 13. Access denied! Komento tosin löytyy, joten jotain onnistui!
 
-Oikeudit ovat väärin! Saltin default-määritykset file.managed -funktiossa ovat väärät tähän tapaukseen. Muutetaan commands-moduulin määrityksiä (kuva 14).
+Oikeudet ovat väärin! Saltin default-määritykset file.managed -funktiossa ovat väärät tähän tapaukseen. Muutetaan commands-moduulin määrityksiä (kuva 14).
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/c8309f2c-4edb-4ed1-948d-dc79f9b4ac5b)
 
