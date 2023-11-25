@@ -140,7 +140,7 @@ Uusi tiedosto näyttäisi olevan luotuna molemmille orjille. Testataan sitä vie
 
 Oikeudet ovat väärin! Saltin default-määritykset file.managed -funktiossa ovat väärät tähän tapaukseen. Muutetaan commands-moduulin määrityksiä (kuva 14).
 
-### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/c8309f2c-4edb-4ed1-948d-dc79f9b4ac5b)
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/7a517c9d-b322-4fa4-9f9e-8481a16457a6)
 
 > Kuva 14. Muutokset init.sls -tiedostoon.
 
