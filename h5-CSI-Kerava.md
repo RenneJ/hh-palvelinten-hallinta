@@ -43,6 +43,18 @@ Siirrytään seuraavaksi `/etc/`-hakemistoon ja tarkastetaan samalla komennolla 
 
 > Kuva 2. Ote `find`-komennon tulosteesta konfigurointihakemistossani.
 
+## b) Gui2fs. Muokkaa asetuksia jostain graafisen käyttöliittymän (GUI) ohjelmasta käyttäen ohjelman valikoita ja dialogeja. Etsi tämä asetus tiedostojärjestelmästä.
+
+Muokataan VScoden asetuksia graafisesta käyttöliittymästä ja etsitään konfigurointitiedosto. Kokeillaan myös muuttaa asetus takaisin tällä kertaa tekstitiedostoa muuttamalla ja todennetaan muutos graafisessa käyttöliittymässä.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/a7d60f33-dcac-43d0-989b-32787febdc53)
+
+> Kuva 3. VScoden näkymä asetusten muuttamiseen.
+
+      File -> Preferences -> Settings
+            tai
+      Ctrl + ,
+
 # Lähteet
 
 Karvinen, T. 2018. Apache User Homepages Automatically – Salt Package-File-Service Example. Luettavissa: https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-package-file-service-example/ Luettu: 2023/11/24
