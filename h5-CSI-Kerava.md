@@ -215,6 +215,17 @@ Tyhjän index-tiedoston luominen onnistuu helposti, koska kaikkien labrani käyt
 
 ## e) Ämpärillinen. Tee Salt-tila, joka asentaa järjestelmään kansiollisen komentoja.
 
+Ensin käsin.
+
+Tarkoitukseni on saada yhdellä salt-tilalla saada asennettua orjille 'commandcenterin' sisältö orjan hakemistoon `/usr/local/bin`. Luin saltin dokumentaatiota [tiedostotiloista](https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html#salt.states.file.recurse) (VMware, Inc. 2023). `file.recurse`-funktio näyttäisi olevan sopiva. Kokeillaan seuraavasti:
+
+1. Hakemiston luonti esimerkkikomentoineen
+2. Salt-tilan luominen osittain; ensin kopioidaan hakemisto orjille
+3. Salt-tilan jatkaminen; kopioidaan/siirretään hakemiston sisältö `/usr/local/bin/` -hakemistoon
+4. Poistetaan hakemisto orjilta
+
+Idempotentin tilan ajaminen useasti ei haittaa kunhan muistaa dokumentoida tapahtuneet muutokset.
+
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/964b621f-c08b-47fb-b8ec-2cad0e2d4ecd)
 
 > Kuva 25. Komentojen luonti hakemistoon.
@@ -222,6 +233,12 @@ Tyhjän index-tiedoston luominen onnistuu helposti, koska kaikkien labrani käyt
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/8df1d965-9336-44ec-b704-a07124b57509)
 
 > Kuva 26. Hakemiston kopiointi `/usr/local/bin` hakemistoon.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/388d7489-4c97-4c16-a489-ec80fee168a3)
+
+> Kuva 27. Salt-tila, jossa orjat hakevat hakemiston masterilta.
+
+
 
 # Lähteet
 
@@ -231,5 +248,5 @@ Karvinen, T. 2018. Apache User Homepages Automatically – Salt Package-File-Ser
 
 Karvinen, T. 2023. Infra as Code 2023. H5 CSI Kerava. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h5-csi-kerava) Luettu: 2023/11/24
 
-
+VMware, Inc. 2023. salt.states.file. Salt Project. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html#salt.states.file.recurse Luettu: 2023/11/26
 
