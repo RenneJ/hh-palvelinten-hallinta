@@ -244,6 +244,38 @@ Yksi vaihe olisi pitänyt tässä muistaa; oikeuksien muuttaminen. Lisäsin init
 
 > Kuva 28. Init.sls -tiedostoon lisätty `file_mode`-määritys.
 
+Seuraavaksi muokataan tilatiedostoa niin, että orjat kopioivat 'commandcenterin' sisällön `/usr/local/bin/`-hakemistoon.
+
+Selailin aikani saltin dokumentaatiota ja googlailin olisiko tähän sopivaa tilafunktiota. Mutta en sellaista löytänyt. Päädyin käyttämään `cmd.run`-funktiota.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/17d0328d-e6a0-441f-b8fc-d1a7516902ad)
+
+> Kuva 29. Init.sls sisältö.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/e865b9ed-f333-4b64-88f4-423cd7fcf768)
+
+> Kuva 30. Salt-tilan ajo orjilla, jotta ne kopioivat komennot oikeaan hakemistoon.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/dbc77bf2-d327-4ab0-bced-1282f263b4c0)
+
+> Kuva 31. Uuden komennon ajo ja `/usr/local/bin` sisältö.
+
+Kuvasta 31 voi nähädä, että komennon ajaminen paikallisesti orjalla onnistuu. Muokataan vielä tilatiedostoa niin, että se tarkistaa `/tmp/commandcenter` hakemiston olevan poissa.
+
+Taas googlailin ja tutkin saltin dokumentaatiota. Mutta en löytänyt järkevää ratkaisua hakemiston poistamiseen. Käytin siis taas `cmd.run` -funktiota.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/f5c42673-435d-4a12-9ad5-228955a5ca3d)
+
+> Kuva 32. Tilatiedoston sisältö. Uutena funktiona pooistaminen.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/8ad3011b-f908-4df3-b230-2af76c52637c)
+
+> Kuva 33. Tilamoduulin ajo.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/89172f12-1c6f-4202-b2be-9b431bc3597a)
+
+> Kuva 34. Kaikkien komentojen ajaminen orjalla ja listaus oman tilafunktion käsittelemistä hakemistoista `/tmp/` ja `/usr/local/bin`.
+
 # Lähteet
 
 a2enmod 2006. `man a2enmod`.
