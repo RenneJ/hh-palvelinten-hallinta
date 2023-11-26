@@ -213,6 +213,16 @@ Tyhjän index-tiedoston luominen onnistuu helposti, koska kaikkien labrani käyt
 
 > Kuva 24. Orjalle on luotu oma kotisivu, jota käyttäjällä on oikeus muokata.
 
+## e) Ämpärillinen. Tee Salt-tila, joka asentaa järjestelmään kansiollisen komentoja.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/964b621f-c08b-47fb-b8ec-2cad0e2d4ecd)
+
+> Kuva 25. Komentojen luonti hakemistoon.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/8df1d965-9336-44ec-b704-a07124b57509)
+
+> Kuva 26. Hakemiston kopiointi `/usr/local/bin` hakemistoon.
+
 # Lähteet
 
 a2enmod 2006. `man a2enmod`.
