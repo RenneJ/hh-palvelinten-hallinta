@@ -238,7 +238,11 @@ Idempotentin tilan ajaminen useasti ei haittaa kunhan muistaa dokumentoida tapah
 
 > Kuva 27. Salt-tila, jossa orjat hakevat hakemiston masterilta.
 
+Yksi vaihe olisi pitänyt tässä muistaa; oikeuksien muuttaminen (kuva 28).
 
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/fe7344fd-5948-4453-97ce-f0e09ba137e8)
+
+> Kuva 28. Init.sls -tiedostoon lisätty `mode`-määritys.
 
 # Lähteet
 
