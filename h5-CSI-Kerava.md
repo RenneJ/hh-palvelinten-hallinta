@@ -238,7 +238,7 @@ Idempotentin tilan ajaminen useasti ei haittaa kunhan muistaa dokumentoida tapah
 
 > Kuva 27. Salt-tila, jossa orjat hakevat hakemiston masterilta.
 
-Yksi vaihe olisi pitänyt tässä muistaa; oikeuksien muuttaminen (kuva 28).
+Yksi vaihe olisi pitänyt tässä muistaa; oikeuksien muuttaminen. Lisäsin init.sls tiedostoon ensin `- mode: '0755'` mutta oikea tapa onkin `- file_mode: '0755'`, kun käytetään `file.recurse`-funktiota.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/137d9b9f-bf7d-45e7-b896-fe56e8112fe6)
 
