@@ -240,9 +240,9 @@ Idempotentin tilan ajaminen useasti ei haittaa kunhan muistaa dokumentoida tapah
 
 Yksi vaihe olisi pitänyt tässä muistaa; oikeuksien muuttaminen (kuva 28).
 
-### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/fe7344fd-5948-4453-97ce-f0e09ba137e8)
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/137d9b9f-bf7d-45e7-b896-fe56e8112fe6)
 
-> Kuva 28. Init.sls -tiedostoon lisätty `mode`-määritys.
+> Kuva 28. Init.sls -tiedostoon lisätty `file_mode`-määritys.
 
 # Lähteet
 
