@@ -106,11 +106,16 @@ Nimesin koneen lab02 mukaan. Aion lisätä tämän virtuaalimasiinan lab02_wsmas
 
 Kokeilin vaihtaa boot-järjestystä, jolloin windows käynnistyi mutta sammui ilman virheilmoitusta. Tämän jälkeen kokeilin lisätä koneeseen muistin määrää mutta sekään ei auttanut. Näiden [ohjeiden](https://raphtlw.medium.com/how-to-set-up-a-kvm-qemu-windows-10-vm-ca1789411760) mukaan onnistuin luomaan uuden koneen. Erona aiempaan:
 
-### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/dbb153db-c9b7-41a9-93d6-1b26b5b509e0)
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/03ae3537-3c1b-41e9-8d89-92c8773725d4)
 
 > Kuva 9. Tallenusmedian luominen oikein.
 
-Eipäs käytetäkään defaultia vaan: Select or create custom storage -> Manage -> valitse oikea iso image -> Forward
+Eipäs käytetäkään defaultia vaan: Select or create custom storage -> Manage -> Volumes: + -> nimeä storage volume (kuva 10) -> Finish -> valitse luomasi storage volume -> Choose volume -> Forward -> nimeä kone -> Finish
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/cb9950cb-e3e6-48b5-b41a-18d219ec9db7)
+
+> Kuva 10. Uusi storage volume.
+
 
 
 # Lähteet
