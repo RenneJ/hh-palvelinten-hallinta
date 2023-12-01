@@ -116,6 +116,17 @@ Eipäs käytetäkään defaultia vaan: Select or create custom storage -> Manage
 
 > Kuva 10. Uusi storage volume.
 
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/5023bca7-d2ba-450c-a466-0f5b31c964eb)
+ 
+> Kuva 11. Windowsin asentaminen alkaa.
+
+Nyt on vaikein osuus suoritettu. Seuraavaksi seurataan prompteja ja klikkailaan valinnat. Kannattaa olla tarkkana, että näppäimistö tulee oikein.
+
+Kun asennus etenee vaiheeseen, jossa Windows pyytää kirjautumaan sisään Microsoft-tunnuksilla valitsin 'Domain join instead'. Luo käyttäjätunns ja salasana. Security questions -kohta on pakollinen. Jatka promptien seuraamista ja asennus on valmis.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/d5997716-bf0b-45dd-b650-7b4dd8b48cc5)
+
+> Kuva 12. Asennus valmis!
 
 
 # Lähteet
