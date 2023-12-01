@@ -20,7 +20,7 @@ Windows orjana:
 
 Windows-orjan konfigurointi:
 
-- Määrittele windows-ohjelmien repot (Huom! tutustu saltin dokumentaatioon windowsohjelmien paketinhallinasta; [Windows Package Manager](https://sampohautala.wordpress.com/2018/11/24/ph-h5/))
+- Määrittele windows-ohjelmien repot ***(Huom! tutustu saltin dokumentaatioon windowsohjelmien paketinhallinasta; [Windows Package Manager](https://sampohautala.wordpress.com/2018/11/24/ph-h5/))***
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/796e79e9-9fb1-40c9-bd2c-b3d96bdada47)
 
