@@ -26,6 +26,12 @@ Windows-orjan konfigurointi:
 
 > Kuva 1. Kuvakaappaus Hautalan antamista komennoista repojen päivittämiseksi. Kuvan [lähde](https://sampohautala.wordpress.com/2018/11/24/ph-h5/).
 
+- Ohjelmien paikallisen metadatan luominen `sudo salt -G 'os:windows' pkg.refresh_db`
+- Paketinhallinta toimii nyt windows-orjalle
+    - `sudo salt '*' pkg.install putty` komentoo asentaa puttyn orjille
+- Tarkistus paikallisesti orjalla
+
+### Installing Windows 10 on a virtual machine ([Halonen, Ollikainen Rajala 2023](https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md))
 
 # Lähteet
 
