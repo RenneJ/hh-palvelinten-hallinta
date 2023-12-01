@@ -128,6 +128,20 @@ Kun asennus etenee vaiheeseen, jossa Windows pyytää kirjautumaan sisään Micr
 
 > Kuva 12. Asennus valmis!
 
+## b) Asenna Salt Windowsille. Osoita 'salt-call --local' komentoa ajamalla, että asennus on onnistunut.
+
+Alkusanoiksi mainittakoon, että näiden tehtävien suorittaminen laitteellani on hankalaa, koska lenovoni menee nopsaa maitohapoille. Windows-kone tuppaa sammumaan itsekseen ja se johtunee muistin vähyydestä. Tapoin muutamia turhia prosesseja host-koneen taustalla.
+
+    $ ps -ef                         # listaa prosessit
+    $ sudo pkill <prosessin nimi>    # tappaa prosessin
+
+Muutamat prosessit tapettuani sain masterin päälle (tulevan) windows-orjan kanssa samaan aikaan.
+
+Salt-minionin asennus aloitetaan oletuksella, että windows-koneessa ei ole sitä asennettuna. Masterilta tarkastetaan ip-osoite sekä saltin versio.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/e466159a-39f6-4ff0-b9a0-f34ee6c4ee4a)
+
+> Kuva 13. Saltin versio ja masterin ip.
 
 # Lähteet
 
