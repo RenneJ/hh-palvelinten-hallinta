@@ -143,6 +143,9 @@ Salt-minionin asennus aloitetaan oletuksella, että windows-koneessa ei ole sit�
 
 > Kuva 13. Saltin versio ja masterin ip.
 
+En löytänyt salt-minionia Windowsille, joka olisi ollut sama versio. Päivitin masterini saltin uudempaan versioon näiden [ohjeiden](https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/ubuntu.html#install-salt-on-ubuntu-22-04-jammy-amd64) mukaan.
+
+
 # Lähteet
 
 Halonen, Ollikainen, Rajala. 2023. Installing Windows 10 on a virtual machine. Luettavissa: https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md Luettu: 2023/12/01
