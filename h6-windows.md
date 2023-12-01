@@ -7,9 +7,9 @@
 ### Ph h5 ([Hautala 2018](https://sampohautala.wordpress.com/2018/11/24/ph-h5/))
 
 - Salt-masterin asennus herrakoneelle
- - Ip-osoite muistiin, tarkista salt-versio `salt-master --version`
+    - Ip-osoite muistiin, tarkista salt-versio `salt-master --version`
 - Lataa Windowsille salt-minion (sama versio kuin masterilla)
- - https://repo.saltproject.io/windows/
+    - https://repo.saltproject.io/windows/
 
 
 # Lähteet
