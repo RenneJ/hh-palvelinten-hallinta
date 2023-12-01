@@ -145,6 +145,33 @@ Salt-minionin asennus aloitetaan oletuksella, että windows-koneessa ei ole sit�
 
 En löytänyt salt-minionia Windowsille, joka olisi ollut sama versio. Päivitin masterini saltin uudempaan versioon näiden [ohjeiden](https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/ubuntu.html#install-salt-on-ubuntu-22-04-jammy-amd64) mukaan.
 
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/9542f1aa-c8af-480f-bd51-0e7c6b1f11ad)
+
+> Kuva 14. Uusin saltin versio asennettu masterille.
+
+Noudatan saltin omia ohjeita salt-minionin asentamiseen Windowsille, [täältä](https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/windows.html). Linkistä löytyy myös asennustiedosto, jonka latasin.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/fcefdf2f-0c8b-49d0-8ab7-96c4760360cb)
+
+> Kuva 15. Salt-minionin asennus alkaa!
+
+Hyväksyin käyttöehdot ja käytin oletuspolkua salt-minionin asennukseen. Kuvan 16 näkymässä muutin masterin ip:n osoitekenttään oikean ip:n ja muutin minionin nimen omien käytäntöjeni mukaiseksi.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/50343ebf-e71c-4e28-a24d-09e9ab6c277a)
+
+> Kuva 16. Näkymä salt-minionin asennusprosessista.
+
+Install-painikketta klikkaamalla tuli myös prompti, joka kysyi pythonin asennuksesta. Vastasin kyllä.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/ce35d4e2-b13a-437f-ba73-685a63f1878c)
+
+> Kuva 17. Asennus valmis!
+
+Suljetaan installeri ja käynnistetään minion! Tarkistetaan asennuksen onnistuminen. Komentoriviohjelman (cmd) käynnistys pitää suorittaa järjestelmänvalvojana (kuva 18). Windowsilla ei ole sudoa.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/d3573c18-e7a1-4538-9619-afcb285528f9)
+
+> Kuva 18. Salt-call ajo onnistuu!
 
 # Lähteet
 
