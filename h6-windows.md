@@ -6,10 +6,25 @@
 
 ### Ph h5 ([Hautala 2018](https://sampohautala.wordpress.com/2018/11/24/ph-h5/))
 
+Windows orjana:
+
 - Salt-masterin asennus herrakoneelle
-    - Ip-osoite muistiin, tarkista salt-versio `salt-master --version`
+    - ip-osoite muistiin, tarkista salt-versio `salt-master --version`
 - Lataa Windowsille salt-minion (sama versio kuin masterilla)
     - https://repo.saltproject.io/windows/
+- Aja ladattu asennustiedosto järjestelmänvalvojana
+    - Seuraa prompteja, täytä masterin ip-osoite ja nimeä salt-minion
+    - Käynnistä orja
+- Herrakoneella hyväksy uusi avain `sudo salt-key -A`
+- Testaa herra-orja -arkkitehtuuri esim. grains-kutsulla `sudo salt '*' grains.item cpu_model`
+
+Windows-orjan konfigurointi:
+
+- Määrittele windows-ohjelmien repot (säilöt)
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/796e79e9-9fb1-40c9-bd2c-b3d96bdada47)
+
+> Kuva 1. Kuvakaappaus Hautalan antamista komennoista repojen päivittämiseksi. Kuvan [lähde](https://sampohautala.wordpress.com/2018/11/24/ph-h5/).
 
 
 # Lähteet
