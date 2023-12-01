@@ -33,6 +33,17 @@ Windows-orjan konfigurointi:
 
 ### Installing Windows 10 on a virtual machine ([Halonen, Ollikainen Rajala 2023](https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md))
 
+- Lataa iso-tiedosto https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise 
+- Avaa VirtualBox -> New -> nimeä kone -> aseta os windows 10:ksi -> aseta RAM 8GB (windows tarvitsee paljon resursseja) -> Create
+- Valitse polku asennusta varten ja aseta kiintolevyn koko; allokoi tarpeeksi asennustilaa ettei se lopu kesken
+- Aseta prosessoreiden määrä (väh. 4)
+- Käynnistä virtuaalikone
+    - VirtualBox promptaa asennusmedian valinnan -> valitse lataamasi iso-tiedosto
+    - Windowsin asennus alkaa. Valitse itsellesi sopivat paikallistiedot (aika ja pvm). Valitse oikea näppäimistötyyppi.
+    - Seuraa prompteja (lisenssin hyväksyntä, maatiedot toistamiseen...)
+    - Kirjautumistietojen antamisen kohdalla valitse "Domain join instead" (vasen alakulma)
+        - Syötä käyttäjätiedot, älä käytä huonoja salasanoja edes haroituskäytössä!
+
 # Lähteet
 
 Hautala, S. 2018. Ph h5. Luettavissa: https://sampohautala.wordpress.com/2018/11/24/ph-h5/ Luettu: 2023/12/01
