@@ -191,11 +191,23 @@ Osfinger kertoo käyttöjärjestelmän ja käyttöjärjestelmään version.
 
 **systempath**
 
-Systempath listaa kaikki ne hakemistot, joita salt tarvitsee toimiakseen. Hakemistoista löytyy ohjelmia, tiedostoja ja toisia hakemistoja.
+Systempath listaa kaikki ne hakemistot, joita salt tarvitsee toimiakseen. Hakemistoista löytyy ohjelmia, tiedostoja ja toisia hakemistoja. Oletan, että systempath tarkoittaa saltin kontekstissa samaa kuin esimerkiksi java-ohjelmassa.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/993ca00e-fab3-4855-9036-0d4b5fc68af7)
 
 > Kuva 20. C:\Windows\system32\wbem sisältö osittain.
+
+## d) Kokeile Saltin file -toimintoa Windowsilla.
+
+Kokeillaan luoda suoraan `C:\` juureen uusi tekstitiedosto. Aikaisemmalta oppitunnilta muistelen, että idempotentteja funktioita käytettäessä täytyy komentoon lisätä `state.single` - yksi totuus.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/ff8e8a77-6ddf-488d-b778-e98470c5d27d)
+
+> Kuva 21. Onnistui ekalla yrityksellä!
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/fab695e9-e282-4a30-a3e5-73cdf6c60e21)
+
+> Kuva 22. Hakemiston `C:\` sisältölistaus.
 
 # Lähteet
 
