@@ -185,6 +185,18 @@ Windowsin komentorivi pitää käynnistää järjestelmänvalvojana.
 
 Cwd tarkoittaa current working directory eli työskentelyhakemisto. Se on hakemistopolku, josta komento suoritetaan. Nostin sen tähän esille, koska se eroaa aiemmin käyttämistämme linux-boxeista. Master-koneella (Debian 12), joka on alustettu Vagrantilla, `sudo salt-call --local grains.item cwd` tulostaa `/home/vagrant` eli käyttäjän kotihakemiston. En ole Windows-expertti. Mutta vaikuttaa siltä, että `system32`:sta ohjelman ajaminen vastaa linuxin `sudo` komentoa.
 
+**osfinger**
+
+Osfinger kertoo käyttöjärjestelmän ja käyttöjärjestelmään version.
+
+**systempath**
+
+Systempath listaa kaikki ne hakemistot, joita salt tarvitsee toimiakseen. Hakemistoista löytyy ohjelmia, tiedostoja ja toisia hakemistoja.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/993ca00e-fab3-4855-9036-0d4b5fc68af7)
+
+> Kuva 20. C:\Windows\system32\wbem sisältö osittain.
+
 # Lähteet
 
 Halonen, Ollikainen, Rajala. 2023. Installing Windows 10 on a virtual machine. Luettavissa: https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md Luettu: 2023/12/01
