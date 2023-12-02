@@ -173,6 +173,18 @@ Suljetaan installeri ja käynnistetään minion! Tarkistetaan asennuksen onnistu
 
 > Kuva 18. Salt-call ajo onnistuu!
 
+## c) Kerää Windows-koneesta tietoa grains.items -toiminnolla. Poimi 'grains.item' perään muutamia keskeisiä tietoja ja analysoi ne--
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/06d736c5-59df-4bac-9996-6a28e597b274)
+
+> Kuva 19. Salt-call -komento ja -tuloste Windowsilla.
+
+Windowsin komentorivi pitää käynnistää järjestelmänvalvojana.
+
+**cwd**
+
+Cwd tarkoittaa current working directory eli työskentelyhakemisto. Se on hakemistopolku, josta komento suoritetaan. Nostin sen tähän esille, koska se eroaa aiemmin käyttämistämme linux-boxeista. Master-koneella (Debian 12), joka on alustettu Vagrantilla, `sudo salt-call --local grains.item cwd` tulostaa `/home/vagrant` eli käyttäjän kotihakemiston. En ole Windows-expertti. Mutta vaikuttaa siltä, että `system32`:sta ohjelman ajaminen vastaa linuxin `sudo` komentoa.
+
 # Lähteet
 
 Halonen, Ollikainen, Rajala. 2023. Installing Windows 10 on a virtual machine. Luettavissa: https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md Luettu: 2023/12/01
