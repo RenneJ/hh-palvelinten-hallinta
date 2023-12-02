@@ -209,6 +209,20 @@ Kokeillaan luoda suoraan `C:\` juureen uusi tekstitiedosto. Aikaisemmalta oppitu
 
 > Kuva 22. Hakemiston `C:\` sisältölistaus.
 
+## e) Kokeile jotain itsellesi uutta toimintoa Saltista Windowsilla.
+
+Selailin saltin dokumentaatiota ja valitsin testattavaksi key-moduulin. Key-moduulilla voi tarkistaa orjien julkisten salausavainten tiedot (VMware, Inc. 2023).
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/c24611a9-82b6-4a6f-a2e3-e20fa4049c88)
+
+> Kuva 23. `key.finger`-funktion ajo.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/9ee30770-bafc-43e5-a407-1ca2ecce6cc8)
+
+> Kuva 24. `key.finger`-funktion ajo argumentein.
+
+`key.finger` voidaan joko ajaa argumentitta tai siihen voi syöttää yhden argumentin - hash-algoritmin. Oletusarvoisesti käytetään SHA256-algoritmia (vertaa kuvien 23 ja 24 komennot ja tuloste).
+
 # Lähteet
 
 Halonen, Ollikainen, Rajala. 2023. Installing Windows 10 on a virtual machine. Luettavissa: https://github.com/therealhalonen/PhishSticks/blob/master/notes/ollikainen/windows.md Luettu: 2023/12/01
@@ -216,3 +230,5 @@ Halonen, Ollikainen, Rajala. 2023. Installing Windows 10 on a virtual machine. L
 Hautala, S. 2018. Ph h5. Luettavissa: https://sampohautala.wordpress.com/2018/11/24/ph-h5/ Luettu: 2023/12/01
 
 Karvinen, T. 2023. Infra as Code 2023. H6 Windows. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h6-windows Luettu: 2023/12/01
+
+VMware, Inc. 2023. salt.modules.key. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.key.html Luettu: 2023/12/02
