@@ -44,7 +44,25 @@ Windows-orjan konfigurointi:
     - Kirjautumistietojen antamisen kohdalla valitse "Domain join instead" (vasen alakulma)
         - Syötä käyttäjätiedot, älä käytä huonoja salasanoja edes haroituskäytössä!
 
-### Filesystem Hierarchy Standard ([The Linux Foundation 2015](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html))
+### Filesystem Hierarchy Standard ([LSB Workgroup](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html))
+
+- /bin
+    - järjestelmän kaikkien käyttäjien komentojen binäärit
+- /etc
+    - järjestelmäkohtaiset konfiguraatiot
+- /home
+    - käyttäjien kotihakemistot
+- /srv
+    - järjestelmän palvelukohtaiset skriptit ja muut kirjoitettava data
+    - ainoastaan ollut käytössä minulla tällä opintojaksolla
+- /tmp
+    - väliaikaiset tiedostot
+- /usr
+    - jaettavaa dataa
+    - read-only
+- /var
+    - muuttuvat tiedostot
+    - *"includes spool directories and files, administrative and logging data, and transient and temporary files"*
 
 ## a) Asenna Windows virtuaalikoneeseen.
 
