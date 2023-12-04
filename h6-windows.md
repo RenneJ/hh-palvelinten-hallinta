@@ -44,6 +44,8 @@ Windows-orjan konfigurointi:
     - Kirjautumistietojen antamisen kohdalla valitse "Domain join instead" (vasen alakulma)
         - Syötä käyttäjätiedot, älä käytä huonoja salasanoja edes haroituskäytössä!
 
+### Filesystem Hierarchy Standard ([The Linux Foundation 2015](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html))
+
 ## a) Asenna Windows virtuaalikoneeseen.
 
 - Host: Ubuntu 22.04LTS
@@ -230,5 +232,7 @@ Halonen, Ollikainen, Rajala. 2023. Installing Windows 10 on a virtual machine. L
 Hautala, S. 2018. Ph h5. Luettavissa: https://sampohautala.wordpress.com/2018/11/24/ph-h5/ Luettu: 2023/12/01
 
 Karvinen, T. 2023. Infra as Code 2023. H6 Windows. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/#h6-windows Luettu: 2023/12/01
+
+LSB Workgroup. 2015. Filesystem Hierarchy Standard. The Linux Foundation. Luettavissa: https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html Luettu: 2023/12/04
 
 VMware, Inc. 2023. salt.modules.key. Luettavissa: https://docs.saltproject.io/en/latest/ref/modules/all/salt.modules.key.html Luettu: 2023/12/02
