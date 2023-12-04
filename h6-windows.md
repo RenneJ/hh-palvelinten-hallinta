@@ -46,11 +46,11 @@ Windows-orjan konfigurointi:
 
 ## a) Asenna Windows virtuaalikoneeseen.
 
-Host: Ubuntu 22.04LTS
-Prosessori: 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
-Prosessori arkkitehtuuri: x86_64 (AMD64)
-Muisti (total): 8GB
-Virtualisointi: libvirt
+- Host: Ubuntu 22.04LTS
+- Prosessori: 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz
+- Prosessori arkkitehtuuri: x86_64 (AMD64)
+- Muisti (total): 8GB
+- Virtualisointi: libvirt
 
 Tässä tehtävässä mukailen yllä olevan tehtävän ohjeita (Halonen, Ollikainen, Rajala 2023). Virtualisointiin käytän avoimen lähdekoodin ohjelmaa: [libvirt](https://libvirt.org/index.html).
 
