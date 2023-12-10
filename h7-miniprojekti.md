@@ -68,9 +68,28 @@ Pakettien asennus on tullut tutuksi opintojakson aikana. Tilatiedoston polku `/s
 
 > Kuva 6. Toinen ajo. Huomioitavaa! Ei "Changed" -merkintää.
 
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/2c5757ac-6368-4dca-aa31-5f80c70cbca0)
+
+> Kuva 7. Pakettien asentumisen tarkistus paikallisesti.
+
+### Palvelimen konfigurointi
+
+Aloitin tietokantapalvelimen konfiguroimsen selvittämllä, miten voidaan ottaa yhteys ei-paikalliseen postgresql-tietokantaan. 
+
+[Tämän](https://blog.devart.com/configure-postgresql-to-allow-remote-connection.html) ohjeen perusteella tein muutoksen `/etc/postgresql/13/main/postgresql.conf`-tiedostoon (Alexander 2023).
+
+        - # listen_addresses = 'localhost*
+        + listen_addresses = '*'
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/b821b2b4-fe40-4113-b8cc-361f2d2221ee)
+
+> Kuva 8. `/srv/salt/pg_config/init.sls` sisältö. Salasanat sensuroitu.
+
 
 
 ## Lähteet
+
+Alexander, H. 2023. How to Configure PostgreSQL for Remote Connections: A Beginner’s Guide. Luettavissa: https://blog.devart.com/configure-postgresql-to-allow-remote-connection.html Luettu: 2023/12/10
 
 Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 2023/12/10
 
