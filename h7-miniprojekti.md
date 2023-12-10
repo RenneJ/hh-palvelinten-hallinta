@@ -86,6 +86,7 @@ Alexanderin (2023) artikkelissa neuvotaan myös muuttamaan `/etc/postgresql/<pos
 |![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/bbd3845e-44f6-45f9-bf88-e29a146a69bb)|![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/f1196d7a-4113-49ac-904d-8a0ae5e4b3cf)|
 |---|---|
 
+> Kuvat 8 & 9. `pg_hba.conf`. Oletusarvot (vas.) ja tekemäni muutokset.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/b821b2b4-fe40-4113-b8cc-361f2d2221ee)
 
