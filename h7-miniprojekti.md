@@ -47,6 +47,28 @@ Testataan vielä, että arkkitehtuuri toimii "Hello World!" -tyyppisellä tilall
 
 > Kuva 4. Testitilan tarkistus paikallisesti.
 
+## Moduulin rakentaminen
+
+### Kaikille orjille asennettavat paketit
+
+Pakettien asennus on tullut tutuksi opintojakson aikana. Tilatedoston polku `/srv/salt/dev_pkgs/init.sls`. Tilatiedoston sisältö:
+
+    postgresql:
+      pkg.installed
+    default-jdk:
+      pkg.installed
+    neovim:
+      pkg.installed
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/e3173bbb-7816-4757-8c23-c12caad287d9)
+
+> Kuva 5. Ensimmäinen ajo. Näemmä kestää liian kauan...
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/c6f9842a-8942-4b84-b817-43cd63aeb4c6)
+
+> Kuva 6. Toinen ajo. Huomioitavaa! Ei "Changed" -merkintää.
+
+
 
 ## Lähteet
 
