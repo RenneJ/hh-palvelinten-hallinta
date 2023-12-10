@@ -104,6 +104,8 @@ Määritystiedostoa kirjoittaessa minua huolestutti salasanojen näkyvyys. En ku
 
 Tarkistin kuitenkin tietokannasta, että eiväthän salasanat ole sinne tallennettu plaintextinä (kuva 11). Ei ole onneksi. Samalla tuli varmistetuksi, että käyttäjien luominen saltilla onnistui.
 
+Kirjautuminen tietokantaan server-koneella.
+
         $ psql -U admin -d postgres        # -U = user ja -d = database
                                            # jos -d optiota ei käytä, yrittää psql hakea admin-nimistä tietokantaa
 
