@@ -102,7 +102,9 @@ Tällä määritystiedostolla käsketään palvelin-orjaa:
 
 Määritystiedostoa kirjoittaessa minua huolestutti salasanojen näkyvyys. En kuitenkaan keksinyt mitään keinoa, jolla ne saataisiin pois näkyvistä `init.sls`-tiedostosta.
 
-Tarkistin kuitenkin tietokannasta, että eiväthän salasanat ole sinne tallennettu plaintextinä (kuva 11). Ei ole onneksi.
+Tarkistin kuitenkin tietokannasta, että eiväthän salasanat ole sinne tallennettu plaintextinä (kuva 11). Ei ole onneksi. Samalla tuli varmistetuksi, että käyttäjien luominen saltilla onnistui.
+
+        $ psql -U admin -d postgres        # -U = user ja -d = database; jos -d optiota ei käytä yrittää psql hakea admin-nimistä tietokantaa
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/042749d0-d7ba-4a3e-b10b-85378b181be5)
 
