@@ -25,7 +25,7 @@ Hostin tiedot:
 - Muisti (total): 8GB
 - Virtualisointi: libvirt
 
-Käytän virtuaalimasiinoiden luomiseen Vagrantia (2.2.19). Kuvassa 1 näkyvä Vagrantfile on muokattu Teron esimerkistä ([Karvinen 2023b](https://terokarvinen.com/2023/salt-vagrant/#ready-made-vagrantfile-for-three-computers)).
+Käytän virtuaalimasiinoiden luomiseen Vagrantia (2.2.19). Kuvassa 1 näkyvä Vagrantfile on muokattu Teron esimerkistä ([Karvinen 2023b](https://terokarvinen.com/2023/salt-vagrant/#ready-made-vagrantfile-for-three-computers)). Tiedostoon on lisätty alustettavaksi yksi orja lisää sekä koneiden nimet ja ip-osoitteet ovat muutettu.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/285c9529-276d-4519-90f4-f13596b39627)
 
@@ -34,6 +34,8 @@ Käytän virtuaalimasiinoiden luomiseen Vagrantia (2.2.19). Kuvassa 1 näkyvä V
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/3bbf564c-a86a-4852-8a99-7c3f6e747d5b)
 
 > Kuva 2. Orjien avainten hyväksyminen master-koneella.
+
+On mahdollista, että kestää hetken ennen kuin orjat ilmoittavat herralle. Tässä tapauksessa välittömästi koneiden pystyttämisen jälkeen, kun kokeilin `sudo salt-key` eli avainten listausta herralla, ei tulosteeseen printtaantunut mitään. Tarkistin yksitellen orjilta, salt-minion daemonin statuksen `sudo systemctl status salt-minion.service`. Status oli jokaisella **Active(running)**, minkä jälkeen kokeilin `sudo salt-key` uudestaan jolloin listaukseen oli ilmestynyt orjien avainten lähetykset. Kaikki avaimet hyväksytään kuvan 2 osoittamalla komennolla.
 
 ## Lähteet
 
