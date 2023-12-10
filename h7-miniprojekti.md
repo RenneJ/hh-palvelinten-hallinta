@@ -27,9 +27,13 @@ Hostin tiedot:
 
 Käytän virtuaalimasiinoiden luomiseen Vagrantia (2.2.19). Kuvassa 1 näkyvä Vagrantfile on muokattu Teron esimerkistä ([Karvinen 2023b](https://terokarvinen.com/2023/salt-vagrant/#ready-made-vagrantfile-for-three-computers)).
 
-### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/9570686e-dcf8-4c2b-b056-03ecce923105)
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/285c9529-276d-4519-90f4-f13596b39627)
 
 > Kuva 1. Vagrantfile virtuaalikoneiden luomiseen.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/3bbf564c-a86a-4852-8a99-7c3f6e747d5b)
+
+> Kuva 2. Orjien avainten hyväksyminen master-koneella.
 
 ## Lähteet
 
