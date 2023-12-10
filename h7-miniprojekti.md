@@ -93,7 +93,7 @@ Luodaan salt-tilaan määritystiedosto `/srv/salt/pg_config/init.sls`.
 Tällä määritystiedostolla käsketään palvelin-orjaa:
 
 - lataamaan herralta konfigurointitiedostot `pg_hba.conf` ja `postgresql.conf`.
-- uudelleenkäynnistämään postgres-daemon, kun jompikumpi .conf-tiedosto muuttuu
+- uudelleenkäynnistämään postgres-daemon, kun mikä tahansa .conf-tiedosto muuttuu postgresin konffaushakemistossa
 - luomaan tietokantaan admin-käyttäjän sekä tavallisen käyttäjän
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/b821b2b4-fe40-4113-b8cc-361f2d2221ee)
