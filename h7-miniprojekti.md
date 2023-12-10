@@ -51,7 +51,7 @@ Testataan vielä, että arkkitehtuuri toimii "Hello World!" -tyyppisellä tilall
 
 ### Kaikille orjille asennettavat paketit
 
-Pakettien asennus on tullut tutuksi opintojakson aikana. Tilatedoston polku `/srv/salt/dev_pkgs/init.sls`. Tilatiedoston sisältö:
+Pakettien asennus on tullut tutuksi opintojakson aikana. Tilatiedoston polku `/srv/salt/dev_pkgs/init.sls`. Tilatiedoston sisältö:
 
     postgresql:
       pkg.installed
