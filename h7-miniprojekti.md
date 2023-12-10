@@ -37,6 +37,17 @@ Käytän virtuaalimasiinoiden luomiseen Vagrantia (2.2.19). Kuvassa 1 näkyvä V
 
 On mahdollista, että kestää hetken ennen kuin orjat ilmoittavat herralle. Tässä tapauksessa välittömästi koneiden pystyttämisen jälkeen, kun kokeilin `sudo salt-key` eli avainten listausta herralla, ei tulosteeseen printtaantunut mitään. Tarkistin yksitellen orjilta, salt-minion daemonin statuksen `sudo systemctl status salt-minion.service`. Status oli jokaisella **Active(running)**, minkä jälkeen kokeilin `sudo salt-key` komentoa herralla uudestaan. Nyt listaukseen ilmestyi orjien avainten lähetykset. Kaikki avaimet hyväksytään kuvan 2 osoittamalla tavalla.
 
+Testataan vielä, että arkkitehtuuri toimii "Hello World!" -tyyppisellä tilalla.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/fca88a4a-72ab-4f59-8dc3-6b8f37a7f25d)
+
+> Kuva 3. Tilan ajo ja tilamääritystiedoston sisältö.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/c6d34f8e-d18a-4b8a-b946-83730918a6f7)
+
+> Kuva 4. Testitilan tarkistus paikallisesti.
+
+
 ## Lähteet
 
 Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 2023/12/10
