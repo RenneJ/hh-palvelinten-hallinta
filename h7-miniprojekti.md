@@ -2,7 +2,7 @@
 
 ## Kuvaus projektista
 
-Tämä projekti on lopputyö Tero Karvisen opintojaksolle Palvelinten hallinta ([Karvinen 2023](https://terokarvinen.com/2023/configuration-management-2023-autumn/))
+Tämä projekti on lopputyö Tero Karvisen opintojaksolle Palvelinten hallinta ([Karvinen 2023a](https://terokarvinen.com/2023/configuration-management-2023-autumn/))
 
 Tavoitteena on saada luotua moduuli, jolla voidaan asentaa määrätylle orjalle postgresql-tietokanta ja pääkäyttäjä.
 Muille orjille luodaan oma käyttäjä tietokantaan eli jokaiselle orjalle ei ole tarkoitus alustaa omaa tietokantaa.
@@ -25,8 +25,14 @@ Hostin tiedot:
 - Muisti (total): 8GB
 - Virtualisointi: libvirt
 
-Käytän virtuaalimasiinoiden luomiseen Vagrantia (2.2.19). Kuvassa 1 näkyvää Vagrantfile on muokattu Tero
+Käytän virtuaalimasiinoiden luomiseen Vagrantia (2.2.19). Kuvassa 1 näkyvä Vagrantfile on muokattu Teron esimerkistä ([Karvinen 2023b](https://terokarvinen.com/2023/salt-vagrant/#ready-made-vagrantfile-for-three-computers)).
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/9570686e-dcf8-4c2b-b056-03ecce923105)
 
 > Kuva 1. Vagrantfile virtuaalikoneiden luomiseen.
+
+## Lähteet
+
+Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 2023/12/10
+
+Karvinen, T. 2023b. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/#ready-made-vagrantfile-for-three-computers Luettu: 2023/12/10
