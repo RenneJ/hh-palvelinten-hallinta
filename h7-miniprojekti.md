@@ -88,10 +88,25 @@ Alexanderin (2023) artikkelissa neuvotaan myös muuttamaan `/etc/postgresql/<pos
 
 > Kuvat 8 & 9. `pg_hba.conf`. Oletusarvot (vas.) ja tekemäni muutokset.
 
+Luodaan salt-tilaan määritystiedosto `/srv/salt/pg_config/init.sls`.
+
+Tällä määritystiedostolla käsketään palvelin-orjaa:
+
+- lataamaan herralta konfigurointitiedostot `pg_hba.conf` ja `postgresql.conf`.
+- uudelleenkäynnistämään postgres-daemon, kun jompikumpi .conf-tiedosto muuttuu
+- luomaan tietokantaan admin-käyttäjän sekä tavallisen käyttäjän
+
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/b821b2b4-fe40-4113-b8cc-361f2d2221ee)
 
-> Kuva 8. `/srv/salt/pg_config/init.sls` sisältö. Salasanat sensuroitu.
+> Kuva 10. `/srv/salt/pg_config/init.sls` sisältö. Salasanat sensuroitu.
 
+Määritystiedostoa kirjoittaessa minua huolestutti salasanojen näkyvyys. En kuitenkaan keksinyt mitään keinoa, jolla ne saataisiin pois näkyvistä `init.sls`-tiedostosta.
+
+Tarkistin kuitenkin tietokannasta, että eiväthän salasanat ole sinne tallennettu plaintextinä (kuva 11). Ei ole onneksi.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/042749d0-d7ba-4a3e-b10b-85378b181be5)
+
+> Kuva 11. Salasanat tallennettuna hash-arvoina tietokannassa.
 
 
 ## Lähteet
