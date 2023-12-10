@@ -35,7 +35,7 @@ Käytän virtuaalimasiinoiden luomiseen Vagrantia (2.2.19). Kuvassa 1 näkyvä V
 
 > Kuva 2. Orjien avainten hyväksyminen master-koneella.
 
-On mahdollista, että kestää hetken ennen kuin orjat ilmoittavat herralle. Tässä tapauksessa välittömästi koneiden pystyttämisen jälkeen, kun kokeilin `sudo salt-key` eli avainten listausta herralla, ei tulosteeseen printtaantunut mitään. Tarkistin yksitellen orjilta, salt-minion daemonin statuksen `sudo systemctl status salt-minion.service`. Status oli jokaisella **Active(running)**, minkä jälkeen kokeilin `sudo salt-key` uudestaan jolloin listaukseen oli ilmestynyt orjien avainten lähetykset. Kaikki avaimet hyväksytään kuvan 2 osoittamalla komennolla.
+On mahdollista, että kestää hetken ennen kuin orjat ilmoittavat herralle. Tässä tapauksessa välittömästi koneiden pystyttämisen jälkeen, kun kokeilin `sudo salt-key` eli avainten listausta herralla, ei tulosteeseen printtaantunut mitään. Tarkistin yksitellen orjilta, salt-minion daemonin statuksen `sudo systemctl status salt-minion.service`. Status oli jokaisella **Active(running)**, minkä jälkeen kokeilin `sudo salt-key` komentoa herralla uudestaan. Nyt listaukseen ilmestyi orjien avainten lähetykset. Kaikki avaimet hyväksytään kuvan 2 osoittamalla tavalla.
 
 ## Lähteet
 
