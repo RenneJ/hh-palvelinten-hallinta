@@ -85,7 +85,7 @@ Aloitin tietokantapalvelimen konfiguroimsen selvittämllä, miten voidaan ottaa 
 
 Alexanderin (2023) artikkelissa neuvotaan myös muuttamaan `/etc/postgresql/<postgres versio>/main/pg_hba.conf`-tiedostoa. Artikkelissa kehotetaan muuttamaan IPv4 yhteys sallimaan kaikki yhteydet (0.0.0.0/0). Itse kuitenkin muokkasin tiedostoa niin, että ainoastaan samasta verkosta tulevat yhteyspyynnöt hyväksytään.
 
-|![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/bbd3845e-44f6-45f9-bf88-e29a146a69bb)|![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/f1196d7a-4113-49ac-904d-8a0ae5e4b3cf)|
+|![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/bbd3845e-44f6-45f9-bf88-e29a146a69bb)|![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/1dd2622e-d4d8-46b6-b7b6-2c903de4047d)|
 |---|---|
 
 > Kuvat 8 & 9. `pg_hba.conf`. Oletusarvot (vas.) ja tekemäni muutokset.
