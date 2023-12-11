@@ -14,6 +14,8 @@
 
 # Salt-moduuli
 
+Lähdekoodi tämän projektin tuotoksesta löytyy omasta repostaan: [palvelinten-hallinta-project](https://github.com/RenneJ/palvelinten-hallinta-project).
+
 ## Kuvaus projektista
 
 Tämä projekti on lopputyö Tero Karvisen opintojaksolle Palvelinten hallinta ([Karvinen 2023a](https://terokarvinen.com/2023/configuration-management-2023-autumn/))
