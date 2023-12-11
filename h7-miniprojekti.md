@@ -4,8 +4,8 @@
 
 Tämä projekti on lopputyö Tero Karvisen opintojaksolle Palvelinten hallinta ([Karvinen 2023a](https://terokarvinen.com/2023/configuration-management-2023-autumn/))
 
-Tavoitteena on saada luotua moduuli, jolla voidaan asentaa määrätylle orjalle postgresql-tietokanta ja pääkäyttäjä.
-Muille orjille luodaan oma käyttäjä tietokantaan eli jokaiselle orjalle ei ole tarkoitus alustaa omaa tietokantaa.
+Tavoitteena on saada luotua moduuli, jolla voidaan asentaa määrätylle orjalle postgresql-tietokanta. Tietokantaan lisätään kaksi käyttäjää - admin ja developer.
+Tietokanta konfiguroidaan niin, että sinne voi ottaa yhteyden lähiverkon sisällä.
 
 Jokaiselle orjalle tulee asentaa myös neovim, java ja git. Neovimiin tulee lisätä java-devaukseen sopiva lisäosa [nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls/tree/master).
 
