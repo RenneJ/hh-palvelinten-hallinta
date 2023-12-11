@@ -70,7 +70,7 @@ Pakettien asennus on tullut tutuksi opintojakson aikana. Tilatiedoston polku `/s
 
 > Kuva 6. Toinen ajo. Huomioitavaa! Ei "Changed" -merkintää.
 
-### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/2c5757ac-6368-4dca-aa31-5f80c70cbca0)
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/0738146d-8ee5-497b-8811-266d9b3a63c4)
 
 > Kuva 7. Pakettien asentumisen tarkistus paikallisesti.
 
