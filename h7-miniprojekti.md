@@ -117,7 +117,7 @@ Kirjautuminen tietokantaan server-koneella.
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/ea9bee26-d438-4121-8f10-3e149a5bcc9f)
 
-> Kuva 12. Kirjautuminen tietokantaan toiselta koneelta.
+> Kuva 12. Kirjautuminen tietokantaan toiselta koneelta. -h = host
 
 ## Lähteet
 
