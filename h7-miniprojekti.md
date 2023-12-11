@@ -66,7 +66,7 @@ Pakettien asennus on tullut tutuksi opintojakson aikana. Tilatiedoston polku `/s
 
 > Kuva 5. Ensimmäinen ajo. Näemmä kestää liian kauan...
 
-### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/c6f9842a-8942-4b84-b817-43cd63aeb4c6)
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/6a4da224-fef5-4b1c-bf98-3c11fbb4fa47)
 
 > Kuva 6. Toinen ajo. Huomioitavaa! Ei "Changed" -merkintää.
 
