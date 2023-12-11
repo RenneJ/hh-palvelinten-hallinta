@@ -1,3 +1,17 @@
+# Linkit aikaisempiin tehtäviin
+
+#### [H1 Viisikko](https://github.com/RenneJ/hh-palvelinten-hallinta/blob/main/h1-viisikko.md)
+
+#### [H2 Karjaa](https://github.com/RenneJ/hh-palvelinten-hallinta/blob/main/h2-karjaa.md)
+
+#### [H3 Versio](https://github.com/RenneJ/hh-palvelinten-hallinta/blob/main/h3-versio.md)
+
+#### [H4 Demonit](https://github.com/RenneJ/hh-palvelinten-hallinta/blob/main/h4-demonit.md)
+
+#### [H5 CSI Kerava](https://github.com/RenneJ/hh-palvelinten-hallinta/blob/main/h5-CSI-Kerava.md)
+
+#### [H6 Windows](https://github.com/RenneJ/hh-palvelinten-hallinta/blob/main/h6-windows.md)
+
 # Salt-moduuli
 
 ## Kuvaus projektista
