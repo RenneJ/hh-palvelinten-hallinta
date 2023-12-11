@@ -115,6 +115,10 @@ Kirjautuminen tietokantaan server-koneella.
 
 > Kuva 11. Salasanat tallennettuna hash-arvoina tietokannassa.
 
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/ea9bee26-d438-4121-8f10-3e149a5bcc9f)
+
+> Kuva 12. Kirjautuminen tietokantaan toiselta koneelta.
+
 ## Lähteet
 
 Alexander, H. 2023. How to Configure PostgreSQL for Remote Connections: A Beginner’s Guide. Luettavissa: https://blog.devart.com/configure-postgresql-to-allow-remote-connection.html Luettu: 2023/12/10
