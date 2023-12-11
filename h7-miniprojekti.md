@@ -7,7 +7,7 @@ Tämä projekti on lopputyö Tero Karvisen opintojaksolle Palvelinten hallinta (
 Tavoitteena on saada luotua moduuli, jolla voidaan asentaa määrätylle orjalle postgresql-tietokanta. Tietokantaan lisätään kaksi käyttäjää - admin ja developer.
 Tietokanta konfiguroidaan niin, että sinne voi ottaa yhteyden lähiverkon sisällä.
 
-Jokaiselle orjalle tulee asentaa myös neovim, java ja git. Neovimiin tulee lisätä java-devaukseen sopiva lisäosa [nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls/tree/master).
+Jokaiselle orjalle tulee asentaa myös neovim, java ja git. Neovimiin tulee lisätä java-devaukseen sopiva lisäosa [nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls/tree/master) (Fussenegger 2022).
 
 ## Työskentely-ympäristön luominen
 
@@ -113,10 +113,15 @@ Kirjautuminen tietokantaan server-koneella.
 
 > Kuva 11. Salasanat tallennettuna hash-arvoina tietokannassa.
 
+## Neovim pluginin asennus
+
+Kokeillaan ensin käsin koneella 'pc01'. Tätä projektia ei haittaa, jos yhdellä työympäristön koneista on asennettuna plugin käsin. Tavoitteena on saavuttaa salt-tila, joka on idempotentti. Nvim-jdtls dokumentaatio löytyy [täältä](https://github.com/mfussenegger/nvim-jdtls).
 
 ## Lähteet
 
 Alexander, H. 2023. How to Configure PostgreSQL for Remote Connections: A Beginner’s Guide. Luettavissa: https://blog.devart.com/configure-postgresql-to-allow-remote-connection.html Luettu: 2023/12/10
+
+Fussenegger, M. 2022. nvim-jdtls. Luettavissa: https://github.com/mfussenegger/nvim-jdtls Luettu: 2023/12/11
 
 Karvinen, T. 2023a. Infra as Code 2023. Luettavissa: https://terokarvinen.com/2023/configuration-management-2023-autumn/ Luettu: 2023/12/10
 
