@@ -14,7 +14,7 @@
 
 # Salt-moduuli
 
-Lähdekoodi tämän projektin tuotoksesta löytyy omasta repostaan: [palvelinten-hallinta-project](https://github.com/RenneJ/palvelinten-hallinta-project).
+Lähdekoodi ja hakemistot tämän projektin tuotoksesta löytyvät omasta repostaan: [palvelinten-hallinta-project](https://github.com/RenneJ/palvelinten-hallinta-project).
 
 ## Kuvaus projektista
 
