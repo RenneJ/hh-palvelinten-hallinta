@@ -119,6 +119,20 @@ Kirjautuminen tietokantaan server-koneella.
 
 > Kuva 12. Kirjautuminen tietokantaan toiselta koneelta. -h = host
 
+### Tilat yhteen: top.sls
+
+Tässä vaiheessa on saatu toiminnot kuntoon. Seuraavaksi kirjoitin `top.sls` tiedoston, jossa määritellään mitkä funktiot kukin orja suorittaa.
+
+Tiedostopolku masterilla: `/srv/salt/top.sls`
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/7662fde4-5e26-49c2-972a-97ad3a03f82e)
+
+> Kuva 13. Top.sls määritykset.
+
+### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/8f9005fb-5971-4cdb-a3e0-a837caf20134)
+
+> Kuva 14. Oman moduulin ajo.
+
 ## Lähteet
 
 Alexander, H. 2023. How to Configure PostgreSQL for Remote Connections: A Beginner’s Guide. Luettavissa: https://blog.devart.com/configure-postgresql-to-allow-remote-connection.html Luettu: 2023/12/10
