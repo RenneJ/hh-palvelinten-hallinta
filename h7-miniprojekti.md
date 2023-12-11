@@ -7,7 +7,7 @@ Tämä projekti on lopputyö Tero Karvisen opintojaksolle Palvelinten hallinta (
 Tavoitteena on saada luotua moduuli, jolla voidaan asentaa määrätylle orjalle postgresql-tietokanta. Tietokantaan lisätään kaksi käyttäjää - admin ja developer.
 Tietokanta konfiguroidaan niin, että sinne voi ottaa yhteyden lähiverkon sisällä.
 
-Jokaiselle orjalle tulee asentaa myös neovim, java ja git. Neovimiin tulee lisätä java-devaukseen sopiva lisäosa [nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls/tree/master) (Fussenegger 2022).
+Jokaiselle orjalle tulee asentaa postgresin lisäksi neovim, java ja git. Neovimiin tulee lisätä java-devaukseen sopiva lisäosa [nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls/tree/master) (Fussenegger 2022).
 
 ## Työskentely-ympäristön luominen
 
@@ -58,6 +58,8 @@ Pakettien asennus on tullut tutuksi opintojakson aikana. Tilatiedoston polku `/s
     default-jdk:
       pkg.installed
     neovim:
+      pkg.installed
+    git:
       pkg.installed
 
 ### ![image](https://github.com/RenneJ/hh-palvelinten-hallinta/assets/97522117/e3173bbb-7816-4757-8c23-c12caad287d9)
@@ -116,6 +118,12 @@ Kirjautuminen tietokantaan server-koneella.
 ## Neovim pluginin asennus
 
 Kokeillaan ensin käsin koneella 'pc01'. Tätä projektia ei haittaa, jos yhdellä työympäristön koneista on asennettuna plugin käsin. Tavoitteena on saavuttaa salt-tila, joka on idempotentti. Nvim-jdtls dokumentaatio löytyy [täältä](https://github.com/mfussenegger/nvim-jdtls).
+
+Dokumentaation perusteella tähdätään siihen, että asennus onnistuu ilman muita lisäasennuksia. Git on välttämätön. Mutta sehän on jo asennettu.
+
+Käsin asennus:
+
+        $ git clone https://github.com/mfussenegger/nvim-jdtls.git ~/.config/nvim/pack/plugins/start/nvim-jdtls
 
 ## Lähteet
 
